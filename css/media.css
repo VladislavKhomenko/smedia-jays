@@ -1,0 +1,221 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    .location-name {
+        min-height: 80%;
+    }
+    .about-us-wrapper {
+        background-size: 700px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+    .faq {
+        padding-bottom: 100px;
+    }
+    .steps {
+        min-width: 50%;
+    }
+    .action {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .action__moving:nth-child(1) {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+    .location-name {
+        min-height: 50%;
+    }
+    .quote-location {
+        margin-bottom: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    .location-info iframe {
+        min-width: 100%!important;
+    }
+    .side-menu {
+        display: none;
+    }
+    .steps {
+        min-width: 80%;
+    }
+    .about-us-wrapper {
+        background-image: none!important;
+        padding: 150px 0;
+    }
+    .quote__link {
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (max-width: 690px) {
+    .menu.active-menu .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .quote--menu .quote__link--menu {
+        border: none;
+        padding: 0;
+        text-decoration: underline;
+    }
+    .menu__list {
+        text-align: center;
+        transition: all .5s ease-in-out;
+        padding-top: 50px;
+    }
+    .menu__list.active-mobile-submenu {
+        transform: translateX(-9999px);
+    }
+    .locations__list {
+        display: none;
+    }
+    .menu__item--locations .locations__list {
+        top: 50%;
+    }
+    .locations__list--mobile.active-mobile-submenu--locations {
+        top: 10%;
+    }
+}   
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .location-name {
+        background-image: url(../img/bg-location.png);
+        background-size: cover;
+        min-height: initial;
+    }
+    .location-name__title {
+        padding: 35% 0;
+        color: #fff;
+    }
+    .steps {
+        min-width: 100%;
+        position: absolute;
+        top: 50px;
+    }
+
+    .steps  li:nth-child(5) a:before {
+        content: none;
+    }
+
+    .steps ul:after {
+        content: none;
+    }
+
+    .steps ul {
+        padding-left: 12%;
+    }
+
+    .first-quote, .second-quote, .third-quote, .fifth-quote {
+        padding: 0 20px;
+    }
+    .second-quote .form-group {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .wrapper-quote, #quotes {
+        min-height: initial;
+    }
+
+    #quotes {
+        padding: 60% 0;
+        padding-bottom: 40px;
+    }
+
+    .steps ul li a:before {
+        left: 23%;
+    }
+
+    .actions ul[role] li:nth-child(2) a {
+        padding: 27px 68px!important;
+        margin-top: 50px;
+        display: block;
+    }
+
+    .actions ul[role] li:nth-child(3) a {
+        padding: 27px 68px!important;
+        margin-top: 50px;
+        display: block;
+    }
+
+    .group-data i {
+        display: none;
+    }
+
+    .steps ul li.last a:after {
+        content: none;
+    }
+
+    .action__moving {
+        padding: 45px 100px;
+    }
+    
+    .quote {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .quote__link {
+        display: inline-block;
+        padding: 42px 50px;
+    }
+
+    .main-title__text {
+        padding: 0 10px;
+    }
+    .logo-empty {
+        height: 0px;
+    }
+}
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+@media only screen and (min-width: 1800px) {
+    .menu .container {
+        width: 80%;
+    }
+    .menu__link {
+        font-size: 32px;
+    }
+    .quote--menu {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .logo {
+        background-position-y: -139%;
+    }
+    .logo__link {
+        margin-top: 60px;
+    }
+    .logo__action {
+        margin-bottom: 35px;
+        padding-top: 10px;
+    }
+    .about-us {
+        background-size: cover;
+    }
+    .about-us-wrapper {
+        background-size: 1500px;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    .back-menu, .locations__list--mobile {
+        display: none!important;
+    }
+}
