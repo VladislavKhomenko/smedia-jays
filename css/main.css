@@ -619,7 +619,7 @@ textarea.error {
 
 .side-menu__title {
     display: block;
-    color: #000000;
+    color: #ffffff;
     font-family: Bariol  Bold;
     font-size: 17px;
     text-transform: uppercase;
@@ -653,7 +653,7 @@ textarea.error {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #000000;
+    background: #ffffff;
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -710,14 +710,14 @@ textarea.error {
 
 .side-menu__item a {
     cursor: pointer;
-    color: black!important;
+    color: white!important;
     font-family: Bariol Bold;
     font-size: 20px;
     text-transform: uppercase;
 }
 
 .side-menu__item a.current {
-    color: #4e4e4e!important;
+    color: #ffffff!important;
 }
 
 .active-submenu {
