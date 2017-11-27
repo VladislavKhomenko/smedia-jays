@@ -15,8 +15,8 @@ var myModule = (function (){
         $('.menu__item--locations').on('mouseleave', onFadeOutSubMenu);
         $('.menu__item--locations').on('touchstart', function() {$(this).unbind('mouseleave'); $(this).unbind('mouseenter');});
         $('.locations__link').on('touchstart', function() {$(this).unbind('mouseleave'); $(this).unbind('mouseenter');});
+        $('.wrapper').on('click', '.logo__action', onFadeInMenuNavigation);
         $(window).on('scroll', fadeInRibbon);
-        $('.logo__action').on('click', onFadeInMenuNavigation);
         $('.back-menu').on('touchstart', onFadeOutSubMenu);
         // quote page
         $(document).ready(onInitUi);

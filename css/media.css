@@ -178,6 +178,9 @@
     .logo-empty {
         height: 0px;
     }
+    .content .title {
+        margin-top: 100px;
+    }
 }
 
 
