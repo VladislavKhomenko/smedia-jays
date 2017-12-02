@@ -8,6 +8,9 @@
     .about-us-wrapper {
         background-size: 700px;
     }
+    .side-menu {
+        left: 5px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -26,6 +29,13 @@
         margin-right: 0px;
         margin-bottom: 20px;
     }
+    .about-us-wrapper {
+        background-image: none!important;
+        padding: 150px 0;
+    }
+    .side-menu {
+        display: none;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -41,15 +51,8 @@
     .location-info iframe {
         min-width: 100%!important;
     }
-    .side-menu {
-        display: none;
-    }
     .steps {
         min-width: 80%;
-    }
-    .about-us-wrapper {
-        background-image: none!important;
-        padding: 150px 0;
     }
     .quote__link {
         padding: 30px 50px;
