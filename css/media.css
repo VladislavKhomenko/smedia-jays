@@ -104,6 +104,7 @@
         min-width: 100%;
         position: absolute;
         top: 50px;
+        margin-top: 140px;
     }
 
     .steps  li:nth-child(5) a:before {

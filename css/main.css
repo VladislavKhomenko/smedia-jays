@@ -275,7 +275,7 @@ body, html {
     min-width: 30%;
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 240px;
 }
 
 .steps ul {
@@ -365,6 +365,15 @@ body, html {
 
 .content {
     margin-top: -100px;
+}
+
+.content section {
+    margin-top: 80px;
+}
+
+.actions {
+    margin-top: 80px;
+    padding-bottom: 100px;
 }
 
 .content .title  {
