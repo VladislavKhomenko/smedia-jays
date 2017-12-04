@@ -1,6 +1,13 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1400px) {
+    .about-us-wrapper {
+        background-size: 900px;
+    }
+}
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
     .location-name {
         min-height: 80%;
@@ -10,6 +17,13 @@
     }
     .side-menu {
         left: 5px;
+    }
+    .side-menu {
+        display: none;
+    }
+    .about-us-wrapper {
+        background-image: none!important;
+        padding: 150px 0;
     }
 }
 
@@ -28,13 +42,6 @@
     .action__moving:nth-child(1) {
         margin-right: 0px;
         margin-bottom: 20px;
-    }
-    .about-us-wrapper {
-        background-image: none!important;
-        padding: 150px 0;
-    }
-    .side-menu {
-        display: none;
     }
 }
 

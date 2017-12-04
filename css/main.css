@@ -123,11 +123,7 @@ body, html {
     text-transform: uppercase;
     position: relative;
     letter-spacing: 2.72px;
-}
-
-.menu__link:hover, .menu__link:focus {
-    color: #000000;
-    text-decoration: none;
+    cursor: pointer;
 }
 
 .menu__link:before {
@@ -142,6 +138,13 @@ body, html {
 
 .menu__item:hover .menu__link:before {
     width: 100%;
+}
+
+.menu__link:hover, .menu__link:focus {
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
 }
 
 .menu__list {
@@ -275,7 +278,7 @@ body, html {
     min-width: 30%;
     display: flex;
     justify-content: center;
-    margin-top: 240px;
+    margin-top: 10%;
 }
 
 .steps ul {
@@ -361,10 +364,6 @@ body, html {
     left: 17%;
     top: 6px;
     z-index: 0;
-}
-
-.content {
-    margin-top: -100px;
 }
 
 .content section {

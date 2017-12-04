@@ -15,6 +15,7 @@ var myModule = (function (){
         $('.menu__item--locations').on('mouseleave', onFadeOutSubMenu);
         $('.menu__item--locations').on('touchstart', function() {$(this).unbind('mouseleave'); $(this).unbind('mouseenter');});
         $('.locations__link').on('touchstart', function() {$(this).unbind('mouseleave'); $(this).unbind('mouseenter');});
+        $('.menu__link').on('touchstart', function() {$(this).unbind('mouseleave'); $(this).unbind('mouseenter');});
         $('.wrapper').on('click', '.logo__action', onFadeInMenuNavigation);
         $(window).on('scroll', fadeInRibbon);
         $('.back-menu').on('touchstart', onFadeOutSubMenu);
@@ -142,7 +143,7 @@ var myModule = (function (){
         $('#datepicker').datepicker();
 
         // parallax 
-        $(window).paroller();
+        $(window).stellar();
 
         if ($('.careers').length && $('.about-us').length) {
             var careersTop = $('.careers').position().top - 500;
