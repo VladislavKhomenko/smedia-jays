@@ -367,7 +367,9 @@ body, html {
 }
 
 .content section {
-    margin-top: 80px;
+    min-width: 300px;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .actions {
@@ -386,17 +388,25 @@ body, html {
 }
 
 .title.current {
-    display: block;
-}
-
-.first-quote {
-    padding: 0 100px;
+    display: table-cell;
+    padding-bottom: 50px;
 }
 
 .first-quote__label {
     color: #000000;
     font-family: 'Bariol Bold';
     font-size: 20px;
+    display: block;
+}
+
+.form-check-label {
+    color: #000000;
+    font-family: 'Bariol';
+    font-size: 20px;
+}
+
+.form-check-inline+.form-check-inline {
+    margin-left: 2.75rem!important;
 }
 
 input.form-control {
@@ -437,16 +447,10 @@ section .form-control:focus {
 
 .second-quote__description {
     display: block;
-    text-align: center;
     color: #000000;
     font-family: Bariol Bold;
     font-size: 20px;
-    margin-bottom: 50px;
-}
-
-.second-quote .form-group {
-    width: 45%;
-    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .second-quote input.form-control {

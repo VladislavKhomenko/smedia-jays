@@ -120,10 +120,7 @@ var myModule = (function (){
                         $('.actions ul[role] li:nth-child(2) a').addClass('black-button');
                         break;
                     case 4:
-                        $('#quotes').css({
-                            'background-image': 'none',
-                            'backgroud-color': '#e9e9e9'
-                        });
+                        $('#quotes').css('background-image', 'url(./img/bg-quote-1.png)');
                         break;
                     default: 
                         $('#quotes').css('background-image', 'url(./img/bg-quote-1.png)');
@@ -140,7 +137,8 @@ var myModule = (function (){
             }
         });
 
-        $('#datepicker').datepicker();
+        $('#datepickerPickup').datepicker();
+        $('#datepickerDelivery').datepicker();
 
         // parallax 
         $(window).stellar();
