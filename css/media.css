@@ -16,9 +16,6 @@
         background-size: 700px;
     }
     .side-menu {
-        left: 5px;
-    }
-    .side-menu {
         display: none;
     }
     .about-us-wrapper {
@@ -61,12 +58,6 @@
     .steps {
         min-width: 80%;
     }
-    .quote__link {
-        padding: 30px 50px;
-    }
-}
-
-@media only screen and (max-width: 690px) {
     .menu.active-menu .row {
         flex-direction: column;
         align-items: center;
@@ -97,7 +88,7 @@
     .locations__list--mobile.active-mobile-submenu--locations {
         top: 10%;
     }
-}   
+}
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -158,6 +149,10 @@
         display: none;
     }
 
+    i.fa-calendar {
+        display: block;
+    }
+
     .steps ul li.last a:after {
         content: none;
     }
@@ -182,8 +177,8 @@
     .logo-empty {
         height: 0px;
     }
-    .content .title {
-        padding-top: 80px;
+    .menu__item {
+        margin-bottom: 5px;
     }
 }
 
@@ -218,6 +213,15 @@
     }
     .about-us-wrapper {
         background-size: 1500px;
+    }
+    .side-menu {
+        left: 250px!important;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .side-menu {
+        left: 50px;
     }
 }
 

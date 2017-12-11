@@ -24,13 +24,14 @@ body, html {
 
 #video-background {
     position: fixed;
-    right: 0; 
-    bottom: 0;
-    min-width: 100%; 
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
     min-height: 100%;
-    width: auto; 
+    width: auto;
     height: auto;
     z-index: -100;
+    transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -86,7 +87,7 @@ body, html {
     color: #ffffff;
     font-size: 24px;
     border: 1px solid #fff;
-    padding: 42px 101px;
+    padding: 70px 110px;
     transition: all .3s ease-in-out;
 }
 
@@ -116,7 +117,7 @@ body, html {
 }
 
 .menu__item {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
     cursor: pointer;
 }
 
@@ -151,7 +152,6 @@ body, html {
 .menu__link:hover, .menu__link:focus {
     color: #000000;
     text-decoration: none;
-    display: inline-block;
     cursor: pointer;
 }
 
@@ -160,7 +160,7 @@ body, html {
 }
 
 .quote--menu {
-    flex: 1;
+    flex: 0.85;
     justify-content: center;
     display: flex;
 }
@@ -286,7 +286,7 @@ body, html {
     min-width: 30%;
     display: flex;
     justify-content: center;
-    margin-top: 10%;
+    margin-top: 150px;
 }
 
 .steps ul {
@@ -584,7 +584,7 @@ textarea.error {
 
 .quote__about-us {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 110px;
 }
 
 .careers {
@@ -605,6 +605,7 @@ textarea.error {
 
 .table {
     margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .table thead th {
@@ -638,7 +639,7 @@ textarea.error {
 .side-menu {
     position: fixed;
     top: 31%;
-    left: 67px;   
+    left: -10px;   
 }
 
 .side-menu__title {
@@ -650,7 +651,7 @@ textarea.error {
     letter-spacing: 2.72px;
     transform: rotate(-90deg);
     cursor: pointer;
-    left: 10px;
+    left: 20px;
     bottom: 20px;
     position: relative;
 }
@@ -659,7 +660,8 @@ textarea.error {
     width: 35px;
     height: 45px;
     position: relative;
-    margin: 50px auto;
+    left: 38px;
+    top: 45px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -722,13 +724,13 @@ textarea.error {
 }
 
 .quote-side-menu .side-menu__title {
-    bottom: -10px;
+    bottom: 0px;
 }
 
 .side-menu__list {
     position: relative;
-    left: 55px;
-    bottom: 12px;
+    left: 60px;
+    bottom: -30px;
     display: none;
 }
 
@@ -802,7 +804,7 @@ textarea.error {
 }
 
 .quote-location {
-    margin-top: 70px;
+    margin-top: 110px;
 }
 
 .location-info__item--map {
@@ -825,6 +827,14 @@ textarea.error {
     margin-top: 40px;
 }
 
+.side-menu__title--locations {
+    left: 10px;
+}
+
+.side-menu__list--locations {
+    position: absolute;
+    top: 120px;
+}
 
 /*********************** FAQ PAGE *********************/
 

@@ -137,6 +137,7 @@ var myModule = (function (){
             }
         });
 
+        $('#datepicker').datepicker();
         $('#datepickerPickup').datepicker();
         $('#datepickerDelivery').datepicker();
 

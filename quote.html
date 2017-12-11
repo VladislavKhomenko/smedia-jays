@@ -17,267 +17,136 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="libs/datepicker/datepicker.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/a6846a2378.js"></script>
+</head>
+
+<body>
+    <div class="wrapper wrapper-moving">
+        <div class="logo">
+            <a href="./index.html" class="logo__link">
+                <img src="./img/logo.png" alt="logo" class="logo__img">
+            </a>
+            <span class="logo__action">menu</span>
+        </div>
+        <div class="action">
+            <a href="./moving.html" class="action__moving">moving</a>
+            <a href="./freight.html" class="action__moving">freight</a>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="container">
+            <div class="row">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="./index.html" class="menu__link">home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./about.html" class="menu__link">about us</a>
+                    </li>
+                    <li class="menu__item menu__item--locations">
+                        <a href="#" class="menu__link">locations</a>
+                        <ul class="locations__list row">
+                            <div class="col-md-4">
+                                <li class="locations__item">
+                                    <a href="./location.html" class="locations__link">Regina</a>
+                                </li>
+                                <li class="locations__item">
+                                    <a href="./location.html" class="locations__link">Saskatoon</a>
+                                </li>
+                                <li class="locations__item">
+                                    <a href="./location.html" class="locations__link">Calgary</a>
+                                </li>
+                            </div>
+                            <div class="col-md-4">
+                                <li class="locations__item">
+                                    <a href="./location.html" class="locations__link">Battleford</a>
+                                </li>
+                                <li class="locations__item">
+                                    <a href="./location.html" class="locations__link">Estevan</a>
+                                </li>
+                                <li class="locations__item">
+                                    <a href="./location.html" class="locations__link">Moose Jaw</a>
+                                </li>
+                            </div>
+                            <div class="col-md-4">
+                                <li class="locations__item">
+                                    <a href="./location.html" class="locations__link">Prince Albert</a>
+                                </li>
+                                <li class="locations__item">
+                                    <a href="./location.html" class="locations__link">Swift Current</a>
+                                </li>
+                                <li class="locations__item">
+                                    <a href="./location.html" class="locations__link">Yorkton</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./moving.html" class="menu__link">moving</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./freight.html" class="menu__link">freight</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">blog</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">faq</a>
+                    </li>
+                </ul>
+                <ul class="locations__list--mobile row">
+                    <a href="#" class="menu__link">locations</a>
+                    <div class="col-md-4">
+                        <li class="locations__item">
+                            <a href="./location.html" class="locations__link">Regina</a>
+                        </li>
+                        <li class="locations__item">
+                            <a href="./location.html" class="locations__link">Saskatoon</a>
+                        </li>
+                        <li class="locations__item">
+                            <a href="./location.html" class="locations__link">Calgary</a>
+                        </li>
+                    </div>
+                    <div class="col-md-4">
+                        <li class="locations__item">
+                            <a href="./location.html" class="locations__link">Battleford</a>
+                        </li>
+                        <li class="locations__item">
+                            <a href="./location.html" class="locations__link">Estevan</a>
+                        </li>
+                        <li class="locations__item">
+                            <a href="./location.html" class="locations__link">Moose Jaw</a>
+                        </li>
+                    </div>
+                    <div class="col-md-4">
+                        <li class="locations__item">
+                            <a href="./location.html" class="locations__link">Prince Albert</a>
+                        </li>
+                        <li class="locations__item">
+                            <a href="./location.html" class="locations__link">Swift Current</a>
+                        </li>
+                        <li class="locations__item">
+                            <a href="./location.html" class="locations__link">Yorkton</a>
+                        </li>
+                    </div>
+                </ul>
+                <div class="quote quote--menu">
+                    <a href="./quote.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
+                </div>
+            </div>
+        </div>
+        <span class="back-menu">
+            < back</span>
+    </div>
+    <script src="./libs/jquery/jquery.js"></script>
+    <script src="js/common.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
     <script src="./libs/datepicker/datepicker.js"></script>
     <script src="./libs/datepicker/datepicker.en.js"></script>
     <script src="https://use.fontawesome.com/a6846a2378.js"></script>
     <script src="./libs/parallax/jquery.stellar.min.js"></script>
-</head>
-
-<body>
-    <div class="wrapper wrapper-quote">
-        <form id="quotes">
-            <div class="logo">
-                <a href="./index.html" class="logo__link">
-                    <img src="./img/logo.png" alt="logo" class="logo__img">
-                </a>
-                <span class="logo__action">menu</span>
-            </div>
-            <h3>Get a freight quote</h3>
-            <section class="first-quote">
-                <div class="form-group moving-from">
-                    <label class="first-quote__label">Hi! What's your name?</label>
-                    <input type="text" class="form-control" name="firstName" placeholder="First name" required>
-                    <input type="text" class="form-control" name="lastName" placeholder="Laste name" required>
-                </div>
-                <div class="form-group">
-                    <label class="first-quote__label">Company name?</label>
-                    <input type="text" class="form-control" name="companyName" placeholder="Company name" required>
-                </div>
-            </section>
-            <h3></h3>
-            <section class="second-quote">
-                <span class="second-quote__description">Where will we pick up your freight?</span>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="address" placeholder="Address" required>
-                    <input type="text" class="form-control" name="city" placeholder="City" required>
-                    <input type="text" class="form-control" name="province" placeholder="Province/State" required>
-                    <input type="text" class="form-control" name="zip" placeholder="Postal/Zip Code" required>
-                </div>
-                <div class="form-group">
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="state" id="business" value="business"> Business
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline form-check--residence">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="state" id="residence" value="residence"> Residence
-                        </label>
-                    </div>
-                </div>
-            </section>
-            <h3></h3>
-            <section class="third-quote">
-                <div class="form-group">
-                    <label class="first-quote__label">What is the destination?</label>
-                    <input type="text" class="form-control" name="addressDestination" placeholder="Address" required>
-                    <input type="text" class="form-control" name="cityDestination" placeholder="City" required>
-                    <input type="text" class="form-control" name="provinceDestination" placeholder="Province/State" required>
-                    <input type="text" class="form-control" name="zipDestination" placeholder="Postal/Zip Code" required>
-                </div>
-                <div class="form-group">
-                    <label class="first-quote__label">Bes phone number to reach you?</label>
-                    <input type="text" class="form-control" name="phone" placeholder="" required>
-                </div>
-                <div class="form-group">
-                    <label class="first-quote__label">Email address?</label>
-                    <input type="text" class="form-control" name="email" placeholder="" required>
-                </div>
-            </section>
-            <h3>Moving dates</h3>
-            <section class="fourth-quote">
-                <span class="second-quote__description">Pickup date</span>
-                <div class="form-group group-data">
-                    <input type="text" class="form-control control-data" id="datepickerPickup" name="pickupDate" placeholder="MM/DD/YY" required data-language='en'>
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                </div>
-                <span class="second-quote__description">Delivery date</span>
-                <div class="form-group group-data">
-                    <input type="text" class="form-control control-data" id="datepickerDelivery" name="deliveryDate" placeholder="MM/DD/YY" required data-language='en'>
-                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                </div>
-            </section>
-            <h3></h3>
-            <section class="fifth-quote">
-                <div class="form-group">
-                    <label class="first-quote__label">What is your freight?</label>
-                    <input type="text" class="form-control" name="freight" placeholder="Freight" required>
-                </div>
-                <div class="form-group">
-                    <label class="first-quote__label">Weight?</label>
-                    <input type="text" class="form-control" name="freight" placeholder="Weight" required>
-                </div>
-                <div class="form-group">
-                    <label class="first-quote__label">Number of pieces?</label>
-                    <input type="number" class="form-control" name="pieces" placeholder="#" required>
-                </div>
-                <div class="form-group">
-                    <label class="first-quote__label">Pallet?</label>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="palette" id="paletteYes" value="yes"> Yes
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline form-check--residence">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="palette" id="paletteNo" value="no"> No
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="first-quote__label">Stackable pallet?</label>
-                    <div class="form-check form-check-inline">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="stackablepalette" id="stackablepaletteYes" value="yes"> Yes
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline form-check--residence">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="stackablepalette" id="stackablepaletteNo" value="no"> No
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline form-check--residence">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="stackablepalette" id="stackablepalettena" value="n/a"> N/A
-                        </label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="first-quote__label">Size</label>
-                    <input type="text" class="form-control" name="size" placeholder="LxWxH" required>
-                </div>
-            </section>
-        </form>
-        <div class="menu">
-            <div class="container">
-                <div class="row">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="./index.html" class="menu__link">home</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="./about.html" class="menu__link">about us</a>
-                        </li>
-                        <li class="menu__item menu__item--locations">
-                            <a href="#" class="menu__link">locations</a>
-                            <ul class="locations__list row">
-                                <div class="col-md-4">
-                                    <li class="locations__item">
-                                        <a href="./location.html" class="locations__link">Regina</a>
-                                    </li>
-                                    <li class="locations__item">
-                                        <a href="./location.html" class="locations__link">Saskatoon</a>
-                                    </li>
-                                    <li class="locations__item">
-                                        <a href="./location.html" class="locations__link">Calgary</a>
-                                    </li>
-                                </div>
-                                <div class="col-md-4">
-                                    <li class="locations__item">
-                                        <a href="./location.html" class="locations__link">Battleford</a>
-                                    </li>
-                                    <li class="locations__item">
-                                        <a href="./location.html" class="locations__link">Estevan</a>
-                                    </li>
-                                    <li class="locations__item">
-                                        <a href="./location.html" class="locations__link">Moose Jaw</a>
-                                    </li>
-                                </div>
-                                <div class="col-md-4">
-                                    <li class="locations__item">
-                                        <a href="./location.html" class="locations__link">Prince Albert</a>
-                                    </li>
-                                    <li class="locations__item">
-                                        <a href="./location.html" class="locations__link">Swift Current</a>
-                                    </li>
-                                    <li class="locations__item">
-                                        <a href="./location.html" class="locations__link">Yorkton</a>
-                                    </li>
-                                </div>
-                            </ul>
-                        </li>
-                        <li class="menu__item">
-                            <a href="./quote.html" class="menu__link">moving</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="./moving.html" class="menu__link">freight</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">blog</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">faq</a>
-                        </li>
-                    </ul>
-                    <ul class="locations__list--mobile row">
-                        <a href="#" class="menu__link">locations</a>
-                        <div class="col-md-4">
-                            <li class="locations__item">
-                                <a href="./location.html" class="locations__link">Regina</a>
-                            </li>
-                            <li class="locations__item">
-                                <a href="./location.html" class="locations__link">Saskatoon</a>
-                            </li>
-                            <li class="locations__item">
-                                <a href="./location.html" class="locations__link">Calgary</a>
-                            </li>
-                        </div>
-                        <div class="col-md-4">
-                            <li class="locations__item">
-                                <a href="./location.html" class="locations__link">Battleford</a>
-                            </li>
-                            <li class="locations__item">
-                                <a href="./location.html" class="locations__link">Estevan</a>
-                            </li>
-                            <li class="locations__item">
-                                <a href="./location.html" class="locations__link">Moose Jaw</a>
-                            </li>
-                        </div>
-                        <div class="col-md-4">
-                            <li class="locations__item">
-                                <a href="./location.html" class="locations__link">Prince Albert</a>
-                            </li>
-                            <li class="locations__item">
-                                <a href="./location.html" class="locations__link">Swift Current</a>
-                            </li>
-                            <li class="locations__item">
-                                <a href="./location.html" class="locations__link">Yorkton</a>
-                            </li>
-                        </div>
-                    </ul>
-                    <div class="quote quote--menu">
-                        <a href="./moving.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
-                    </div>
-                </div>
-            </div>
-            <span class="back-menu">
-                < back</span>
-        </div>
-    </div>
-    <div class="side-menu quote-side-menu">
-        <span class="side-menu__title">quote</span>
-        <div id="side-menu__icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- <ul class="side-menu__list">
-            <li class="side-menu__item">
-                <a>About us</a>
-            </li>
-            <li class="side-menu__item">
-                <a>Careers</a>
-            </li>
-        </ul> -->
-    </div>
-    <script src="js/common.js"></script>
 </body>
-
 </html>
