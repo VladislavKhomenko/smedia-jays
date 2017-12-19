@@ -22,6 +22,9 @@
         background-image: none!important;
         padding: 150px 0;
     }
+    .main-title {
+        flex: 0.9;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -75,18 +78,35 @@
         text-align: center;
         transition: all .5s ease-in-out;
         padding-top: 50px;
+        margin-bottom: 20px;
     }
     .menu__list.active-mobile-submenu {
         transform: translateX(-9999px);
-    }
-    .locations__list {
-        display: none;
     }
     .menu__item--locations .locations__list {
         top: 50%;
     }
     .locations__list--mobile.active-mobile-submenu--locations {
         top: 10%;
+    }
+    .row--logo {
+        display: flex;
+        justify-content: center;
+    }
+    .socials, .footer-desktop, .quote, .main-title__text--quote, .locations__list {
+        display: none;
+    }
+    .footer-mobile {
+        display: block;
+    }
+    .main-title {
+        flex: 0.5;
+    }
+    .footer {
+        padding: 50px 0;
+    }
+    .socials--mobile {
+        display: flex;
     }
 }
 
@@ -168,7 +188,7 @@
 
     .quote__link {
         display: inline-block;
-        padding: 42px 50px;
+        margin-top: 10px;
     }
 
     .main-title__text {
@@ -178,7 +198,10 @@
         height: 0px;
     }
     .menu__item {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+    }
+    .menu__list {
+        margin-bottom: 20px;
     }
 }
 
@@ -187,7 +210,7 @@
 /*==========  Mobile First Method  ==========*/
 
 @media only screen and (min-width: 1800px) {
-    .menu .container {
+    .menu .container, .wrapper .container--logo {
         width: 80%;
     }
     .menu__link {
@@ -197,6 +220,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
+        margin-top: -50px;
     }
     .logo {
         background-position-y: -139%;
@@ -222,6 +246,15 @@
 @media only screen and (min-width: 1400px) {
     .side-menu {
         left: 50px;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .footer-desktop {
+        display: block;
+    }
+    .footer-mobile, .socials--mobile {
+        display: none;
     }
 }
 

@@ -17,7 +17,7 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
     overflow: hidden;
 }
@@ -35,9 +35,6 @@ body, html {
 }
 
 .logo {
-    position: fixed;
-    top: 0px;
-    left: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +43,12 @@ body, html {
     z-index: 99;
     background-position-y: -129%;
     transition: all .5s ease-in-out;
-    transform: translateX(-50%);
+}
+
+.row--logo {
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo-index {
@@ -87,7 +89,7 @@ body, html {
     color: #ffffff;
     font-size: 24px;
     border: 1px solid #fff;
-    padding: 70px 110px;
+    padding: 25px 40px;
     transition: all .3s ease-in-out;
 }
 
@@ -97,7 +99,109 @@ body, html {
     text-decoration: none;
 }
 
+.main-title__text--quote {
+    color: #000;
+}
+
+.socials {
+    display: flex;
+    margin-top: 30px;
+}
+
+.socials__link {
+    color: rgba(115, 92, 92, 0.7);
+    margin-right: 20px;
+    font-size: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.socials .socials__link:nth-child(4) {
+    margin-right: 0;
+}
+
+.socials__link:hover {
+    color: rgba(115, 92, 92, 1);
+}
+
+.footer {
+    min-width: 100%;
+    background-color: #272525;
+    padding: 30px 0;
+}
+
+.contacts {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.contacts__item {
+    margin-right: 50px;
+}
+
+.contacts__link {
+    color: #bdbdbd;
+    transition: all .3s ease-in-out;
+}
+
+.contacts__link:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.contacts .contacts__item:nth-child(4) {
+    margin-right: 0px;
+}
+
+.copyright {
+    color: #7d7c7c;
+    font-size: 14px;
+}
+
+.main-title {
+    flex: 1;    
+    padding: 0 50px;
+}
+
+.quote {
+    position: relative;
+    bottom: 70px;
+}
+
+.footer-mobile .quote__link {
+    padding: 15px 30px;
+    margin-bottom: 40px;
+}
+
+.row--socials-mobile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.socials--mobile {
+    margin-top: 10px;
+}
+
+.socials--mobile .socials__link {
+    color: rgba(191, 190, 190, 0.7);
+}
+
+.socials--mobile .socials__link:hover {
+    color: rgba(191, 190, 190, 1);
+}
+
+.footer-mobile .contacts__link {
+    margin-right: 20px;
+}
+
 /* Main menu */
+
+.container--menu {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
 
 .menu {
     position: fixed;
@@ -163,6 +267,8 @@ body, html {
     flex: 0.85;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .quote__link--menu {
