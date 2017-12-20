@@ -66,9 +66,7 @@
         align-items: center;
     }
     .quote--menu .quote__link--menu {
-        border: none;
-        padding: 0;
-        text-decoration: underline;
+        padding: 10px 15px;
     }
     .menu__list {
         text-align: center;
@@ -183,6 +181,7 @@
     .quote {
         min-width: 100%;
         text-align: center;
+        position: static;
     }
 
     .quote__link {
