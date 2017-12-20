@@ -10,15 +10,15 @@ var myModule = (function (){
 
     var _setUpListners = function () {
         // main page
-        $('.menu__item--locations').on('mouseenter touchstart', onFadeInSubMenu);
         $('.locations__list').on('mouseleave', onFadeOutSubMenu);
+        $('.locations__list').on('mouseover', showLocationsMenu);
         $('.menu__item--locations').on('mouseleave', onFadeOutSubMenu);
-        $('.menu__item--locations').on('touchstart', function() {$(this).unbind('mouseleave'); $(this).unbind('mouseenter');});
-        $('.locations__link').on('touchstart', function() {$(this).unbind('mouseleave'); $(this).unbind('mouseenter');});
-        $('.menu__link').on('touchstart', function() {$(this).unbind('mouseleave'); $(this).unbind('mouseenter');});
+        $('.menu__item--locations').on('mouseenter touchstart', onFadeInSubMenu);
         $('.wrapper').on('click', '.logo__action', onFadeInMenuNavigation);
         $(window).on('scroll', fadeInRibbon);
         $('.back-menu').on('touchstart', onFadeOutSubMenu);
+        $('.menu__link--moving').on('click', showFormPreviewMoving);
+        $('.menu__link--freight').on('click', showFormPreviewFreight);
         // quote page
         $(document).ready(onInitUi);
         $(document).on('scroll', onChangeSubPageTitle);
@@ -28,24 +28,94 @@ var myModule = (function (){
 
     // main page
 
-    var onFadeInSubMenu = function() {
-        $('.locations__list--mobile').addClass('active-mobile-submenu--locations');
-        $('.back-menu').fadeIn();
-        $('.menu__list').addClass('active-mobile-submenu');
-        $('.quote--menu').stop(true).fadeOut();
+    var showLocationsMenu = function() {
+        $('.quote--menu').stop(true).fadeOut(0);
+        $('.locations__list').css("display", "flex");
+    };
+
+    var showFormPreviewMoving = function() {
+        if ($('.form-preview--freight').hasClass('active-form')) {
+            return;
+        }
+
+        $('.form-preview').toggleClass('active-form');
+
+        if ($('.form-preview').hasClass('active-form')) {
+            $('.quote--menu').stop(true).fadeOut(0);
+            $('.form-preview').css("display", "flex")
+            .hide()
+            .delay(200)
+            .stop(true)
+            .fadeIn();
+        } else {
+            $('.quote--menu').stop(true).fadeIn();
+            $('.form-preview').stop(true).fadeOut(0);
+        }
+
+        if ($(window).width() < 480) {
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
+    };
+
+    var showFormPreviewFreight = function() {
+        if ($('.form-preview').hasClass('active-form')) {
+            return;
+        }
+
+        $('.form-preview--freight').toggleClass('active-form');
+
+        if ($('.form-preview--freight').hasClass('active-form')) {
+            $('.quote--menu').stop(true).fadeOut(0);
+            $('.form-preview--freight').css("display", "flex")
+            .hide()
+            .delay(200)
+            .stop(true)
+            .fadeIn();
+        } else {
+            $('.quote--menu').stop(true).fadeIn();
+            $('.form-preview--freight').stop(true).fadeOut(0);
+        }
+
+        if ($(window).width() < 480) {
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
+    };
+
+    var onFadeInSubMenu = function(e) {
+        e.preventDefault();
+
+        if ($('.form-preview--freight').hasClass('active-form') || $('.form-preview').hasClass('active-form')) {
+            return;
+        }
+
+        $('.quote--menu').stop(true).fadeOut(0);
         $('.locations__list').css("display", "flex")
         .hide()
-        .delay(200)
+        .delay(300)
         .stop(true)
         .fadeIn();
+        if ($(window).width() < 480) {
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
     };
     
     var onFadeOutSubMenu = function() {
+        if ($('.form-preview--freight').hasClass('active-form') || $('.form-preview').hasClass('active-form')) {
+            return;
+        }
+
         $('.locations__list--mobile').removeClass('active-mobile-submenu--locations');
         $('.back-menu').fadeOut();
-        $('.menu__list').removeClass('active-mobile-submenu');
-        $('.locations__list').stop(true).fadeOut(300);
+        $('.locations__list').stop(true).fadeOut(0);
         $('.quote--menu').fadeIn();
+
+        if ($(window).width() < 480) {
+            $('.menu__list').fadeIn();
+            $('.back-menu').fadeOut(0);
+        }
     };
 
     var onFadeInMenuNavigation = function() {

@@ -101,6 +101,8 @@ body, html {
 
 .main-title__text--quote {
     color: #000;
+    position: relative;
+    top: 50px;
 }
 
 .socials {
@@ -161,11 +163,6 @@ body, html {
     flex: 1;
 }
 
-.quote {
-    position: relative;
-    bottom: 70px;
-}
-
 .footer-mobile .quote__link {
     padding: 15px 30px;
     margin-bottom: 40px;
@@ -194,12 +191,23 @@ body, html {
     margin-right: 20px;
 }
 
+.quote-main {
+    position: relative;
+    bottom: 70px;
+}
+
 /* Main menu */
 
 .container--menu {
     justify-content: center;
     flex-direction: column;
     display: flex;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .menu {
@@ -263,11 +271,13 @@ body, html {
 }
 
 .quote--menu {
-    flex: 0.85;
-    justify-content: center;
+    flex: 1;
+    justify-content: space-between;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    top: 150px;
 }
 
 .quote__link--menu {
@@ -278,14 +288,11 @@ body, html {
     cursor: pointer;
 }
 
-.menu__item--locations .locations__list {
-    cursor: pointer;
-    position: absolute;
-    left: 0;
-    top: 30%;
-    min-width: 100%;
+.locations__list.row {
     display: none;
-    padding-left: 30%;
+    flex: 1;
+    align-self: center;
+    padding-left: 100px;
 }
 
 .locations__link {
@@ -320,16 +327,13 @@ body, html {
     margin-bottom: 10px;
 }
 
-.locations__list--mobile {
-    position: absolute;
+.locations__list--mobile.row {
+    display: none;
     text-align: center;
-    transition: all .5s ease-in-out;
-    transform: translateX(9999px);
 }
 
-.locations__list--mobile.active-mobile-submenu--locations {
-    transform: translateX(0);
-    left: 0;
+.locations__list--mobile .menu__link {
+    text-decoration: underline;
 }
 
 .locations__list--mobile  .locations__item {
@@ -360,6 +364,57 @@ body, html {
     left: 20px;
     display: none;
     cursor: pointer;
+}
+
+.form-preview, .form-preview--freight {
+    display: none;
+}
+
+.form-preview.active-form, .form-preview--freight.active-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding-left: 150px;
+}
+
+.form-preview-title {
+    margin-bottom: 70px;
+}
+
+.form-preview__content {
+    line-height: 30px;
+    color: black;
+    font-weight: 600;
+}
+
+.form-preview__item {
+    color: black;
+    font-weight: 600;
+}
+
+.form-preview__list {
+    margin-bottom: 0px;
+    margin-left: 19px;
+}
+
+.form-preview__list li {
+    list-style: disc;
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+.form-page {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+    transition: all .3s ease-in-out;
+}
+
+.form-page:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
 /************************** QUOTE PAGE ****************************/
@@ -642,6 +697,10 @@ textarea.error {
 
 /************************* ABOUT US PAGE ******************************/
 
+.container--logo--about {
+    margin-bottom: 150px;
+}
+
 .wrapper-about-us {
     background-image: none;
 }
@@ -654,9 +713,8 @@ textarea.error {
 
 .about-us-wrapper {
     background-image: url('../img/about-us-parallax.png');
-    padding: 150px 0;
+    padding-bottom: 150px;
     background-size: cover;
-    padding-top: 300px;
     background-position: right top;
     background-repeat: no-repeat;
     background-size: 1000px;

@@ -20,7 +20,7 @@
     }
     .about-us-wrapper {
         background-image: none!important;
-        padding: 150px 0;
+        padding-bottom: 50px;
     }
     .main-title {
         flex: 0.9;
@@ -62,10 +62,6 @@
         min-width: 80%;
     }
     .menu.active-menu .row {
-        flex-direction: column;
-        align-items: center;
-    }
-    .menu .row {
         flex-direction: column;
         align-items: center;
     }
@@ -205,6 +201,28 @@
     }
     .menu__list {
         margin-bottom: 20px;
+    }
+    .locations__list.row {
+        padding-left: 0;
+        text-align: center;
+    }
+    .locations__item {
+        margin-bottom: 5px;
+    }
+    .locations__link {
+        color: #000000;
+        font-family: 'Bariol';
+        font-size: 20px;
+        text-transform: capitalize;
+        position: relative;
+        letter-spacing: 2.72px;
+        font-weight: 600;
+    }
+    .menu__link--mobile {
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin-bottom: 15px;
+        display: inline-block;
     }
 }
 
