@@ -81,6 +81,10 @@ body, html {
     text-transform: uppercase;
     color: #ffffff;
     text-align: center;
+    text-shadow: 0 2px 13px rgba(11, 11, 11, 0.3);
+    font-size: 44px;
+    position: relative;
+    bottom: 40px;
 }
 
 .quote__link {
@@ -133,16 +137,17 @@ body, html {
 
 .contacts {
     display: flex;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .contacts__item {
-    margin-right: 50px;
+    margin-right: 25px;
 }
 
 .contacts__link {
     color: #bdbdbd;
     transition: all .3s ease-in-out;
+    font-size: 10px;
 }
 
 .contacts__link:hover {
@@ -156,7 +161,7 @@ body, html {
 
 .copyright {
     color: #7d7c7c;
-    font-size: 14px;
+    font-size: 9px;
 }
 
 .main-title {
@@ -193,7 +198,21 @@ body, html {
 
 .quote-main {
     position: relative;
-    bottom: 70px;
+    bottom: 100px;
+}
+
+.customers {
+    display: flex;
+}
+
+.customer-item {
+    margin-right: 34px;
+    display: flex;
+    align-items: center;
+}
+
+.customers .customer-item:nth-child(5) {
+    margin-right: 0;
 }
 
 /* Main menu */
