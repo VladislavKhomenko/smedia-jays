@@ -23,21 +23,29 @@
     <script src="https://use.fontawesome.com/a6846a2378.js"></script>
   </head>
   <body>
-    <div class="wrapper wrapper-locations">
-      <div class="logo nav-up">
-        <a href="./index.html" class="logo__link">
-          <img src="./img/logo.png" alt="logo" class="logo__img">
-        </a>
-        <span class="logo__action">menu</span>
-      </div>
-    </div>
     <section class="location-name">
+        <div class="container container--logo">
+            <div class="row row--logo">
+                <div class="logo">
+                    <a href="./index.html" class="logo__link">
+                        <img src="./img/logo.png" alt="logo" class="logo__img">
+                    </a>
+                    <span class="logo__action">menu</span>
+                </div>
+                <ul class="socials">
+                    <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-facebook-square"></i></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-instagram"></i></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-linkedin"></i></a></li>
+                    <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-google-plus-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
         <h1 class="location-name__title">Saskatoon</h1>
     </section>
     <section class="location-info">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4 offset-md-2">
                     <h2 class="location-info__title">MOVING & STORAGE SERVICES</h2>
                     <p class="location-info__content">At Jay’s Transportation Group in Saskatoon we offer full commercial and household moving services and storage. Our warehouse provides secure short and long term storage as well as limited self storage.</p>
                     <p class="location-info__content">As part of Jay’s Group our movers participate in a number of volunteer activities in support of charitable organizations including:</p>
@@ -103,113 +111,107 @@
       </ul>
   </div>
   <div class="menu">
-        <div class="container container--menu">
-            <div class="row">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a href="./index.html" class="menu__link">home</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./about.html" class="menu__link">about us</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link menu__item--locations">locations</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link menu__link--moving">moving</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link menu__link--freight">freight</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">blog</a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="#" class="menu__link">faq</a>
-                    </li>
-                </ul>
-                <ul class="locations__list row">
+    <div class="container container--menu">
+        <div class="row">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="./index.html" class="menu__link">home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="./about.html" class="menu__link">about us</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link menu__item--locations">locations</a>
+                </li>
+                <li class="menu__item menu__link--moving">
+                    <a href="./moving-preview.html" class="menu__link">moving</a>
+                </li>
+                <li class="menu__item menu__link--freight">
+                    <a href="./freight-preview.html" class="menu__link">freight</a>
+                </li>
+                <li class="menu__item menu__link--contact">
+                    <a href="#" class="menu__link">contact</a>
+                </li>
+            </ul>
+            <ul class="locations__list row">
 
-                    <div class="col-md-4">
-                        <a href="#" class="menu__link--mobile locations__link">Locations</a>
-                        <li class="locations__item">
-                            <a href="./location.html" class="locations__link">Regina</a>
-                        </li>
-                        <li class="locations__item">
-                            <a href="./location.html" class="locations__link">Saskatoon</a>
-                        </li>
-                        <li class="locations__item">
-                            <a href="./location.html" class="locations__link">Calgary</a>
-                        </li>
-                    </div>
-                    <div class="col-md-4">
-                        <li class="locations__item">
-                            <a href="./location.html" class="locations__link">Battleford</a>
-                        </li>
-                        <li class="locations__item">
-                            <a href="./location.html" class="locations__link">Estevan</a>
-                        </li>
-                        <li class="locations__item">
-                            <a href="./location.html" class="locations__link">Moose Jaw</a>
-                        </li>
-                    </div>
-                    <div class="col-md-4">
-                        <li class="locations__item">
-                            <a href="./location.html" class="locations__link">Prince Albert</a>
-                        </li>
-                        <li class="locations__item">
-                            <a href="./location.html" class="locations__link">Swift Current</a>
-                        </li>
-                        <li class="locations__item">
-                            <a href="./location.html" class="locations__link">Yorkton</a>
-                        </li>
-                    </div>
-                </ul>
-                <div class="form-preview">
-                    <h1 class="main-title__text main-title__text--quote form-preview-title">let's get a move on!</h1>
-                    <p class="form-preview__content">Moving prices shouldn't be wrapped in mystery. Jay's goes the extra mile to give you an accurate quote, coming to your home or business at no charge to walk through all of your requirements. Here's some of the ground you and your Jay's moving consultant will cover:</p>
-                    <ul class="form-preview__list">
-                        <li class="form-preview__item">weight of your shipment</li>
-                        <li class="form-preview__item">distance to your destination</li>
-                        <li class="form-preview__item">appliances (moving our and in)</li>
-                        <li class="form-preview__item">crating of large or fragile items</li>
-                        <li class="form-preview__item">storage in transit</li>
-                        <li class="form-preview__item">packing and unpacking</li>
-                        <li class="form-preview__item">packing supplies</li>
-                        <li class="form-preview__item">logistical challenges like elevators and stairs, or if shuttle service is required</li>
-                        <li class="form-preview__item">cargo protection beyond the standard protection we include</li>
-                    </ul>
-                    <h1 class="main-title__text main-title__text--quote form-preview-title">how do we price your move?</h1>
-                    <p class="form-preview__content">Local moves are priced by the hour. Out-of-town moves are priced by weight and distance. After our free in-home visit, Jay's guarantees your long distance move estimate within 10%! Just another reason why choosing Jay's is the right move.</p>
-                    <a href="./moving.html" class="form-page">To moving</a>
+                <div class="col-md-4">
+                    <a href="#" class="menu__link--mobile locations__link">Locations</a>
+                    <li class="locations__item">
+                        <a href="./location.html" class="locations__link">Regina</a>
+                    </li>
+                    <li class="locations__item">
+                        <a href="./location.html" class="locations__link">Saskatoon</a>
+                    </li>
+                    <li class="locations__item">
+                        <a href="./location.html" class="locations__link">Calgary</a>
+                    </li>
                 </div>
-                <div class="form-preview--freight">
-                    <h1 class="main-title__text main-title__text--quote form-preview-title">let's get a move on!</h1>
-                    <p class="form-preview__content">Moving prices shouldn't be wrapped in mystery. Jay's goes the extra mile to give you an accurate quote, coming to your home or business at no charge to walk through all of your requirements. Here's some of the ground you and your Jay's moving consultant will cover:</p>
-                    <ul class="form-preview__list">
-                        <li class="form-preview__item">weight of your shipment</li>
-                        <li class="form-preview__item">distance to your destination</li>
-                        <li class="form-preview__item">appliances (moving our and in)</li>
-                        <li class="form-preview__item">crating of large or fragile items</li>
-                        <li class="form-preview__item">storage in transit</li>
-                        <li class="form-preview__item">packing and unpacking</li>
-                        <li class="form-preview__item">packing supplies</li>
-                        <li class="form-preview__item">logistical challenges like elevators and stairs, or if shuttle service is required</li>
-                        <li class="form-preview__item">cargo protection beyond the standard protection we include</li>
-                    </ul>
-                    <h1 class="main-title__text main-title__text--quote form-preview-title">how do we price your move?</h1>
-                    <p class="form-preview__content">Local moves are priced by the hour. Out-of-town moves are priced by weight and distance. After our free in-home visit, Jay's guarantees your long distance move estimate within 10%! Just another reason why choosing Jay's is the right move.</p>
-                    <a href="./freight.html" class="form-page">To freight</a>
+                <div class="col-md-4">
+                    <li class="locations__item">
+                        <a href="./location.html" class="locations__link">Battleford</a>
+                    </li>
+                    <li class="locations__item">
+                        <a href="./location.html" class="locations__link">Estevan</a>
+                    </li>
+                    <li class="locations__item">
+                        <a href="./location.html" class="locations__link">Moose Jaw</a>
+                    </li>
                 </div>
-                <div class="quote quote--menu">
-                    <h1 class="main-title__text main-title__text--quote">going the extra mile since '64</h1>
-                    <a href="./quote.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
+                <div class="col-md-4">
+                    <li class="locations__item">
+                        <a href="./location.html" class="locations__link">Prince Albert</a>
+                    </li>
+                    <li class="locations__item">
+                        <a href="./location.html" class="locations__link">Swift Current</a>
+                    </li>
+                    <li class="locations__item">
+                        <a href="./location.html" class="locations__link">Yorkton</a>
+                    </li>
                 </div>
+            </ul>
+            <div class="quote quote--menu">
+                <h1 class="main-title__text main-title__text--quote">going the extra mile since '64</h1>
+                <a href="./quote.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
             </div>
+            <div class="quote quote--menu--freight">
+                <h1 class="main-title__text main-title__text--quote">give us the goods</h1>
+                <a href="./freight-preview.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
+            </div>
+            <div class="quote quote--menu--moving">
+                <h1 class="main-title__text main-title__text--quote">let's get a move on!</h1>
+                <a href="./moving-preview.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
+            </div>
+            <form class="contact-form">
+                <span class="close-form">x close</span>
+                <a href="#" class="menu__link--contact--mobile">contact</a>
+                <div class="contact-form__basic">
+                    <div class="form-group">
+                        <label class="first-quote__label">Name</label>
+                        <input type="text" class="form-control" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label class="first-quote__label">Email Address</label>
+                        <input type="text" class="form-control" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label class="first-quote__label">Subject</label>
+                        <input type="text" class="form-control" name="subject">
+                    </div>
+                </div>
+                <div class="contact-form__secondary">
+                    <div class="form-group">
+                        <label class="first-quote__label">Message</label>
+                        <textarea class="form-control" name="message" rows="8" cols="5"></textarea>
+                    </div>
+                    <button class="submit-contact-form" type="submit">submit</button>
+                </div>
+            </form>
         </div>
-        <span class="back-menu">
-            < back</span>
     </div>
+    <span class="back-menu">
+        < back</span>
+</div>
     <script src="https://use.fontawesome.com/a6846a2378.js"></script>
     <script src="./libs/jquery/jquery.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>

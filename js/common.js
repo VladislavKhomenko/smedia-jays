@@ -12,75 +12,99 @@ var myModule = (function (){
         // main page
         $('.locations__list').on('mouseleave', onFadeOutSubMenu);
         $('.locations__list').on('mouseover', showLocationsMenu);
+        $('.quote--menu--freight').on('mouseover', showPreviewFormFreight);
+        $('.quote--menu--moving').on('mouseover', showPreviewFormMoving);
         $('.menu__item--locations').on('mouseleave', onFadeOutSubMenu);
         $('.menu__item--locations').on('mouseenter touchstart', onFadeInSubMenu);
-        $('.wrapper').on('click', '.logo__action', onFadeInMenuNavigation);
+        $('.container--logo').on('click', '.logo__action', onFadeInMenuNavigation);
         $(window).on('scroll', fadeInRibbon);
         $('.back-menu').on('touchstart', onFadeOutSubMenu);
-        $('.menu__link--moving').on('click', showFormPreviewMoving);
-        $('.menu__link--freight').on('click', showFormPreviewFreight);
+        $('.menu__link--moving').on('mouseenter', showFormPreviewMoving);
+        $('.menu__link--moving').on('mouseleave', hideFormPreviewMoving);
+        $('.menu__link--freight').on('mouseenter', showFormPreviewFreight);
+        $('.menu__link--freight').on('mouseleave', hideFormPreviewFreight);
+        $('.menu__link--contact').on('click', showContactForm);
+        $('.close-form').on('click', hideContactForm);
         // quote page
         $(document).ready(onInitUi);
         $(document).on('scroll', onChangeSubPageTitle);
+        $(document).on('scroll', onChangeSubPageTitleAbout);
         $('#side-menu__icon').on('click', onAnimateBurgerIcon);
         $('.side-menu__item').on('click', goToTheSection);
     };
 
     // main page
 
-    var showLocationsMenu = function() {
+    var hideContactForm = function() {
+        $('.contact-form').removeClass('active-form');
+        $('.quote--menu').stop(true).fadeIn();
+    };
+
+    var showContactForm = function() {
         $('.quote--menu').stop(true).fadeOut(0);
+        $('.contact-form').toggleClass('active-form');
+        
+        if(!$('.contact-form').hasClass('active-form')) {
+            $('.quote--menu').stop(true).fadeIn();
+        }
+        
+        if ($(window).width() < 480) {
+            $('.menu').addClass('active-form-bg');
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
+    };
+
+    var showLocationsMenu = function() {
         $('.locations__list').css("display", "flex");
     };
 
+    var showPreviewFormFreight = function() {
+        $('.quote--menu').stop(true).fadeOut(0);
+        $('.quote--menu--freight').css("display", "flex");
+    };
+
+    var showPreviewFormMoving = function() {
+        $('.quote--menu').stop(true).fadeOut(0);
+        $('.quote--menu--moving').css("display", "flex");
+    };
+
     var showFormPreviewMoving = function() {
-        if ($('.form-preview--freight').hasClass('active-form')) {
-            return;
-        }
-
-        $('.form-preview').toggleClass('active-form');
-
-        if ($('.form-preview').hasClass('active-form')) {
-            $('.quote--menu').stop(true).fadeOut(0);
-            $('.form-preview').css("display", "flex")
-            .hide()
-            .delay(200)
-            .stop(true)
-            .fadeIn();
-        } else {
-            $('.quote--menu').stop(true).fadeIn();
-            $('.form-preview').stop(true).fadeOut(0);
-        }
-
+        $('.quote--menu').stop(true).fadeOut(0);
+        $('.quote--menu--moving').css("display", "flex")
+        .hide()
+        .delay(200)
+        .stop(true)
+        .fadeIn();
+        
         if ($(window).width() < 480) {
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
         }
     };
+    
+    var hideFormPreviewMoving = function () {
+        $('.quote--menu').stop(true).fadeIn();
+        $('.quote--menu--moving').stop(true).fadeOut(0);
+    };
 
     var showFormPreviewFreight = function() {
-        if ($('.form-preview').hasClass('active-form')) {
-            return;
-        }
-
-        $('.form-preview--freight').toggleClass('active-form');
-
-        if ($('.form-preview--freight').hasClass('active-form')) {
-            $('.quote--menu').stop(true).fadeOut(0);
-            $('.form-preview--freight').css("display", "flex")
-            .hide()
-            .delay(200)
-            .stop(true)
-            .fadeIn();
-        } else {
-            $('.quote--menu').stop(true).fadeIn();
-            $('.form-preview--freight').stop(true).fadeOut(0);
-        }
-
+        $('.quote--menu').stop(true).fadeOut(0);
+        $('.quote--menu--freight').css("display", "flex")
+        .hide()
+        .delay(200)
+        .stop(true)
+        .fadeIn();
+        
         if ($(window).width() < 480) {
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
         }
+    };
+    
+    var hideFormPreviewFreight = function () {
+        $('.quote--menu').stop(true).fadeIn();
+        $('.quote--menu--freight').stop(true).fadeOut(0);
     };
 
     var onFadeInSubMenu = function(e) {
@@ -103,14 +127,11 @@ var myModule = (function (){
     };
     
     var onFadeOutSubMenu = function() {
-        if ($('.form-preview--freight').hasClass('active-form') || $('.form-preview').hasClass('active-form')) {
-            return;
-        }
-
         $('.locations__list--mobile').removeClass('active-mobile-submenu--locations');
         $('.back-menu').fadeOut();
-        $('.locations__list').stop(true).fadeOut(0);
-        $('.quote--menu').fadeIn();
+        $('.contact-form').toggleClass('active-form');
+        $('.locations__list, .quote--menu--freight, .quote--menu--moving, .contact-form').stop(true).fadeOut(0);
+        $('.menu').removeClass('active-form-bg');
 
         if ($(window).width() < 480) {
             $('.menu__list').fadeIn();
@@ -223,16 +244,16 @@ var myModule = (function (){
 
     // about-us
 
-    var onChangeSubPageTitle = function() {
+    var onChangeSubPageTitleAbout = function() {
         if ($('.careers').length && $('.about-us').length) {
             var careersTop = $('.careers').position().top - 500;
             var aboutTop = $('.about-us').position().top;
     
-            checkPosition(careersTop, aboutTop); 
+            checkPositionAbout(careersTop, aboutTop); 
         }
     };
 
-    var checkPosition = function(careersTop, aboutTop) {
+    var checkPositionAbout = function(careersTop, aboutTop) {
         if($(this).scrollTop() >= careersTop) {
             $('.side-menu__title').text('careers');
             $('.side-menu__list li:nth-child(2) a').addClass('current');
@@ -255,10 +276,45 @@ var myModule = (function (){
 			offset: 0
         });
     }
+
+    // moving-preview page
+
+    var onChangeSubPageTitle = function() {
+        if ($('.moving-preview').length && $('.long-distance').length && $('.speciality').length) {
+            var movingPreview = $('.moving-preview').position().top;
+            var longDistance = $('.long-distance').position().top - 300;
+            var speciality = $('.speciality').position().top - 500;
+
+            checkPosition(movingPreview, longDistance, speciality); 
+        }
+    };
+
+    var checkPosition = function(movingPreview, longDistance, speciality) {
+        if($(this).scrollTop() >= movingPreview) {
+            $('.side-menu__list li:nth-child(1) a').addClass('current');
+            $('.side-menu__list li:nth-child(2) a').removeClass('current');
+            $('.side-menu__list li:nth-child(2) a').removeClass('current');
+        }
+
+        if($(this).scrollTop() >= longDistance)  {
+            $('.side-menu__list li:nth-child(1) a').removeClass('current');
+            $('.side-menu__list li:nth-child(2) a').addClass('current');
+            $('.side-menu__list li:nth-child(3) a').removeClass('current');
+        }
+
+        if ($(this).scrollTop() >= speciality) {
+            $('.side-menu__list li:nth-child(1) a').removeClass('current');
+            $('.side-menu__list li:nth-child(2) a').removeClass('current');
+            $('.side-menu__list li:nth-child(3) a').addClass('current');
+        }
+    };
+
+
+
         
-        return {
-            init: init
-        };
+    return {
+        init: init
+    };
 
 })();
 myModule.init();
