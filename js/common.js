@@ -70,6 +70,7 @@ var myModule = (function (){
     };
 
     var showFormPreviewMoving = function() {
+        $('.contact-form').removeClass('active-form');
         $('.quote--menu').stop(true).fadeOut(0);
         $('.quote--menu--moving').css("display", "flex")
         .hide()
@@ -89,6 +90,7 @@ var myModule = (function (){
     };
 
     var showFormPreviewFreight = function() {
+        $('.contact-form').removeClass('active-form');
         $('.quote--menu').stop(true).fadeOut(0);
         $('.quote--menu--freight').css("display", "flex")
         .hide()
@@ -109,10 +111,7 @@ var myModule = (function (){
 
     var onFadeInSubMenu = function(e) {
         e.preventDefault();
-
-        if ($('.form-preview--freight').hasClass('active-form') || $('.form-preview').hasClass('active-form')) {
-            return;
-        }
+        $('.contact-form').removeClass('active-form');
 
         $('.quote--menu').stop(true).fadeOut(0);
         $('.locations__list').css("display", "flex")
@@ -129,7 +128,7 @@ var myModule = (function (){
     var onFadeOutSubMenu = function() {
         $('.locations__list--mobile').removeClass('active-mobile-submenu--locations');
         $('.back-menu').fadeOut();
-        $('.contact-form').toggleClass('active-form');
+        $('.contact-form').removeClass('active-form');
         $('.locations__list, .quote--menu--freight, .quote--menu--moving, .contact-form').stop(true).fadeOut(0);
         $('.menu').removeClass('active-form-bg');
 
