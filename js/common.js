@@ -42,6 +42,8 @@ var myModule = (function (){
 
     var showContactForm = function() {
         $('.quote--menu').stop(true).fadeOut(0);
+        $('.quote--menu--moving').stop(true).fadeOut(0);
+        $('.quote--menu--freight').stop(true).fadeOut(0);
         $('.contact-form').toggleClass('active-form');
         
         if(!$('.contact-form').hasClass('active-form')) {
@@ -57,6 +59,7 @@ var myModule = (function (){
 
     var showLocationsMenu = function() {
         $('.locations__list').css("display", "flex");
+        $('.quote--menu').stop(true).fadeOut(0);
     };
 
     var showPreviewFormFreight = function() {
@@ -112,6 +115,8 @@ var myModule = (function (){
     var onFadeInSubMenu = function(e) {
         e.preventDefault();
         $('.contact-form').removeClass('active-form');
+        $('.quote--menu--moving').stop(true).fadeOut(0);
+        $('.quote--menu--freight').stop(true).fadeOut(0);
 
         $('.quote--menu').stop(true).fadeOut(0);
         $('.locations__list').css("display", "flex")
@@ -131,6 +136,7 @@ var myModule = (function (){
         $('.contact-form').removeClass('active-form');
         $('.locations__list, .quote--menu--freight, .quote--menu--moving, .contact-form').stop(true).fadeOut(0);
         $('.menu').removeClass('active-form-bg');
+        $('.quote--menu').stop(true).fadeIn();
 
         if ($(window).width() < 480) {
             $('.menu__list').fadeIn();
