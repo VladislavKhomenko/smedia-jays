@@ -105,15 +105,19 @@ body, html {
     border: 1px solid #000;
     color: #000;
 }
-.quote__link--main:hover {
-    border: 1px solid #000;
-    color: #000;
-}
+
 
 .quote__link:hover, .quote__link:focus {
     background-color: rgba(255, 255, 255, 0.15);
     color: #fff;
     text-decoration: none;
+}
+
+.quote__link--main:hover {
+    border: 1px solid #000;
+    color: #000;
+    background-color: rgba(12, 6, 6, 0.055);
+    
 }
 
 .main-title__text--quote {
