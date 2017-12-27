@@ -116,7 +116,7 @@ body, html {
     color: #000;
     position: relative;
     top: 50px;
-    font-size: 35px;
+    font-size: 26px;
 }
 
 .socials {
@@ -753,7 +753,7 @@ textarea.error {
     background-size: cover;
     background-position: right top;
     background-repeat: no-repeat;
-    background-size: 1000px;
+    background-size: 1100px;
     background-position-x: right!important;
 }
 
@@ -768,7 +768,7 @@ textarea.error {
 .about-us__title {
     color: #000000;
     font-family: Matiz;
-    font-size: 35px;
+    font-size: 26px;
     text-transform: uppercase;
     margin-bottom: 30px;
 }
@@ -776,14 +776,16 @@ textarea.error {
 .about-us__content {
     color: #000000;
     font-family: Bariol;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     margin-bottom: 36px;
+    font-weight: bold;
 }
 
 .quote__about-us {
     margin: 0 auto;
     margin-top: 110px;
+    text-align: center;
 }
 
 .careers {
@@ -805,6 +807,7 @@ textarea.error {
 .table {
     margin-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.5);
+    width: 789px!important;
 }
 
 .table thead th {
@@ -829,6 +832,7 @@ textarea.error {
 
 .table td {
     padding: .35rem!important;
+    padding-left: .75rem!important;
 }
 
 .table tbody tr:nth-child(even) {
@@ -935,7 +939,7 @@ textarea.error {
 
 .side-menu__item {
     margin-bottom: 10px;
-    width: 150px;
+    width: 180px;
 }
 
 .side-menu__item a {
@@ -1125,7 +1129,7 @@ textarea.error {
 .quote__moving {
     text-align: center;
     margin-bottom: 100px;
-    margin-top: 70px;
+    margin-top: 150px;
 }
 
 .quote__freight {
@@ -1277,4 +1281,24 @@ textarea.error {
 .table tr:hover td {
     cursor: pointer;
     color: #000;
+}
+
+.moving-preview, .freight-preview {
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url('../img/moving-first-section.png');
+    background-repeat: no-repeat;
+    background-position-x: right!important;
+}
+
+.speciality {
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url('../img/moving-third-section.png');
+    background-repeat: no-repeat;
+    background-position-x: right!important;
+}
+
+.quote__freight .quote__link--black {
+    font-size: 21px;
 }
