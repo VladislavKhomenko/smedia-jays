@@ -235,6 +235,8 @@ body, html {
     justify-content: center;
     flex-direction: column;
     display: flex;
+    position: relative;
+    top: 50px;
 }
 
 .menu__list {
