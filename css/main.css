@@ -998,9 +998,14 @@ textarea.error {
     padding-bottom: 10%;
 }
 
+.location-info__content{
+    font-family: Bariol Bold;
+    font-size: 16px;
+    font-weight: 400;
+}
 .location-info__title {
-    font-family: Bariol;
-    font-size: 28px;
+    font-family: Bariol Bold;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2.72px;
     margin-bottom: 40px;
@@ -1012,6 +1017,9 @@ textarea.error {
 
 .location-info__item {
     list-style-type: disc;
+    font-family: Bariol Bold;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .quote-location {
@@ -1020,8 +1028,9 @@ textarea.error {
 
 .location-info__item--map {
     color: #000000;
-    font-family: Bariol;
-    font-size: 18px;
+    font-family: Bariol Bold;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .location-info__link--map {
