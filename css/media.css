@@ -320,9 +320,6 @@
     .about-us-wrapper {
         background-size: 1500px;
     }
-    .side-menu {
-        left: 250px!important;
-    }
 }
 
 @media only screen and (min-width: 1400px) {
