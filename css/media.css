@@ -60,6 +60,34 @@
     .menu__list{
         margin-left: 70px;
     }
+    .locations__link{
+        font-family: 'Bariol Bold';
+        font-size: 21px;
+        line-height: 46.14px;
+        letter-spacing: 0.55px;
+    }
+    .locations__list.row{
+        margin-top: -50px;
+        padding-left: 150px;
+    }
+    .form-preview-title{
+        top: 50px;
+    }
+    .moving-preview, .freight-preview{
+        background-position-x: -175px !important;
+    }
+    .title-inset-moving {
+        margin-bottom: 70px;
+    }
+    .col-inset-mov {
+        padding: 61px 0 0 107px !important;
+    }
+    .col-inset-moving{
+        padding: 0 0 0 107px !important;
+    }
+    .speciality{
+        background-position-x: -220px !important;
+    }
 }
 
 /* Medium Devices, Desktops */
