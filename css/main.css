@@ -1366,3 +1366,9 @@ thead {
 tr:hover td {
     font-weight: 600;
 }
+/* location*/
+
+.quote-link_location{
+    font-size: 21px;
+    padding: 48px 75px;
+}

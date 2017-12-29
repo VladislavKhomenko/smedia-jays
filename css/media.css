@@ -88,6 +88,20 @@
     .speciality{
         background-position-x: -220px !important;
     }
+    .title-inset{
+        margin-bottom: 34px;
+        top: 12px;
+    }
+    .quote-link_location{
+        font-size: 21px;
+        padding: 38px 52px;
+    }
+    .quote__link--freight{
+        padding: 25px;
+    }
+    .action{
+        justify-content: center;
+    }
 }
 
 /* Medium Devices, Desktops */
