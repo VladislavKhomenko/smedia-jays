@@ -428,6 +428,7 @@ body, html {
     line-height: 26px;
     color: black;
     font-weight: 600;
+    letter-spacing: -1px;
 }
 
 .form-preview__item {
@@ -442,8 +443,9 @@ body, html {
 
 .form-preview__list li {
     list-style: disc;
-    padding-left: 40px;
-    margin-bottom: 10px;
+    padding-left: 47px;
+    margin-bottom: 1px;
+    letter-spacing: -1px;
 }
 
 .form-page {
@@ -1145,7 +1147,7 @@ textarea.error {
 .quote__moving {
     text-align: center;
     margin-bottom: 100px;
-    margin-top: 150px;
+    margin-top: 105px;
 }
 
 .quote__freight {
@@ -1207,7 +1209,7 @@ textarea.error {
 }
 
 .speciality {
-    padding: 120px 0;
+    padding: 100px 0;
 }
 
 .freight-preview {
@@ -1330,4 +1332,14 @@ textarea.error {
 .title-inset{
     margin-bottom: 37px;
     top: 17px;
+}
+
+/* moving-preview */
+
+.title-inset-moving {
+    margin-bottom: 58px;
+    top: 35px;
+}
+.col-inset-moving{
+    padding: 0 0 0 93px !important;
 }
