@@ -123,7 +123,7 @@ body, html {
     color: #000;
     position: relative;
     top: 50px;
-    font-size: 36px;
+    font-size: 26px;
 }
 
 .socials {
@@ -870,7 +870,7 @@ textarea.error {
     width: 35px;
     height: 45px;
     position: relative;
-    left: 38px;
+    left: 15px;
     top: 45px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -939,7 +939,7 @@ textarea.error {
 
 .side-menu__list {
     position: relative;
-    left: 60px;
+    left: 44px;
     bottom: -50px;
     display: none;
 }
@@ -1317,4 +1317,17 @@ textarea.error {
 
 .quote__freight .quote__link--black {
     font-size: 21px;
+}
+
+/* fix */
+
+/* freight-preview */
+
+.col-inset{
+    padding: 61px 0 0 93px !important;
+}
+
+.title-inset{
+    margin-bottom: 37px;
+    top: 17px;
 }
