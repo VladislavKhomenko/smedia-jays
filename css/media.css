@@ -102,6 +102,10 @@
     .action{
         justify-content: center;
     }
+    .response{
+        position: relative;
+        right: 65px;
+    }
 }
 
 /* Medium Devices, Desktops */
