@@ -835,8 +835,9 @@ textarea.error {
 .table td, .table th {
     border-top: none!important;
     color: #4e4e4e;
-    font-family: Bariol;
+    font-family: 'Bariol';
     font-size: 18px;
+
 }
 
 .table td {
@@ -1342,4 +1343,18 @@ textarea.error {
 }
 .col-inset-moving{
     padding: 0 0 0 93px !important;
+}
+/* about */
+
+.title-inset-about {
+    margin-bottom: 46px;
+    top: 20px;
+}
+
+thead {
+    font-family: 'Bariol Bold';
+}
+
+tr:hover td {
+    font-weight: 600;
 }
