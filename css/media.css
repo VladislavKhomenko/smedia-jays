@@ -42,6 +42,24 @@
     #side-menu__icon{
         left: 25px;
     }
+    .quote--menu{
+        justify-content: space-between;
+        top: -50px;
+    }
+    .quote__link{
+        font-size: 30px;
+        padding: 38px 40px;
+    }
+    .menu__link{
+        font-size: 23px;
+        line-height: 28.79px;
+    }
+    .main-title__text--quote{
+        top: 98px;
+    }
+    .menu__list{
+        margin-left: 70px;
+    }
 }
 
 /* Medium Devices, Desktops */
