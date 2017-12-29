@@ -133,12 +133,15 @@ body, html {
 
 .socials__link {
     color: rgba(115, 92, 92, 0.7);
-    margin-right: 20px;
     font-size: 25px;
     transition: all .3s ease-in-out;
 }
 
-.socials .socials__link:nth-child(4) {
+.socials__item{
+    margin-right: 20px;
+}
+
+.socials .socials__item:nth-child(4) {
     margin-right: 0;
 }
 
