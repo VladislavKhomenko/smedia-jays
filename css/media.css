@@ -15,15 +15,27 @@
     .about-us-wrapper {
         background-size: 700px;
     }
-    .side-menu {
-        display: none;
-    }
     .about-us-wrapper {
         background-image: none!important;
         padding-bottom: 50px;
     }
     .main-title {
         flex: 0.5;
+    }
+    .col-offset-location{
+        padding-left: 62px !important;
+    }
+    .location-info__title{
+        font-size: 19px;
+    }
+    .logo{
+        margin-left: 55px;
+    }
+    .side-menu__item{
+        margin-bottom: 5px;
+    }
+    .side-menu__item a{
+        font-size: 17px;
     }
 }
 
