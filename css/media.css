@@ -621,6 +621,12 @@
         font-size: 16px;
         padding: 18px;
     }
+    .title-inset-moving {
+        font-size: 22px;
+    }
+    .col-ins{
+        font-size: 22px;
+    }
 }
 
 
