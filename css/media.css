@@ -364,8 +364,8 @@
     .quote--menu--freight--link {
         color: #000000;
         font-family: Bariol;
-        font-size: 30px;
-        font-weight: 400;
+        font-size: 28px;
+        font-weight: 600;
         display: inline-block;
         margin-bottom: 30px;
     }
@@ -379,7 +379,7 @@
         font-size: 21px;
         padding: 18px 23px!important;
     }
-    .quote--menu--freight--link:nth-child(3) {
+    .quote--menu--freight--link:nth-child(4) {
         margin-bottom: 60px;
     }
     .freight--mobile {
@@ -391,8 +391,8 @@
         background-size: cover;
         overflow: auto;
     }
-    .wrapper-moving{
-        background-image: url(../img/moving-bg.jpg);
+    .wrapper-moving {
+        background-image: url('../img/moving-bg.jpg');
         background-position-y: 0;
     }
     .quote--menu{
@@ -409,6 +409,15 @@
     }
     .first-quote__label{
         text-align: left;
+    }
+    .quote--menu--freight .form-preview-title {
+        margin-bottom: 20px;
+        top: 0;
+    }
+    .quote--menu--freight {
+        padding-top: 100px;
+        min-width: 190%!important;
+        padding-bottom: 50px;
     }
 }
 @media only screen and (max-width: 650px) {

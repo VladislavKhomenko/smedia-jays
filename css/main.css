@@ -1293,7 +1293,7 @@ textarea.error {
     overflow: auto;
 }
 
-.active-form-bg .container--menu {
+.active-form-bg .container--menu, .active-freight-bg .container--menu {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -1375,6 +1375,7 @@ tr:hover td {
     margin: 0;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .quote--menu--freight--link, .freight--mobile {
