@@ -134,8 +134,6 @@
     .locations__list.row{
         padding-left: 80px;
     }
-    .about-us-wrapper{
-    }
     .table{
         width: 665px!important;
     }
@@ -186,7 +184,7 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
     .location-name {
-        min-height: 50%;
+        min-height: 75%;
     }
     .quote-location {
         margin-bottom: 70px;
@@ -331,6 +329,9 @@
     }
     .quote--menu{
         justify-content: center;
+    }
+    .about-us-wrapper{
+        background-image: none;
     }
 }
 
