@@ -411,7 +411,14 @@
         text-align: left;
     }
 }
-
+@media only screen and (max-width: 650px) {
+    .table {
+        width: auto!important;
+    }
+    .side-menu{
+        display: none;
+    }
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
     .location-name {
