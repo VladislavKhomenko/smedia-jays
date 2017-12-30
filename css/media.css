@@ -134,9 +134,6 @@
     .contact-form__secondary textarea {
         width: 100%;
     }
-    .quote--menu{
-        justify-content: center;
-    }
     .locations__list.row{
         padding-left: 80px;
     }
@@ -299,6 +296,9 @@
     .wrapper-moving{
         background-image: url(../img/moving-bg.jpg);
         background-position-y: 0;
+    }
+    .quote--menu{
+        justify-content: center;
     }
 }
 

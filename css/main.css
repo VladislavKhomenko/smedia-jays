@@ -77,8 +77,9 @@ body, html {
 }
 
 .main-title  .main-title__text {
-    font-size: 44px;
+    font-size: 34px;
     text-align: center;
+    top: 50px;
 }
 
 .main-title__text {
