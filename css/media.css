@@ -548,6 +548,9 @@
         padding-top: 130px;
         width: 190%;
     }
+    .side-menu{
+        display: none;
+    }
 }
 
 
