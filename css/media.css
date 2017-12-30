@@ -515,7 +515,7 @@
         text-align: center;
     }
     .locations__item {
-        margin-bottom: 5px;
+        margin-bottom: -8px;
     }
     .locations__link {
         color: #000000;
