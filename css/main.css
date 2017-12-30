@@ -1253,6 +1253,7 @@ textarea.error {
     background-image: url('../img/contact-form.png');
     margin-left: 100px;
     padding-top: 50px;
+    padding-bottom: 50px;
     display: none;
 }
 
