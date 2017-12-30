@@ -466,6 +466,9 @@
     .quote__freight .quote__link:nth-child(1) {
         margin-right: 0;
     }
+    .col-inset {
+        padding: 30px 21px 0 21px !important;
+    }
 }
 
 
