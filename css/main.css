@@ -345,8 +345,8 @@ body, html {
 
 .locations__link {
     color: #000000;
-    font-family: 'Bariol';
-    font-size: 28px;
+    font-family: 'Bariol Bold';
+    font-size: 19px;
     position: relative;
     letter-spacing: 2.72px;
 }
