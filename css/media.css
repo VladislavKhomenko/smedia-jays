@@ -133,6 +133,11 @@
     }
     .locations__list.row{
         padding-left: 80px;
+        margin-top: -45px;
+        padding-bottom: 0px;
+    }
+    .locations__item{
+        margin-bottom: 12px;
     }
     .table{
         width: 665px!important;
