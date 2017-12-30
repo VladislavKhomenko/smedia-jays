@@ -414,6 +414,7 @@
 @media only screen and (max-width: 650px) {
     .table {
         width: auto!important;
+        margin: 0 10px;
     }
     .side-menu{
         display: none;
