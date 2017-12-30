@@ -173,9 +173,21 @@
     .menu.active-menu .row {
         flex-direction: column;
         align-items: center;
+        padding-left: 0;
+        text-align: center;
+        padding-top: 30px;
+    }
+    .locations__item {
+        margin-bottom: 0px;
+        margin-bottom: -10px;
+    }
+    .menu__link--mobile.locations__link {
+        text-transform: uppercase;
+        text-decoration: underline;
     }
     .quote--menu .quote__link--menu {
-        padding: 10px 15px;
+        padding: 18px 23px!important;
+        font-size: 21px;
     }
     .menu__list {
         text-align: center;
@@ -230,7 +242,7 @@
         background-image: url('../img/homepage-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -270px;        
+        background-position-y: -370px;        
     }
     .contact-form {
         background-image: none;
@@ -279,8 +291,8 @@
         padding: 30px 25px;
     }
     .back-menu{
-        top: 65px;
-        left: 55px;
+        top: 44px;
+        left: 38px;
     }
     .col-inset-mov{
         padding: 61px 0 0 90px !important;
@@ -292,6 +304,62 @@
     .main-title  .main-title__text{
         font-size: 38px;
         padding-top: 95px;
+        padding-bottom: 95px;
+    }
+    .customers {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .customer-item {
+        margin-right: 0;
+        margin-bottom: 50px;
+    }
+    .customers .customer-item:nth-child(1) {
+        margin-top: 55px;
+    }
+    .contacts__link {
+        color: #fff;
+        font-size: 16px;
+    }
+    .socials__item {
+        margin-right: 30px;
+    }
+    .contacts__link--privacy {
+        margin-right: 20px;
+    }
+    .footer-mobile .quote__link {
+        font-size: 21px;
+    }
+    .quote--menu--freight--link {
+        color: #000000;
+        font-family: Bariol;
+        font-size: 30px;
+        font-weight: 400;
+        display: inline-block;
+        margin-bottom: 30px;
+    }
+    .quote--menu--freight--link:hover {
+        color: #000;
+    }
+    .quote--menu--freight, .quote--menu--moving {
+        position: static;
+    }
+    .quote__link--menu {
+        font-size: 21px;
+        padding: 18px 23px!important;
+    }
+    .quote--menu--freight--link:nth-child(3) {
+        margin-bottom: 60px;
+    }
+    .freight--mobile {
+        text-align: left;
+        padding-top: 50px;
+    }
+    .active-freight-bg {
+        background-image: url('../img/freight-menu.png');
+        background-size: cover;
+        overflow: auto;
     }
 }
 
@@ -375,10 +443,14 @@
     .quote__link {
         display: inline-block;
         margin-top: 10px;
+        font-size: 21px;
     }
 
     .main-title  .main-title__text {
         padding: 30px 10px;
+        font-size: 33px;
+        padding-top: 100px;
+        padding-bottom: 388px;
     }
     .logo-empty {
         height: 0px;
