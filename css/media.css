@@ -379,7 +379,7 @@
         font-size: 21px;
         padding: 18px 23px!important;
     }
-    .quote--menu--freight--link:nth-child(3) {
+    .quote--menu--freight--link:nth-child(4) {
         margin-bottom: 60px;
     }
     .freight--mobile {
@@ -391,8 +391,8 @@
         background-size: cover;
         overflow: auto;
     }
-    .wrapper-moving{
-        background-image: url(../img/moving-bg.jpg);
+    .wrapper-moving {
+        background-image: url('../img/moving-bg.jpg');
         background-position-y: 0;
     }
     .quote--menu{
