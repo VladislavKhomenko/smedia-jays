@@ -410,6 +410,15 @@
     .first-quote__label{
         text-align: left;
     }
+    .quote--menu--freight .form-preview-title {
+        margin-bottom: 20px;
+        top: 0;
+    }
+    .quote--menu--freight {
+        padding-top: 100px;
+        min-width: 190%!important;
+        padding-bottom: 50px;
+    }
 }
 
 /* Extra Small Devices, Phones */
