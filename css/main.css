@@ -190,7 +190,7 @@ body, html {
 }
 
 .footer-mobile .quote__link {
-    padding: 15px 30px;
+    padding: 18px 24px;
     margin-bottom: 40px;
 }
 
@@ -211,10 +211,6 @@ body, html {
 
 .socials--mobile .socials__link:hover {
     color: rgba(191, 190, 190, 1);
-}
-
-.footer-mobile .contacts__link {
-    margin-right: 20px;
 }
 
 .quote-main {
@@ -404,7 +400,7 @@ body, html {
 .back-menu {
     color: #000000;
     font-family: 'Bariol BOld';
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     position: absolute;
     top: 20px;
@@ -1373,4 +1369,10 @@ tr:hover td {
 .quote-link_location{
     font-size: 21px;
     padding: 48px 75px;
+}
+
+.froze-scroll {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
 }

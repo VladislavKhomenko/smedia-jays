@@ -18,10 +18,10 @@ var myModule = (function (){
         $('.menu__item--locations').on('mouseenter touchstart', onFadeInSubMenu);
         $('#quotes, .container--logo').on('click', '.logo__action', onFadeInMenuNavigation);
         $(window).on('scroll', fadeInRibbon);
-        $('.back-menu').on('touchstart', onFadeOutSubMenu);
-        $('.menu__link--moving').on('mouseenter', showFormPreviewMoving);
+        $('.back-menu').on('touchstart', onFadeOutSubMenu); 
+        $('.menu__link--moving').on('mouseenter touchstart', showFormPreviewMoving);
         $('.menu__link--moving').on('mouseleave', hideFormPreviewMoving);
-        $('.menu__link--freight').on('mouseenter', showFormPreviewFreight);
+        $('.menu__link--freight').on('mouseenter touchstart', showFormPreviewFreight);
         $('.menu__link--freight').on('mouseleave', hideFormPreviewFreight);
         $('.menu__link--contact').on('click', showContactForm);
         $('.close-form').on('click', hideContactForm);
@@ -55,13 +55,6 @@ var myModule = (function (){
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
         }
-        
-        if ($(window).width() < 480) {
-            $('.menu').addClass('active-form-bg');
-            $('.menu__list').fadeOut(0);
-            $('.back-menu').fadeIn();
-        }
-
     };
 
     var showLocationsMenu = function() {
@@ -72,6 +65,12 @@ var myModule = (function (){
     var showPreviewFormFreight = function() {
         $('.quote--menu').stop(true).fadeOut(0);
         $('.quote--menu--freight').css("display", "flex");
+
+        if ($(window).width() < 768) {
+            $('.menu').addClass('active-freight-bg');
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
     };
 
     var showPreviewFormMoving = function() {
@@ -88,11 +87,6 @@ var myModule = (function (){
         .stop(true)
         .fadeIn();
         
-        if ($(window).width() < 480) {
-            $('.menu__list').fadeOut(0);
-            $('.back-menu').fadeIn();
-        }
-
         if ($(window).width() < 767) {
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
@@ -117,11 +111,6 @@ var myModule = (function (){
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
         }
-
-        if ($(window).width() < 480) {
-            $('.menu__list').fadeOut(0);
-            $('.back-menu').fadeIn();
-        }
     };
     
     var hideFormPreviewFreight = function () {
@@ -141,12 +130,8 @@ var myModule = (function (){
         .delay(300)
         .stop(true)
         .fadeIn();
-        if ($(window).width() < 767) {
-            $('.menu__list').fadeOut(0);
-            $('.back-menu').fadeIn();
-        }
 
-        if ($(window).width() < 480) {
+        if ($(window).width() < 767) {
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
         }
@@ -158,21 +143,19 @@ var myModule = (function (){
         $('.contact-form').removeClass('active-form');
         $('.locations__list, .quote--menu--freight, .quote--menu--moving, .contact-form').stop(true).fadeOut(0);
         $('.menu').removeClass('active-form-bg');
+        $('.menu').removeClass('active-freight-bg');
         $('.quote--menu').stop(true).fadeIn();
         
         if ($(window).width() < 767) {
-            $('.menu__list').fadeOut(0);
-            $('.back-menu').fadeIn();
-        }
-        
-        if ($(window).width() < 480) {
-            $('.menu__list').fadeIn();
-            $('.back-menu').fadeOut(0);
+            $('.menu__list').stop(true).fadeIn();
+            $('.back-menu').fadeOut();
         }
     };
 
     var onFadeInMenuNavigation = function() {
         $('.menu').toggleClass('active-menu');
+        $('body').toggleClass('froze-scroll');
+
         if($('.menu').hasClass('active-menu')) {
             $(this).text('close');
         } else {
