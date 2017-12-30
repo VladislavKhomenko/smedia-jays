@@ -401,6 +401,15 @@
     .about-us-wrapper{
         background-image: none;
     }
+    .freight--mobile {
+        display: block;
+    }
+    .quote--menu--freight .quote__link--menu {
+        display: none;
+    }
+    .first-quote__label{
+        text-align: left;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -540,6 +549,16 @@
     }
     .col-inset {
         padding: 30px 21px 0 21px !important;
+    }
+    .contact-form {
+        padding-top: 130px;
+        width: 190%;
+    }
+    .side-menu{
+        display: none;
+    }
+    .col-inset-moving{
+        padding: 0 50px 0 58px !important;
     }
 }
 
