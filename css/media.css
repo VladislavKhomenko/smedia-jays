@@ -416,8 +416,17 @@
     }
     .quote--menu--freight {
         padding-top: 100px;
-        min-width: 190%!important;
         padding-bottom: 50px;
+    }
+    .location-name {
+        background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
+        background-position: 50% 0%, center, center;
+        background-size: 130%, cover;
+        background-repeat: no-repeat;
+    }
+    .location-name__title {
+        padding: 35% 0;
+        padding-top: 30px;
     }
 }
 @media only screen and (max-width: 650px) {
@@ -433,13 +442,14 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
     .location-name {
-        background-image: url(../img/bg-location.png);
-        background-size: cover;
-        min-height: initial;
+        background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
+        background-position: 50% 0%, center, center;
+        background-size: 200%, cover;
+        background-repeat: no-repeat;
     }
     .location-name__title {
         padding: 35% 0;
-        color: #fff;
+        padding-top: 30px;
     }
     .steps {
         min-width: 100%;
