@@ -21,9 +21,6 @@
     .main-title {
         flex: 0.5;
     }
-    .col-offset-location{
-        padding-left: 62px !important;
-    }
     .location-info__title{
         font-size: 19px;
     }
@@ -46,7 +43,7 @@
         justify-content: space-between;
         top: -50px;
     }
-    .quote__link{
+    .quote__link--menu{
         font-size: 30px;
         padding: 38px 40px;
     }
@@ -138,16 +135,51 @@
         padding-left: 80px;
     }
     .about-us-wrapper{
-        background-image: none;
     }
     .table{
-        width: 715px!important;
+        width: 665px!important;
     }
     .quote-link_location{
-        padding: 30px 18px;
+        padding: 30px 50px;
     }
     .col-inset-mov{
         padding: 61px 0 0 150px !important;
+    }
+    .main-title  .main-title__text{
+        top: 17px;
+    }
+    .main-title {
+        flex: 1;
+    }
+    .main-title-menu{
+        font-size: 25px;
+    }
+    .main-title__text--quote{
+        top: 104px;
+    }
+    .col-inset{
+        padding: 61px 0 0 82px !important;
+    }
+    .col-inset-moving {
+        padding: 0 0 0 42px !important;
+    }
+    .col-offset-location {
+        padding-left: 23px !important;
+    }
+    .quote-location {
+        margin-top: 83px;
+    }
+    .form-preview-title {
+        top: 50px;
+    }
+    .col-inset-mov{
+        padding: 61px 25px 0 82px !important;
+    }
+    .col-inset-moving {
+        padding: 0 0 0 94px !important;
+    }
+    .title-inset{
+        top:14px;
     }
 }
 
