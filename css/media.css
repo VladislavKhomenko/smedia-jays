@@ -58,14 +58,15 @@
         margin-left: 70px;
     }
     .locations__link{
-        font-family: 'Bariol Bold';
+        font-family: 'Bariol';
         font-size: 21px;
         line-height: 46.14px;
         letter-spacing: 0.55px;
     }
     .locations__list.row{
-        margin-top: -50px;
+        margin-top: -10px;
         padding-left: 150px;
+        padding-bottom: 0px;
     }
     .form-preview-title{
         top: 50px;
@@ -183,6 +184,9 @@
     }
     .title-inset{
         top:14px;
+    }
+    .location-info__title {
+        font-size: 17px;
     }
 }
 
@@ -368,9 +372,8 @@
     }
     .quote--menu--freight--link {
         color: #000000;
-        font-family: Bariol;
+        font-family: 'Bariol';
         font-size: 28px;
-        font-weight: 600;
         display: inline-block;
         margin-bottom: 30px;
     }
@@ -426,7 +429,7 @@
     .location-name {
         background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
         background-position: 50% 0%, center, center;
-        background-size: 130%, cover;
+        background-size: 110%, cover;
         background-repeat: no-repeat;
     }
     .location-name__title {
@@ -449,12 +452,13 @@
     .location-name {
         background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
         background-position: 50% 0%, center, center;
-        background-size: 200%, cover;
+        background-size: 155%, cover;
         background-repeat: no-repeat;
     }
     .location-name__title {
         padding: 35% 0;
         padding-top: 30px;
+        font-size: 24px;
     }
     .steps {
         min-width: 100%;
@@ -557,7 +561,6 @@
         text-transform: capitalize;
         position: relative;
         letter-spacing: 2.72px;
-        font-weight: 600;
     }
     .menu__link--mobile {
         text-transform: uppercase;
@@ -610,6 +613,13 @@
     }
     .long-distance--content:nth-child(4) {
         margin-bottom: 50px;
+    }
+    .freight--mobile {
+        width: 155% !important;
+    }
+    .quote__freight .quote__link--freight {
+        font-size: 16px;
+        padding: 18px;
     }
 }
 
