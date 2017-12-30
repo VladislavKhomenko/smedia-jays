@@ -131,6 +131,27 @@
     .contact-form__secondary textarea {
         width: 100%;
     }
+    .main-title-menu{
+        display: none;
+    }
+    .quote--menu{
+        justify-content: center;
+    }
+    .locations__list.row{
+        padding-left: 80px;
+    }
+    .about-us-wrapper{
+        background-image: none;
+    }
+    .table{
+        width: 715px!important;
+    }
+    .quote-link_location{
+        padding: 30px 18px;
+    }
+    .col-inset-mov{
+        padding: 61px 0 0 150px !important;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -195,7 +216,7 @@
     .container--logo--about {
         margin-bottom: 50px;
     }
-    .quote-index, .quote--menu {
+    .quote-index {
         display: none;
     }
     .container--form {
@@ -215,6 +236,7 @@
         background-image: none;
         flex-direction: column;
         padding-top: 300px;
+        width: 80%;
     }
     .close-form {
         display: none;
@@ -233,6 +255,43 @@
         text-decoration: underline;
         text-align: center;
         margin-bottom: 30px;
+    }
+    .table{
+        width: 580px!important;
+    }
+    .location-name__title{
+        padding-top: 10%;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .quote-location{
+        margin-top: 40px;
+    }
+    .menu__list{
+        margin-left: 0;
+        padding-top: 0;
+    }
+    .quote--menu{
+        top: 0;
+    }
+    .quote--menu .quote__link--menu{
+        padding: 30px 25px;
+    }
+    .back-menu{
+        top: 65px;
+        left: 55px;
+    }
+    .col-inset-mov{
+        padding: 61px 0 0 90px !important;
+    }
+    .quote__freight .quote__link--freight{
+        font-size: 19px;
+        padding: 18px;
+    }
+    .main-title  .main-title__text{
+        font-size: 38px;
+        padding-top: 95px;
     }
 }
 
@@ -412,6 +471,11 @@
     }
 }
 
+@media only screen and (min-width: 768px){
+    .back-menu, .locations__list--mobile {
+        display: none!important;
+    }
+}
 @media only screen and (min-width: 767px) {
     .footer-desktop {
         display: block;
@@ -428,7 +492,5 @@
 }
 
 @media only screen and (min-width: 480px) {
-    .back-menu, .locations__list--mobile {
-        display: none!important;
-    }
+
 }

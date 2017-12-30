@@ -50,11 +50,18 @@ var myModule = (function (){
             $('.quote--menu').stop(true).fadeIn();
         }
         
+        if ($(window).width() < 768) {
+            $('.menu').addClass('active-form-bg');
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
+        
         if ($(window).width() < 480) {
             $('.menu').addClass('active-form-bg');
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
         }
+
     };
 
     var showLocationsMenu = function() {
@@ -85,6 +92,11 @@ var myModule = (function (){
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
         }
+
+        if ($(window).width() < 767) {
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
     };
     
     var hideFormPreviewMoving = function () {
@@ -101,6 +113,11 @@ var myModule = (function (){
         .stop(true)
         .fadeIn();
         
+        if ($(window).width() < 767) {
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
+
         if ($(window).width() < 480) {
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
@@ -124,6 +141,11 @@ var myModule = (function (){
         .delay(300)
         .stop(true)
         .fadeIn();
+        if ($(window).width() < 767) {
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
+
         if ($(window).width() < 480) {
             $('.menu__list').fadeOut(0);
             $('.back-menu').fadeIn();
@@ -137,7 +159,12 @@ var myModule = (function (){
         $('.locations__list, .quote--menu--freight, .quote--menu--moving, .contact-form').stop(true).fadeOut(0);
         $('.menu').removeClass('active-form-bg');
         $('.quote--menu').stop(true).fadeIn();
-
+        
+        if ($(window).width() < 767) {
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
+        
         if ($(window).width() < 480) {
             $('.menu__list').fadeIn();
             $('.back-menu').fadeOut(0);
