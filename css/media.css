@@ -401,6 +401,12 @@
     .about-us-wrapper{
         background-image: none;
     }
+    .freight--mobile {
+        display: block;
+    }
+    .quote--menu--freight .quote__link--menu {
+        display: none;
+    }
 }
 
 /* Extra Small Devices, Phones */
