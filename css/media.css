@@ -106,6 +106,9 @@
         position: relative;
         right: 65px;
     }
+    .contact-form{
+        margin-bottom: 50px;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -130,9 +133,6 @@
     }
     .contact-form__secondary textarea {
         width: 100%;
-    }
-    .main-title-menu{
-        display: none;
     }
     .quote--menu{
         justify-content: center;
@@ -191,6 +191,9 @@
     }
     .locations__list--mobile.active-mobile-submenu--locations {
         top: 10%;
+    }
+    .main-title-menu{
+        display: none;
     }
     .row--logo {
         display: flex;
@@ -292,6 +295,10 @@
     .main-title  .main-title__text{
         font-size: 38px;
         padding-top: 95px;
+    }
+    .wrapper-moving{
+        background-image: url(../img/moving-bg.jpg);
+        background-position-y: 0;
     }
 }
 
