@@ -990,7 +990,7 @@ textarea.error {
     font-size: 35px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 15%;
+    padding-top: 5%;
     margin-bottom: 0px;
 }
 
@@ -1006,13 +1006,16 @@ textarea.error {
     font-family: Bariol Bold;
     font-size: 16px;
     font-weight: 400;
+    color: #000;
 }
 .location-info__title {
     font-family: Bariol Bold;
     font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: 2.72px;
-    margin-bottom: 40px;
+    letter-spacing: 3.6px;
+    margin-bottom: 20px;
+    color: #000;
+    margin-top: 15px;
 }
 
 .location-info__list {
@@ -1024,6 +1027,7 @@ textarea.error {
     font-family: Bariol Bold;
     font-size: 16px;
     font-weight: 400;
+    color: #000;
 }
 
 .quote-location {

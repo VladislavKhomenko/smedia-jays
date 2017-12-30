@@ -416,21 +416,40 @@
     }
     .quote--menu--freight {
         padding-top: 100px;
-        min-width: 190%!important;
         padding-bottom: 50px;
+    }
+    .location-name {
+        background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
+        background-position: 50% 0%, center, center;
+        background-size: 130%, cover;
+        background-repeat: no-repeat;
+    }
+    .location-name__title {
+        padding: 35% 0;
+        padding-top: 30px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .table {
+        width: auto!important;
+        margin: 0 10px;
+    }
+    .side-menu{
+        display: none;
     }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
     .location-name {
-        background-image: url(../img/bg-location.png);
-        background-size: cover;
-        min-height: initial;
+        background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
+        background-position: 50% 0%, center, center;
+        background-size: 200%, cover;
+        background-repeat: no-repeat;
     }
     .location-name__title {
         padding: 35% 0;
-        color: #fff;
+        padding-top: 30px;
     }
     .steps {
         min-width: 100%;
@@ -524,7 +543,7 @@
         text-align: center;
     }
     .locations__item {
-        margin-bottom: 5px;
+        margin-bottom: -8px;
     }
     .locations__link {
         color: #000000;
@@ -567,7 +586,25 @@
         display: none;
     }
     .col-inset-moving{
-        padding: 0 50px 0 58px !important;
+        padding: 0 10px 0 16px !important;
+    }
+    .quote__freight .quote__link:nth-child(1) {
+        margin-right: 20px;
+    }
+    .quote__freight {
+        flex-direction: row;
+    }
+    .quote__moving{
+        margin: 0 0 50px 0;
+    }
+    .speciality--content:nth-child(3) {
+        margin-bottom: 50px;
+    }
+    .long-distance{
+        padding-bottom: 100px;
+    }
+    .long-distance--content:nth-child(4) {
+        margin-bottom: 50px;
     }
 }
 
