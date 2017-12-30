@@ -420,6 +420,7 @@
         display: none;
     }
 }
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
     .location-name {
@@ -567,6 +568,12 @@
     }
     .col-inset-moving{
         padding: 0 50px 0 58px !important;
+    }
+    .quote__freight .quote__link:nth-child(1) {
+        margin-right: 20px;
+    }
+    .quote__freight {
+        flex-direction: row;
     }
 }
 
