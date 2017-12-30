@@ -1376,3 +1376,7 @@ tr:hover td {
     height: 100%;
     overflow: hidden;
 }
+
+.quote--menu--freight--link, .freight--mobile {
+    display: none;
+}
