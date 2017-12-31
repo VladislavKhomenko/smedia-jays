@@ -281,7 +281,7 @@ body, html {
 
 .menu__link {
     color: #000000;
-    font-family: 'Bariol Bold';
+    font-family: 'Bariol';
     font-size: 19px;
     text-transform: uppercase;
     position: relative;
@@ -336,12 +336,13 @@ body, html {
     display: none;
     flex: 1;
     align-self: center;
-    padding-left: 100px;
+    padding-left: 200px;
+    padding-bottom: 36px;
 }
 
 .locations__link {
     color: #000000;
-    font-family: 'Bariol Bold';
+    font-family: 'Bariol';
     font-size: 19px;
     position: relative;
     letter-spacing: 2.72px;
@@ -367,7 +368,7 @@ body, html {
 }
 
 .locations__item {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .locations__list--mobile.row {
@@ -428,8 +429,9 @@ body, html {
 .form-preview__content {
     line-height: 26px;
     color: black;
-    font-weight: 600;
-    letter-spacing: -1px;
+    font-family: 'Bariol';
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .form-preview__item {
@@ -446,7 +448,11 @@ body, html {
     list-style: disc;
     padding-left: 47px;
     margin-bottom: 1px;
-    letter-spacing: -1px;
+    line-height: 26px;
+    color: black;
+    font-family: 'Bariol';
+    font-weight: 400;
+    font-size: 16px;
 }
 
 .form-page {
@@ -785,11 +791,9 @@ textarea.error {
 
 .about-us__content {
     color: #000000;
-    font-family: Bariol;
+    font-family: 'Bariol';
     font-size: 16px;
-    font-weight: 400;
     margin-bottom: 36px;
-    font-weight: bold;
 }
 
 .quote__about-us {
@@ -990,7 +994,7 @@ textarea.error {
     font-size: 35px;
     text-transform: uppercase;
     text-align: center;
-    padding-top: 5%;
+    padding-top: 10%;
     margin-bottom: 0px;
 }
 
@@ -1003,13 +1007,13 @@ textarea.error {
 }
 
 .location-info__content{
-    font-family: Bariol Bold;
+    font-family: 'Bariol';
     font-size: 16px;
     font-weight: 400;
     color: #000;
 }
 .location-info__title {
-    font-family: Bariol Bold;
+    font-family: 'Bariol';
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 3.6px;
@@ -1024,7 +1028,7 @@ textarea.error {
 
 .location-info__item {
     list-style-type: disc;
-    font-family: Bariol Bold;
+    font-family: 'Bariol';
     font-size: 16px;
     font-weight: 400;
     color: #000;
@@ -1036,7 +1040,7 @@ textarea.error {
 
 .location-info__item--map {
     color: #000000;
-    font-family: Bariol Bold;
+    font-family: 'Bariol';
     font-size: 16px;
     font-weight: 400;
 }
@@ -1232,7 +1236,7 @@ textarea.error {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 80px;
+    top: 41px;
 }
 
 .container--form {
