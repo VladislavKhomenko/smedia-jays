@@ -31,6 +31,14 @@ var myModule = (function (){
         $(document).on('scroll', onChangeSubPageTitleAbout);
         $('#side-menu__icon').on('click', onAnimateBurgerIcon);
         $('.side-menu__item').on('click', goToTheSection);
+        // moving page
+        $('.quote--menu--freight--link').on('click', onGoToMovingSection);
+    };
+
+    var onGoToMovingSection = function() {
+        $('.menu').removeClass('active-menu');
+        $('body').removeClass('froze-scroll');
+        $('.logo__action').text('menu');
     };
 
     // main page
@@ -78,7 +86,9 @@ var myModule = (function (){
         $('.quote--menu--moving').css("display", "flex");
     };
 
-    var showFormPreviewMoving = function() {
+    var showFormPreviewMoving = function(e) {
+        e.preventDefault();
+
         $('.contact-form').removeClass('active-form');
         $('.quote--menu').stop(true).fadeOut(0);
         $('.quote--menu--moving').css("display", "flex")
