@@ -614,9 +614,6 @@
     .long-distance--content:nth-child(4) {
         margin-bottom: 50px;
     }
-    .freight--mobile {
-        width: 155% !important;
-    }
     .quote__freight .quote__link--freight {
         font-size: 16px;
         padding: 18px;
