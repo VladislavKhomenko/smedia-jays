@@ -19,7 +19,7 @@
         padding-bottom: 50px;
     }
     .main-title {
-        flex: 0.5;
+        flex: 1;
     }
     .location-info__title{
         font-size: 19px;
@@ -281,7 +281,8 @@
         background-image: url('../img/homepage-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -370px;        
+        background-position-y: -800px;
+        width: 100%;
     }
     .contact-form {
         background-image: none;
@@ -623,6 +624,15 @@
     }
     .col-ins{
         font-size: 22px;
+    }
+    .wrapper {
+        background-image: url('../img/homepage-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;    
     }
 }
 
