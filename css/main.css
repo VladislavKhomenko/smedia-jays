@@ -651,7 +651,7 @@ section .form-control:focus {
     color: #ffffff;
     font-size: 24px;
     border: 1px solid #fff;
-    padding: 50px 90px;
+    padding: 26px 30px;
     transition: all .3s ease-in-out;
 }
 
@@ -704,7 +704,7 @@ textarea.error {
     color: #000;
     font-size: 24px;
     border: 1px solid #000;
-    padding: 50px 90px;
+    padding: 26px 30px;
     transition: all .3s ease-in-out;
 }
 
@@ -736,7 +736,7 @@ textarea.error {
     color: #000;
     font-size: 24px;
     border: 1px solid #000;
-    padding: 40px 100px;
+    padding: 26px 60px;
     transition: all .3s ease-in-out;
 }
 
@@ -863,7 +863,7 @@ textarea.error {
 .side-menu__title {
     display: block;
     color: #ffffff;
-    font-family: Bariol  Bold;
+    font-family: 'Bariol';
     font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 2.72px;
@@ -960,9 +960,10 @@ textarea.error {
 .side-menu__item a {
     cursor: pointer;
     color: white!important;
-    font-family: Bariol Bold;
-    font-size: 20px;
+    font-family: 'Bariol';
+    font-size: 17px;
     text-transform: uppercase;
+    line-height: 20.22px;
 }
 
 .side-menu__item a.current {
@@ -1035,7 +1036,7 @@ textarea.error {
 }
 
 .quote-location {
-    margin-top: 110px;
+    margin-top: 60px;
 }
 
 .location-info__item--map {
@@ -1060,14 +1061,22 @@ textarea.error {
 }
 
 .side-menu__title--locations {
-    left: 00px;
+    left: 0px;
 }
 
 .side-menu__list--locations {
     position: absolute;
     top: 120px;
 }
-
+.side-menu__title--black{
+    color: #000;
+    left: 6px;
+    top: -10px;
+}
+.color{
+    left: 16px;
+    top: 0px;
+}
 /*********************** FAQ PAGE *********************/
 
 .wrapper-faq {
@@ -1172,6 +1181,8 @@ textarea.error {
 .side-menu__item--black a {
     color: #4e4e4e!important;
     letter-spacing: 2.72px;
+    font-size: 17px;
+    line-height: 20.22px;
 }
 
 .side-menu__item--black a.current {
@@ -1331,7 +1342,6 @@ textarea.error {
 .quote__freight .quote__link--black {
     font-size: 21px;
 }
-
 /* fix */
 
 .main-title-menu{
@@ -1376,7 +1386,7 @@ tr:hover td {
 
 .quote-link_location{
     font-size: 21px;
-    padding: 48px 75px;
+    padding: 26px 30px;
 }
 
 .froze-scroll {
