@@ -629,7 +629,6 @@
 
 
 /*==========  Mobile First Method  ==========*/
-
 @media only screen and (min-width: 1800px) {
     .menu .container, .wrapper .container--logo {
         width: 80%;
@@ -658,8 +657,23 @@
     .about-us-wrapper {
         background-size: 1500px;
     }
-}
+    .contact-form{
+        margin-left: 100px;
+        margin-right: 300px;
+        background-size: cover;
+    }
+    .close-form{
+        right: 35px;
+    }
 
+}
+@media only screen and (min-width: 2200px) {
+    .contact-form{
+        margin-left: 300px;
+        margin-right: 400px;
+    }
+
+}
 @media only screen and (min-width: 1400px) {
     .side-menu {
         left: 50px;

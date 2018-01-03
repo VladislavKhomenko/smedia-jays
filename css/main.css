@@ -1389,3 +1389,7 @@ tr:hover td {
 .quote--menu--freight--link, .freight--mobile {
     display: none;
 }
+
+.bold{
+    font-weight: 900;
+}

@@ -19,20 +19,11 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
-    <script src="./libs/jquery/jquery.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
-    <script src="./libs/datepicker/datepicker.js"></script>
-    <script src="./libs/datepicker/datepicker.en.js"></script>
     <script src="https://use.fontawesome.com/a6846a2378.js"></script>
-    <script src="./libs/parallax/jquery.stellar.min.js"></script>
 </head>
 
 <body>
-    <video autoplay loop id="video-background" muted plays-inline>
-        <source src="./img/homepage.mp4" type="video/mp4">
-    </video>
-    <div class="wrapper">
+    <section class="location-name">
         <div class="container container--logo">
             <div class="row row--logo">
                 <div class="logo">
@@ -65,120 +56,98 @@
                 </ul>
             </div>
         </div>
-        <div class="logo-empty"></div>
-        <div class="main-title">
-            <h1 class="main-title__text">going the extra mile since '64</h1>
-        </div>
-        <div class="quote quote-main quote-index">
-            <a href="./quote.html" class="quote__link">NEED A QUOTE?</a>
-        </div>
-        <footer class="footer">
-            <div class="footer-desktop container">
-                <div class="row row--footer">
-                    <div class="row row--customers justify-content-center">
-                        <ul class="customers">
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-2.png" alt="customer-img">
-                            </li>
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-5.png" alt="customer-img">
-                            </li>
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-3.png" alt="customer-img">
-                            </li>
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-4.png" alt="customer-img">
-                            </li>
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-1.png" alt="customer-img">
+        <h1 class="location-name__title">Regina</h1>
+    </section>
+    <section class="location-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 offset-lg-1 col-md-6 col-offset-location">
+                    <ul class="location-info__list--map">
+                        <li class="location-info__item--map bold">Regina Head Office</li>
+                        <li class="location-info__item--map">555 Park Street P.O. Box 4560</li>
+                        <li class="location-info__item--map">Regina, SK  S4P 3Y3</li>
+                        <li class="location-info__item--map">Tel 306 569 9369</li>
+                        <li class="location-info__item--map">Fax 306 721 4641</li>
+                        <li class="location-info__item--map">Email
+                            <a href="mailto:sa@jaystransportationgroup.ca" class="location-info__link--map">sa@jaystransportationgroup.ca</a>
+                        </li>
+                    </ul>
+                    <ul class="location-info__list--map">
+                        <li class="location-info__item--map bold">Regina Moving</li>
+                        <li class="location-info__item--map">555 Park Street P.O. Box 4560</li>
+                        <li class="location-info__item--map">Regina, SK  S4P 3Y3</li>
+                        <li class="location-info__item--map">Tel 306 721 1222</li>
+                        <li class="location-info__item--map">Fax 306 721 4696</li>
+                        <li class="location-info__item--map">Toll Free 1 800 667 5988</li>
+                        <li class="location-info__item--map">Email
+                            <a href="mailto:sa@jaystransportationgroup.ca" class="location-info__link--map">sa@jaystransportationgroup.ca</a>
+                        </li>
+                    </ul>
+                    <ul class="location-info__list--map">
+                        <li class="location-info__item--map bold">Regina Freight</li>
+                        <li class="location-info__item--map">1240 1st Avenue P.O. Box 4560</li>
+                        <li class="location-info__item--map">Regina, SK  S4P 3Y3</li>
+                        <li class="location-info__item--map">Tel 306 525 5708</li>
+                        <li class="location-info__item--map">Fax 306 757 0089</li>
+                        <li class="location-info__item--map">Toll Free 1 866 419 0767</li>
+                        <li class="location-info__item--map">Email
+                            <a href="mailto:sa@jaystransportationgroup.ca" class="location-info__link--map">sa@jaystransportationgroup.ca</a>
+                        </li>
+                    </ul>
+                    <ul class="location-info__list--map">
+                            <li class="location-info__item--map bold">Regina Shop</li>
+                            <li class="location-info__item--map">1730 Ross Avenue East P.O. Box 4560</li>
+                            <li class="location-info__item--map">Regina, SK  S4P 3Y3</li>
+                            <li class="location-info__item--map">Tel 306 352 4482</li>
+                            <li class="location-info__item--map">Fax 306 352 4484</li>
+                            <li class="location-info__item--map">Email
+                                <a href="mailto:sa@jaystransportationgroup.ca" class="location-info__link--map">sa@jaystransportationgroup.ca</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="row justify-content-center">
-                        <ul class="contacts">
-                            <li class="contacts__item">
-                                <a href="#" class="contacts__link">Privacy policy</a>
-                            </li>
-                            <li class="contacts__item">
-                                <a href="#" class="contacts__link">Terms & use</a>
-                            </li>
-                            <li class="contacts__item">
-                                <a href="#" class="contacts__link">
-                                    <i class="fa fa-phone" aria-hidden="true"></i> 1(866) 995-8731</a>
-                            </li>
-                            <li class="contacts__item">
-                                <a href="#" class="contacts__link">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i> info@jaystransportationgroup.ca</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row justify-content-center">
-                        <span class="copyright">Copyright 2017 Jay's Transportation Group</span>
-                    </div>
+                </div>
+                <div class="col-md-5 offset-md-1">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1QIvB70TO3n3QwWcbYGcsZgj80SPJlMfs&hl=ru"
+                        width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="footer-mobile">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <a href="./quote.html" class="quote__link">NEED A QUOTE?</a>
-                    </div>
-                    <div class="row row--socials-mobile">
-                        <a href="#" class="contacts__link">
-                            <i class="fa fa-phone" aria-hidden="true"></i> 1(866) 995-8731</a>
-                        <a href="#" class="contacts__link">
-                            <i class="fa fa-envelope" aria-hidden="true"></i> info@jaystransportationgroup.ca</a>
-                        <ul class="socials socials--mobile">
-                            <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <i class="fa fa-facebook-square"></i>
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <i class="fa fa-google-plus-square"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="row justify-content-center">
-                        <a href="#" class="contacts__link contacts__link--privacy">Privacy policy</a>
-                        <a href="#" class="contacts__link">Terms & use</a>
-                    </div>
-                    <div class="row justify-content-center">
-                        <span class="copyright">Copyright 2017 Jay's Transportation Group</span>
-                    </div>
-                    <div class="row justify-content-center">
-                        <ul class="customers">
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-mobile-1.png" alt="customer-img">
-                            </li>
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-mobile-4.png" alt="customer-img">
-                            </li>
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-mobile-3.png" alt="customer-img">
-                            </li>
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-mobile-5.png" alt="customer-img">
-                            </li>
-                            <li class="customer-item">
-                                <img src="./img/footer-logo-mobile-2.png" alt="customer-img">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        </div>
+    </section>
+    <div class="side-menu">
+        <span class="side-menu__title side-menu__title--locations">locations</span>
+        <div id="side-menu__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="side-menu__list side-menu__list--locations">
+            <li class="side-menu__item">
+                <a href="./location-regina.html" class="current">Regina</a>
+            </li>
+            <li class="side-menu__item">
+                <a href="./location.html">Saskatoon</a>
+            </li>
+            <li class="side-menu__item">
+                <a href="./location-Calgary.html">Calgary</a>
+            </li>
+            <li class="side-menu__item">
+                <a href="./location-Battleford.html">Battleford</a>
+            </li>
+            <li class="side-menu__item">
+                <a href="./location-Estevan.html">Estevan</a>
+            </li>
+            <li class="side-menu__item">
+                <a href="./location-Moose_Jaw.html">Moose Jaw</a>
+            </li>
+            <li class="side-menu__item">
+                <a href="./location->Prince_Albert.html">Prince Albert</a>
+            </li>
+            <li class="side-menu__item">
+                <a href="./location-Swift_Current.html">Swift Current</a>
+            </li>
+            <li class="side-menu__item">
+                <a href="./location-Yorkton.html">Yorkton</a>
+            </li>
+        </ul>
     </div>
     <div class="menu">
         <div class="container container--menu">
@@ -194,7 +163,7 @@
                         <a href="#" class="menu__link menu__item--locations">locations</a>
                     </li>
                     <li class="menu__item menu__link--moving">
-                        <a class="menu__link">moving</a>
+                        <a href="./moving-preview.html" class="menu__link">moving</a>
                     </li>
                     <li class="menu__item menu__link--freight">
                         <a href="./freight-preview.html" class="menu__link">freight</a>
@@ -236,7 +205,7 @@
                             <a href="./location-Swift_Current.html" class="locations__link">Swift Current</a>
                         </li>
                         <li class="locations__item">
-                            <a href="./location-Yorkton.html" class="locations__link">Yorkton</a>
+                            <a href="./location-Yorkton#.html" class="locations__link">Yorkton</a>
                         </li>
                     </div>
                 </ul>
@@ -302,7 +271,14 @@
         <span class="back-menu">
             < back</span>
     </div>
-    <script src="./js/common.js"></script>
+    <script src="https://use.fontawesome.com/a6846a2378.js"></script>
+    <script src="./libs/jquery/jquery.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
+    <script src="./libs/datepicker/datepicker.js"></script>
+    <script src="./libs/datepicker/datepicker.en.js"></script>
+    <script src="./libs/parallax/jquery.stellar.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
