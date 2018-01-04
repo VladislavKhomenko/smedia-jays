@@ -733,16 +733,16 @@ textarea.error {
 .actions ul[role] li:nth-child(3) a {
     font-family: 'Matiz';
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
     font-size: 24px;
-    border: 1px solid #000;
+    border: 1px solid #fff;
     padding: 26px 60px;
     transition: all .3s ease-in-out;
 }
 
 .actions ul[role] li:nth-child(3) a:hover, .actions ul[role] li:nth-child(3) a:focus {
-    background-color: rgba(0, 0, 0, 0.15);
-    color: #000;
+    background-color: rgba(104, 100, 100, 0.199);
+    color: #fff;
     text-decoration: none;
 }
 
