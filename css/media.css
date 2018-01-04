@@ -107,6 +107,7 @@
     .contact-form{
         margin-bottom: 50px;
     }
+
 }
 
 /* Medium Devices, Desktops */
@@ -281,7 +282,7 @@
         background-image: url('../img/homepage-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -800px;
+        background-position-y: -350px;
         width: 100%;
     }
     .contact-form {
@@ -693,7 +694,7 @@
     }
     #video-background {
         position: fixed;
-        top: 40%;
+        top: 50%;
         left: 50%;
         min-width: 100%;
         min-height: 100%;
