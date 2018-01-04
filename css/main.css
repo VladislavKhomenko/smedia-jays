@@ -1349,7 +1349,10 @@ textarea.error {
 }
 
 /* freight-preview */
-
+.quote__link--freight:hover{
+    color: #000;
+    background-color: rgba(34, 23, 23, 0.034);
+}
 .col-inset{
     padding: 61px 0 0 93px !important;
 }
