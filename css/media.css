@@ -439,6 +439,9 @@
     .location-info__list--map {
         text-align: center;
     }
+    .col-inset-moving {
+        padding: 0 0 0 40px !important;
+    }
 }
 @media only screen and (max-width: 650px) {
     .table {
@@ -454,6 +457,12 @@
         background-size: cover;
         background-position-y: -110px;
         width: 100%;
+    }
+    .col-inset-moving {
+        padding: 0 0 0 30px !important;
+    }
+    .col-inset {
+        padding: 61px 0 0 30px !important;
     }
 }
 @media only screen and (max-width: 560px) {
