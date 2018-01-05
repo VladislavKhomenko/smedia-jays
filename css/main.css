@@ -1063,7 +1063,8 @@ textarea.error {
 }
 
 .side-menu__title--locations {
-    left: 0px;
+    left: 24px;
+    top: -50px;
 }
 
 .side-menu__list--locations {
