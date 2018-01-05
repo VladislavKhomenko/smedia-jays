@@ -436,6 +436,9 @@
         padding: 35% 0;
         padding-top: 30px;
     }
+    .location-info__list--map {
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 650px) {
     .table {
@@ -625,6 +628,9 @@
     }
     .long-distance{
         padding-bottom: 100px;
+        min-height: 120%;
+        background-size: initial;
+        background-position: 0px !important;
     }
     .long-distance--content:nth-child(4) {
         margin-bottom: 50px;
@@ -647,6 +653,15 @@
         width: 100%;
         height: 100%;
         overflow-y: scroll;    
+    }
+    .moving-preview, .freight-preview {
+        min-height: 160%;
+        background-position: 0px !important;
+    }
+    .speciality {
+        min-height: 108%;
+        background-size: initial;
+        background-position: 0px !important;
     }
 }
 
