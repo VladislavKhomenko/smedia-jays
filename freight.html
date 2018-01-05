@@ -31,7 +31,7 @@
 
 <body>
     <div class="wrapper wrapper-quote">
-        <form id="quotes">
+        <form id="quotes" action="freight-form.php">
             <div class="container container--logo container--form">
                 <div class="row row--logo">
                     <div class="logo">
@@ -52,32 +52,32 @@
             <section class="first-quote">
                 <div class="form-group moving-from">
                     <label class="first-quote__label">Hi! What's your name?</label>
-                    <input type="text" class="form-control" name="firstName" placeholder="First name" required>
-                    <input type="text" class="form-control" name="lastName" placeholder="Laste name" required>
+                    <input type="text" class="form-control" name="firstName-freight" placeholder="First name" required>
+                    <input type="text" class="form-control" name="lastName-freight" placeholder="Laste name" required>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Company name?</label>
-                    <input type="text" class="form-control" name="companyName" placeholder="Company name" required>
+                    <input type="text" class="form-control" name="companyName-freight" placeholder="Company name" required>
                 </div>
             </section>
             <h3></h3>
             <section class="second-quote">
                 <span class="second-quote__description">Where will we pick up your freight?</span>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="address" placeholder="Address" required>
-                    <input type="text" class="form-control" name="city" placeholder="City" required>
-                    <input type="text" class="form-control" name="province" placeholder="Province/State" required>
-                    <input type="text" class="form-control" name="zip" placeholder="Postal/Zip Code" required>
+                    <input type="text" class="form-control" name="address-freight" placeholder="Address" required>
+                    <input type="text" class="form-control" name="city-freight" placeholder="City" required>
+                    <input type="text" class="form-control" name="province-freight" placeholder="Province/State" required>
+                    <input type="text" class="form-control" name="zip-freight" placeholder="Postal/Zip Code" required>
                 </div>
                 <div class="form-group">
                     <div class="form-check form-check-inline">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="state" id="business" value="business"> Business
+                            <input class="form-check-input" type="radio" name="state-freight" id="business" value="business"> Business
                         </label>
                     </div>
                     <div class="form-check form-check-inline form-check--residence">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="state" id="residence" value="residence"> Residence
+                            <input class="form-check-input" type="radio" name="state-freight" id="residence" value="residence"> Residence
                         </label>
                     </div>
                 </div>
@@ -86,31 +86,31 @@
             <section class="third-quote">
                 <div class="form-group">
                     <label class="first-quote__label">What is the destination?</label>
-                    <input type="text" class="form-control" name="addressDestination" placeholder="Address" required>
-                    <input type="text" class="form-control" name="cityDestination" placeholder="City" required>
-                    <input type="text" class="form-control" name="provinceDestination" placeholder="Province/State" required>
-                    <input type="text" class="form-control" name="zipDestination" placeholder="Postal/Zip Code" required>
+                    <input type="text" class="form-control" name="addressDestination-freight" placeholder="Address" required>
+                    <input type="text" class="form-control" name="cityDestination-freight" placeholder="City" required>
+                    <input type="text" class="form-control" name="provinceDestination-freight" placeholder="Province/State" required>
+                    <input type="text" class="form-control" name="zipDestination-freight" placeholder="Postal/Zip Code" required>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Bes phone number to reach you?</label>
-                    <input type="text" class="form-control" name="phone" placeholder="" required>
+                    <input type="text" class="form-control" name="phone-freight" placeholder="" required>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Email address?</label>
-                    <input type="text" class="form-control" name="email" placeholder="" required>
+                    <input type="text" class="form-control" name="email-freight" placeholder="" required>
                 </div>
             </section>
             <h3>Moving dates</h3>
             <section class="fourth-quote">
                 <span class="second-quote__description">Pickup date</span>
                 <div class="form-group group-data">
-                    <input type="text" class="form-control control-data" id="datepickerPickup" name="pickupDate" placeholder="MM/DD/YY" required
+                    <input type="text" class="form-control control-data" id="datepickerPickup" name="pickupDate-freight" placeholder="MM/DD/YY" required
                         data-language='en'>
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                 </div>
                 <span class="second-quote__description">Delivery date</span>
                 <div class="form-group group-data">
-                    <input type="text" class="form-control control-data" id="datepickerDelivery" name="deliveryDate" placeholder="MM/DD/YY" required
+                    <input type="text" class="form-control control-data" id="datepickerDelivery" name="deliveryDate-freight" placeholder="MM/DD/YY" required
                         data-language='en'>
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                 </div>
@@ -119,26 +119,26 @@
             <section class="fifth-quote">
                 <div class="form-group">
                     <label class="first-quote__label">What is your freight?</label>
-                    <input type="text" class="form-control" name="freight" placeholder="Freight" required>
+                    <input type="text" class="form-control" name="freight-freight" placeholder="Freight" required>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Weight?</label>
-                    <input type="text" class="form-control" name="freight" placeholder="Weight" required>
+                    <input type="text" class="form-control" name="weight-freught" placeholder="Weight" required>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Number of pieces?</label>
-                    <input type="number" class="form-control" name="pieces" placeholder="#" required>
+                    <input type="number" class="form-control" name="pieces-freight" placeholder="#" required>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Pallet?</label>
                     <div class="form-check form-check-inline">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="palette" id="paletteYes" value="yes"> Yes
+                            <input class="form-check-input" type="radio" name="palette-freight" id="paletteYes" value="yes"> Yes
                         </label>
                     </div>
                     <div class="form-check form-check-inline form-check--residence">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="palette" id="paletteNo" value="no"> No
+                            <input class="form-check-input" type="radio" name="palette-freight" id="paletteNo" value="no"> No
                         </label>
                     </div>
                 </div>
@@ -146,23 +146,23 @@
                     <label class="first-quote__label">Stackable pallet?</label>
                     <div class="form-check form-check-inline">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="stackablepalette" id="stackablepaletteYes" value="yes"> Yes
+                            <input class="form-check-input" type="radio" name="stackablepalette-freight" id="stackablepaletteYes" value="yes"> Yes
                         </label>
                     </div>
                     <div class="form-check form-check-inline form-check--residence">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="stackablepalette" id="stackablepaletteNo" value="no"> No
+                            <input class="form-check-input" type="radio" name="stackablepalette-freight" id="stackablepaletteNo" value="no"> No
                         </label>
                     </div>
                     <div class="form-check form-check-inline form-check--residence">
                         <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="stackablepalette" id="stackablepalettena" value="n/a"> N/A
+                            <input class="form-check-input" type="radio" name="stackablepalette-freight" id="stackablepalettena" value="n/a"> N/A
                         </label>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Size</label>
-                    <input type="text" class="form-control" name="size" placeholder="LxWxH" required>
+                    <input type="text" class="form-control" name="size-freight" placeholder="LxWxH" required>
                 </div>
             </section>
         </form>
