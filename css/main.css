@@ -871,7 +871,7 @@ textarea.error {
     cursor: pointer;
     left: 20px;
     bottom: 20px;
-    position: relative;
+    position: absolute;
 }
 
 #side-menu__icon {
@@ -946,9 +946,9 @@ textarea.error {
 }
 
 .side-menu__list {
-    position: relative;
-    left: 44px;
-    bottom: -50px;
+    position: absolute;
+    left: 50px;
+    bottom: -100px;
     display: none;
 }
 
@@ -1070,8 +1070,8 @@ textarea.error {
 }
 .side-menu__title--black{
     color: #000;
-    left: 6px;
-    top: -10px;
+    left: 32px;
+    top: -49px;
 }
 .color{
     left: 16px;
