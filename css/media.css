@@ -280,7 +280,7 @@
         background-image: url('../img/homepage-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -350px;
+        background-position-y: -240px;
         width: 100%;
     }
     .contact-form {
@@ -343,7 +343,7 @@
     .main-title  .main-title__text{
         font-size: 38px;
         padding-top: 95px;
-        padding-bottom: 95px;
+        padding-bottom: 255px;
     }
     .customers {
         flex-direction: column;
@@ -445,8 +445,23 @@
     .side-menu{
         display: none;
     }
+    .wrapper {
+        background-image: url(../img/homepage-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -110px;
+        width: 100%;
+    }
 }
-
+@media only screen and (max-width: 560px) {
+    .wrapper {
+        background-image: url(../img/homepage-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 0px;
+        width: 100%;
+    }
+}
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
     .location-name {
