@@ -34,10 +34,8 @@
         font-size: 17px;
     }
     .side-menu__title--locations{
-        left: -10px;
-    }
-    #side-menu__icon{
-        left: 25px;
+        left: 24px;
+        top: -50px;
     }
     .quote--menu{
         justify-content: space-between;

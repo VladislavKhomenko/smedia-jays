@@ -24,7 +24,7 @@ body, html {
 
 #video-background {
     position: fixed;
-    top: 40%;
+    top: 50%;
     left: 50%;
     min-width: 100%;
     min-height: 100%;
@@ -871,7 +871,9 @@ textarea.error {
     cursor: pointer;
     left: 20px;
     bottom: 20px;
-    position: relative;
+    height: 100%;
+    position: absolute;
+    width: 100px;
 }
 
 #side-menu__icon {
@@ -946,9 +948,9 @@ textarea.error {
 }
 
 .side-menu__list {
-    position: relative;
-    left: 44px;
-    bottom: -50px;
+    position: absolute;
+    left: 66px;
+    bottom: -115px;
     display: none;
 }
 
@@ -1061,7 +1063,8 @@ textarea.error {
 }
 
 .side-menu__title--locations {
-    left: 0px;
+    left: 24px;
+    top: -50px;
 }
 
 .side-menu__list--locations {
@@ -1070,8 +1073,8 @@ textarea.error {
 }
 .side-menu__title--black{
     color: #000;
-    left: 6px;
-    top: -10px;
+    left: 23px;
+    top: -48px;
 }
 .color{
     left: 16px;

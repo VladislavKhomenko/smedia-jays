@@ -25,6 +25,7 @@ var myModule = (function (){
         $('.menu__link--freight').on('mouseleave', hideFormPreviewFreight);
         $('.menu__link--contact').on('click', showContactForm);
         $('.close-form').on('click', hideContactForm);
+        $('.logo__link').on('click', function () {localStorage.clear()});
         // quote page
         $(document).ready(onInitUi);
         $(document).on('scroll', onChangeSubPageTitle);
@@ -33,6 +34,12 @@ var myModule = (function (){
         $('.side-menu__item').on('click', goToTheSection);
         // moving page
         $('.quote--menu--freight--link').on('click', onGoToMovingSection);
+        // about us
+        $('.content-link--locations').on('click', onStoreMenu);
+    };
+
+    var onStoreMenu = function() {
+        localStorage.setItem('menu', 'open');
     };
 
     var onGoToMovingSection = function() {
@@ -171,6 +178,8 @@ var myModule = (function (){
         } else {
             $(this).text('menu');
         }
+
+        localStorage.clear();
     };
 
     var fadeInRibbon = function(e) {
@@ -208,7 +217,18 @@ var myModule = (function (){
     };
 
     var onInitUi = function() {
+        // locations menu
         
+        if (localStorage.length) {
+           $('.menu').addClass('active-menu');
+           $('.locations__list').css("display", "flex")
+            .hide()
+            .delay(300)
+            .stop(true)
+            .fadeIn();
+           $('.quote--menu').fadeOut(0);
+        }
+
         var form = $('#quotes');
 
         $("#quotes").steps({

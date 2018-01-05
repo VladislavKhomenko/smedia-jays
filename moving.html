@@ -31,7 +31,7 @@
 
 <body>
     <div class="wrapper wrapper-quote">
-        <form id="quotes">
+        <form id="quotes" action="moving-form.php">
             <div class="container container--logo container--form">
                 <div class="row row--logo">
                     <div class="logo">
@@ -52,13 +52,13 @@
             <section class="first-quote">
                 <div class="form-group moving-from">
                     <label class="first-quote__label">Where are you moving from?</label>
-                    <input type="text" class="form-control" name="cityFrom" placeholder="City" required>
-                    <input type="text" class="form-control" name="provinceFrom" placeholder="Province" required>
+                    <input type="text" class="form-control" name="cityFrom-moving" placeholder="City" required>
+                    <input type="text" class="form-control" name="provinceFrom-moving" placeholder="Province" required>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Where are you moving to?</label>
-                    <input type="text" class="form-control" name="cityTo" placeholder="City" required>
-                    <input type="text" class="form-control" name="provinceTo" placeholder="Province" required>
+                    <input type="text" class="form-control" name="cityTo-moving" placeholder="City" required>
+                    <input type="text" class="form-control" name="provinceTo-moving" placeholder="Province" required>
                 </div>
             </section>
             <h3>how many rooms are you moving?</h3>
@@ -73,22 +73,22 @@
             <section class="third-quote">
                 <div class="form-group">
                     <label class="first-quote__label">Name</label>
-                    <input type="text" class="form-control" name="firstName" placeholder="First Name" required>
-                    <input type="text" class="form-control" name="lastName" placeholder="Last Name" required>
+                    <input type="text" class="form-control" name="firstName-moving" placeholder="First Name" required>
+                    <input type="text" class="form-control" name="lastName-moving" placeholder="Last Name" required>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Email</label>
-                    <input type="text" class="form-control" name="email" placeholder="Email" required>
+                    <input type="text" class="form-control" name="email-moving" placeholder="Email" required>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Phone</label>
-                    <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                    <input type="text" class="form-control" name="phone-moving" placeholder="Phone" required>
                 </div>
             </section>
             <h3>Moving dates</h3>
             <section class="fourth-quote">
                 <div class="form-group group-data">
-                    <input type="text" class="form-control control-data" id="datepicker" name="date" placeholder="MM/DD/YY" required data-language='en'>
+                    <input type="text" class="form-control control-data" id="datepicker" name="date-moving" placeholder="MM/DD/YY" required data-language='en'>
                     <i class="fa fa-calendar" aria-hidden="true"></i>
                 </div>
             </section>
