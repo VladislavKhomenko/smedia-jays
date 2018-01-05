@@ -36,9 +36,6 @@
     .side-menu__title--locations{
         left: -10px;
     }
-    #side-menu__icon{
-        left: 25px;
-    }
     .quote--menu{
         justify-content: space-between;
         top: -50px;
