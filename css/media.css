@@ -436,6 +436,9 @@
         padding: 35% 0;
         padding-top: 30px;
     }
+    .location-info__list--map {
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 650px) {
     .table {
@@ -623,9 +626,6 @@
     .speciality--content:nth-child(3) {
         margin-bottom: 50px;
     }
-    .long-distance{
-        padding-bottom: 100px;
-    }
     .long-distance--content:nth-child(4) {
         margin-bottom: 50px;
     }
@@ -647,6 +647,33 @@
         width: 100%;
         height: 100%;
         overflow-y: scroll;    
+    }
+    .long-distance{
+        padding-bottom: 100px;
+        min-height: 120%;
+        background-size: initial;
+        background-position: 0px !important;
+    }
+    .moving-preview, .freght-preview {
+        min-height: 165%;
+        background-position: 0px !important;
+    }
+    .speciality {
+        min-height: 108%;
+        background-size: initial;
+        background-position: 0px !important;
+    }
+    .careers {
+        min-height: 200%;
+    }
+    .about-us {
+        min-height: 410%;
+    }
+    .quote__about-us{
+        margin-top: 50px;
+    }
+    .active-freight-bg .container--menu {
+        width: 90%;
     }
 }
 
