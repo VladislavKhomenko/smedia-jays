@@ -48,7 +48,17 @@ var myModule = (function (){
             url: $(this).attr('action'),
             data: formData
         }).done(function() {
-            alert("Thanks we will contact you!");
+            $.fancybox.open(`
+                <div class="success-popup">
+                    <div class="success-popup-wrapper">
+                        <h1 class="success-popup__title">THANK YOU!</h1>
+                        <span class="success-popup__content">Your Jay's moving consultant will be in touch soon!</span>
+                    </div>
+                </div>
+            `);
+            setTimeout(function() {
+                $.fancybox.close();
+            }, 5000);
         });
         return false;
     };
@@ -61,7 +71,17 @@ var myModule = (function (){
             url: $(this).attr('action'),
             data: formData
         }).done(function() {
-            alert("Thanks we will contact you!");
+            $.fancybox.open(`
+                <div class="success-popup">
+                    <div class="success-popup-wrapper">
+                        <h1 class="success-popup__title">THANK YOU!</h1>
+                        <span class="success-popup__content">Your Jay's moving consultant will be in touch soon!</span>
+                    </div>
+                </div>
+            `);
+            setTimeout(function() {
+                $.fancybox.close();
+            }, 5000);
         });
         return false;
     };
