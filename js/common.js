@@ -68,15 +68,15 @@ var myModule = (function (){
 
     var onStoreMenu = function(e) {
         e.preventDefault();
-
-         // locations menu
         $('.menu').addClass('active-menu');
+        $('.logo__action').text('close');
         $('.locations__list').css("display", "flex")
             .hide()
             .delay(300)
             .stop(true)
             .fadeIn();
         $('.quote--menu').fadeOut(0);
+        $(window).scrollTop(0);
     };
 
     var onGoToMovingSection = function() {
