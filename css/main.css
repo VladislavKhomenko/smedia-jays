@@ -1424,6 +1424,7 @@ tr:hover td {
     border-radius: .3em;
     box-shadow: 0 0.1em 0.4em rgba(0,0,0,.3);
     display: none;
+    font-family: 'Bariol'!important;
   }
   .fancybox-close-small{
       display: none;
@@ -1437,9 +1438,10 @@ tr:hover td {
     border-color: transparent !important;
   }
   .modal-title {
-    font-weight: 700;
-    padding: 1.5em;
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 900;
+    padding: 10px 15px;
+    font-family: 'Bariol'!important;
+    font-size: 25px;
   }
   
   .modal-body {
@@ -1450,7 +1452,7 @@ tr:hover td {
   }
   
   .modal-footer {
-    padding: 1.5em;
+    padding: 0px !important;
     text-align: right;
   }
   

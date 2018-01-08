@@ -411,3 +411,4 @@ $('.content').fancybox({
 $(document).on('click', '#your-button', function() {
     $.fancybox.close();
 });
+$('a.iframe').fancybox();
