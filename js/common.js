@@ -396,6 +396,17 @@ var myModule = (function (){
         }
     };
 
+    // fancybox popup about-us
+    
+    var fancyboxPopup = function(){
+        $('.content').fancybox();
+        $(document).on('click', '#your-button', function() {$.fancybox.close();});
+        $('.link').click(function(){
+            window.location.href = 'http://chp.tbe.taleo.net/chp01/ats/careers/jobSearch.jsp?org=MULLEN&cws=1';
+            $.fancybox.close();
+        });
+    };
+
     var checkPosition = function(movingPreview, longDistance, speciality) {
         if($(this).scrollTop() >= movingPreview) {
             $('.side-menu__list li:nth-child(1) a').addClass('current');
@@ -426,12 +437,3 @@ var myModule = (function (){
 })();
 myModule.init();
 
-$('.content').fancybox({
-});
-$(document).on('click', '#your-button', function() {
-    $.fancybox.close();
-});
-$('.link').click(function(){
-    window.location.href = 'http://chp.tbe.taleo.net/chp01/ats/careers/jobSearch.jsp?org=MULLEN&cws=1';
-    $.fancybox.close();
-});
