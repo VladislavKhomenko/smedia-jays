@@ -265,7 +265,7 @@ var myModule = (function (){
             transitionEffect: "fade",
             labels: {
                 next: 'Continue',
-                finish: 'send'
+                finish: 'ok'
             },
             onStepChanging: function(event, currentIndex, newIndex) {
                 if(!form.valid()) {return;} 
@@ -280,6 +280,21 @@ var myModule = (function (){
                         $('.actions ul[role] li:nth-child(2) a').addClass('black-button');
                         break;
                     case 3:
+                        $('#datepickerPickupLabel').on('click',  function() {
+                            var dataPicker = $('#datepickerPickup').datepicker().data('datepicker');
+                            dataPicker.show();
+                        });
+
+                        $('#datepickerDeliveryLabel').on('click',  function() {
+                            var dataPicker = $('#datepickerDelivery').datepicker().data('datepicker');
+                            dataPicker.show();
+                        });
+
+                        $('#datepickerLabel').on('click',  function() {
+                            var dataPicker = $('#datepicker').datepicker().data('datepicker');
+                            dataPicker.show();
+                        });
+        
                         $('#quotes').css('background-image', 'url(./img/bg-quote-4.jpg)');
                         $('.actions ul[role] li:nth-child(2) a').addClass('black-button');
                         break;
