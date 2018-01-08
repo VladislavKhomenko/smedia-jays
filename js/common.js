@@ -431,4 +431,7 @@ $('.content').fancybox({
 $(document).on('click', '#your-button', function() {
     $.fancybox.close();
 });
-$('a.iframe').fancybox();
+$('.link').click(function(){
+    window.location.href = 'http://chp.tbe.taleo.net/chp01/ats/careers/jobSearch.jsp?org=MULLEN&cws=1';
+    $.fancybox.close();
+});
