@@ -66,8 +66,17 @@ var myModule = (function (){
         return false;
     };
 
-    var onStoreMenu = function() {
-        localStorage.setItem('menu', 'open');
+    var onStoreMenu = function(e) {
+        e.preventDefault();
+
+         // locations menu
+        $('.menu').addClass('active-menu');
+        $('.locations__list').css("display", "flex")
+            .hide()
+            .delay(300)
+            .stop(true)
+            .fadeIn();
+        $('.quote--menu').fadeOut(0);
     };
 
     var onGoToMovingSection = function() {
@@ -245,18 +254,6 @@ var myModule = (function (){
     };
 
     var onInitUi = function() {
-        // locations menu
-        
-        if (localStorage.length) {
-           $('.menu').addClass('active-menu');
-           $('.locations__list').css("display", "flex")
-            .hide()
-            .delay(300)
-            .stop(true)
-            .fadeIn();
-           $('.quote--menu').fadeOut(0);
-        }
-
         var form = $('#quotes');
 
         $("#quotes").steps({
