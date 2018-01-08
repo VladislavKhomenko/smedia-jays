@@ -1425,7 +1425,17 @@ tr:hover td {
     box-shadow: 0 0.1em 0.4em rgba(0,0,0,.3);
     display: none;
   }
-  
+  .fancybox-close-small{
+      display: none;
+  }
+  .btn-primary{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 100% !important;
+    background-color: #292b2c !important;
+    border-color: transparent !important;
+  }
   .modal-title {
     font-weight: 700;
     padding: 1.5em;
