@@ -12,7 +12,7 @@ $subject = trim(filter_input(INPUT_POST, "subject-contact"));
 $text = trim(filter_input(INPUT_POST, "message-contact"));
 
 $pagetitle = "New sign from \"$sitename\"";
-$message = "Name: $name \Subject: $subject \nEmail: $email \nMessage: $text";
+$message = "Name: $name \Subject: $subject \n Email: $email \n Message: $text";
     
 if($name && $subject && $email && $text) {
     echo SendEmail($recepient, 'offers@mail.smedia.ca', $pagetitle, $message, $email, $name);

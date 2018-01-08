@@ -26,6 +26,8 @@ var myModule = (function (){
         $('.menu__link--contact').on('click', showContactForm);
         $('.close-form').on('click', hideContactForm);
         $('.logo__link').on('click', function () {localStorage.clear()});
+        $('#contact-form').on('submit', submitContactForm);
+        $('#quote').on('submit', submitAjaxForm);
         // quote page
         $(document).ready(onInitUi);
         $(document).on('scroll', onChangeSubPageTitle);
@@ -36,6 +38,32 @@ var myModule = (function (){
         $('.quote--menu--freight--link').on('click', onGoToMovingSection);
         // about us
         $('.content-link--locations').on('click', onStoreMenu);
+    };
+
+    var submitAjaxForm = function () {
+        var formData = $(this).serialize();
+        console.log(formData);
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            data: formData
+        }).done(function() {
+            alert("Thanks we will contact you!");
+        });
+        return false;
+    };
+
+    var submitContactForm = function() {
+        var formData = $(this).serialize();
+        console.log(formData);
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            data: formData
+        }).done(function() {
+            alert("Thanks we will contact you!");
+        });
+        return false;
     };
 
     var onStoreMenu = function() {
@@ -266,10 +294,12 @@ var myModule = (function (){
                 form.validate().settings.ignore = ":disabled,:hidden";
                 return form.valid();
             },
-            onFinishing: function (event, currentIndex)
-            {
+            onFinishing: function (event, currentIndex) {
                 form.validate().settings.ignore = ":disabled";
                 return form.valid();
+            },
+            onFinished: function (event, currentIndex) {
+                form.submit();
             }
         });
 

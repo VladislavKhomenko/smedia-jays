@@ -1274,13 +1274,14 @@ textarea.error {
     padding-top: 50px;
     padding-bottom: 50px;
     display: none;
+    background-size: cover;
 }
 
 .close-form {
     position: absolute;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 40px;
     color: #000000;
     font-family: 'Bariol Bold';
     font-size: 20px;
