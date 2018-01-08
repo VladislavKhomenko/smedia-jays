@@ -815,12 +815,17 @@ textarea.error {
 }
 
 .about-us__content-item .career__content:nth-child(4) {
-    margin-bottom: 40%;
+    margin-bottom: 5%;
 }
-
+.post{
+    font-family: 'Bariol Bold';
+}
+.post a{
+    text-decoration: underline;
+}
 .table {
     margin-bottom: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
     width: 789px!important;
 }
 
@@ -851,7 +856,7 @@ textarea.error {
 }
 
 .table tbody tr:nth-child(even) {
-    background-color: rgba(221, 221, 217, 0.7);
+    background-color: transparent;
 }
 
 .side-menu {
