@@ -40,7 +40,9 @@ var myModule = (function (){
         $('.content-link--locations').on('click', onStoreMenu);
     };
 
-    var submitAjaxForm = function () {
+    var submitAjaxForm = function (e) {
+        e.preventDefault();
+        
         var formData = $(this).serialize();
         console.log(formData);
         $.ajax({
@@ -63,7 +65,9 @@ var myModule = (function (){
         return false;
     };
 
-    var submitContactForm = function() {
+    var submitContactForm = function(e) {
+        e.preventDefault();
+        
         var formData = $(this).serialize();
         console.log(formData);
         $.ajax({
