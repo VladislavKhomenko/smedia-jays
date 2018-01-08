@@ -9,6 +9,9 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+    .close-form {
+        right: 20px;
+    }
     .location-name {
         min-height: 80%;
     }
@@ -39,11 +42,6 @@
     }
     .quote--menu{
         justify-content: space-between;
-        top: -50px;
-    }
-    .quote__link--menu{
-        font-size: 30px;
-        padding: 38px 40px;
     }
     .menu__link{
         font-size: 23px;
@@ -280,7 +278,6 @@
         background-image: url('../img/homepage-mobile.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -240px;
         width: 100%;
     }
     .contact-form {
@@ -455,7 +452,6 @@
         background-image: url(../img/homepage-mobile.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position-y: -110px;
         width: 100%;
     }
     .col-inset-moving {

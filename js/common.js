@@ -26,6 +26,8 @@ var myModule = (function (){
         $('.menu__link--contact').on('click', showContactForm);
         $('.close-form').on('click', hideContactForm);
         $('.logo__link').on('click', function () {localStorage.clear()});
+        $('#contact-form').on('submit', submitContactForm);
+        $('#quote').on('submit', submitAjaxForm);
         // quote page
         $(document).ready(onInitUi);
         $(document).on('scroll', onChangeSubPageTitle);
@@ -38,8 +40,63 @@ var myModule = (function (){
         $('.content-link--locations').on('click', onStoreMenu);
     };
 
-    var onStoreMenu = function() {
-        localStorage.setItem('menu', 'open');
+    var submitAjaxForm = function () {
+        var formData = $(this).serialize();
+        console.log(formData);
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            data: formData
+        }).done(function() {
+            $.fancybox.open(`
+                <div class="success-popup">
+                    <div class="success-popup-wrapper">
+                        <h1 class="success-popup__title">THANK YOU!</h1>
+                        <span class="success-popup__content">Your Jay's moving consultant will be in touch soon!</span>
+                    </div>
+                </div>
+            `);
+            setTimeout(function() {
+                $.fancybox.close();
+            }, 5000);
+        });
+        return false;
+    };
+
+    var submitContactForm = function() {
+        var formData = $(this).serialize();
+        console.log(formData);
+        $.ajax({
+            type: "POST",
+            url: $(this).attr('action'),
+            data: formData
+        }).done(function() {
+            $.fancybox.open(`
+                <div class="success-popup">
+                    <div class="success-popup-wrapper">
+                        <h1 class="success-popup__title">THANK YOU!</h1>
+                        <span class="success-popup__content">Your Jay's moving consultant will be in touch soon!</span>
+                    </div>
+                </div>
+            `);
+            setTimeout(function() {
+                $.fancybox.close();
+            }, 5000);
+        });
+        return false;
+    };
+
+    var onStoreMenu = function(e) {
+        e.preventDefault();
+        $('.menu').addClass('active-menu');
+        $('.logo__action').text('close');
+        $('.locations__list').css("display", "flex")
+            .hide()
+            .delay(300)
+            .stop(true)
+            .fadeIn();
+        $('.quote--menu').fadeOut(0);
+        $(window).scrollTop(0);
     };
 
     var onGoToMovingSection = function() {
@@ -217,18 +274,6 @@ var myModule = (function (){
     };
 
     var onInitUi = function() {
-        // locations menu
-        
-        if (localStorage.length) {
-           $('.menu').addClass('active-menu');
-           $('.locations__list').css("display", "flex")
-            .hide()
-            .delay(300)
-            .stop(true)
-            .fadeIn();
-           $('.quote--menu').fadeOut(0);
-        }
-
         var form = $('#quotes');
 
         $("#quotes").steps({
@@ -237,7 +282,7 @@ var myModule = (function (){
             transitionEffect: "fade",
             labels: {
                 next: 'Continue',
-                finish: 'send'
+                finish: 'ok'
             },
             onStepChanging: function(event, currentIndex, newIndex) {
                 if(!form.valid()) {return;} 
@@ -252,6 +297,21 @@ var myModule = (function (){
                         $('.actions ul[role] li:nth-child(2) a').addClass('black-button');
                         break;
                     case 3:
+                        $('#datepickerPickupLabel').on('click',  function() {
+                            var dataPicker = $('#datepickerPickup').datepicker().data('datepicker');
+                            dataPicker.show();
+                        });
+
+                        $('#datepickerDeliveryLabel').on('click',  function() {
+                            var dataPicker = $('#datepickerDelivery').datepicker().data('datepicker');
+                            dataPicker.show();
+                        });
+
+                        $('#datepickerLabel').on('click',  function() {
+                            var dataPicker = $('#datepicker').datepicker().data('datepicker');
+                            dataPicker.show();
+                        });
+        
                         $('#quotes').css('background-image', 'url(./img/bg-quote-4.jpg)');
                         $('.actions ul[role] li:nth-child(2) a').addClass('black-button');
                         break;
@@ -266,16 +326,28 @@ var myModule = (function (){
                 form.validate().settings.ignore = ":disabled,:hidden";
                 return form.valid();
             },
-            onFinishing: function (event, currentIndex)
-            {
+            onFinishing: function (event, currentIndex) {
                 form.validate().settings.ignore = ":disabled";
                 return form.valid();
+            },
+            onFinished: function (event, currentIndex) {
+                form.submit();
             }
         });
 
         $('#datepicker').datepicker();
         $('#datepickerPickup').datepicker();
         $('#datepickerDelivery').datepicker();
+
+        // fancybox popup about-us
+
+        $('.content').fancybox();
+        $(document).on('click', '#your-button', function() {$.fancybox.close(); parent.$.fancybox.close();});
+        $('.link').click(function(){
+            window.location.href = 'http://chp.tbe.taleo.net/chp01/ats/careers/jobSearch.jsp?org=MULLEN&cws=1';
+            $.fancybox.close();
+            parent.$.fancybox.close();
+        });
 
         // parallax 
         $(window).stellar();
@@ -334,6 +406,7 @@ var myModule = (function (){
         }
     };
 
+
     var checkPosition = function(movingPreview, longDistance, speciality) {
         if($(this).scrollTop() >= movingPreview) {
             $('.side-menu__list li:nth-child(1) a').addClass('current');
@@ -363,3 +436,4 @@ var myModule = (function (){
 
 })();
 myModule.init();
+

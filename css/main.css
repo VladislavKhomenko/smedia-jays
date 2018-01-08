@@ -651,7 +651,7 @@ section .form-control:focus {
     color: #ffffff;
     font-size: 24px;
     border: 1px solid #fff;
-    padding: 26px 30px;
+    padding: 26px 62px;
     transition: all .3s ease-in-out;
 }
 
@@ -704,7 +704,7 @@ textarea.error {
     color: #000;
     font-size: 24px;
     border: 1px solid #000;
-    padding: 26px 30px;
+    padding: 26px 62px;
     transition: all .3s ease-in-out;
 }
 
@@ -815,12 +815,17 @@ textarea.error {
 }
 
 .about-us__content-item .career__content:nth-child(4) {
-    margin-bottom: 40%;
+    margin-bottom: 5%;
 }
-
+.post{
+    font-family: 'Bariol Bold';
+}
+.post a{
+    text-decoration: underline;
+}
 .table {
     margin-bottom: 100px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: transparent;
     width: 789px!important;
 }
 
@@ -851,7 +856,7 @@ textarea.error {
 }
 
 .table tbody tr:nth-child(even) {
-    background-color: rgba(221, 221, 217, 0.7);
+    background-color: transparent;
 }
 
 .side-menu {
@@ -1274,13 +1279,14 @@ textarea.error {
     padding-top: 50px;
     padding-bottom: 50px;
     display: none;
+    background-size: cover;
 }
 
 .close-form {
     position: absolute;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 40px;
     color: #000000;
     font-family: 'Bariol Bold';
     font-size: 20px;
@@ -1409,3 +1415,75 @@ tr:hover td {
 .bold{
     font-weight: 900;
 }
+/* Custom modal content styling */
+
+.modal-container {
+    max-width: 500px;
+    padding: 0;
+    margin: 20px 0;
+    border-radius: .3em;
+    box-shadow: 0 0.1em 0.4em rgba(0,0,0,.3);
+    display: none;
+    font-family: 'Bariol'!important;
+  }
+  .fancybox-close-small{
+      display: none;
+  }
+  .btn-primary{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 100% !important;
+    background-color: #292b2c !important;
+    border-color: transparent !important;
+  }
+  .modal-title {
+    font-weight: 900;
+    padding: 10px 15px;
+    font-family: 'Bariol'!important;
+    font-size: 25px;
+  }
+  
+  .modal-body {
+    max-height: calc(100vh - 230px);
+    min-height: 50px;
+    padding: 0 1.5em 1.5em 1.5em;
+    overflow-y: auto;
+  }
+  
+  .modal-footer {
+    padding: 0px !important;
+    text-align: right;
+  }
+  
+  p:first-child {
+    margin-top: 0;
+  }
+  
+  .success-popup {
+    text-align: center!important;
+    padding: 40px!important;
+    width: 450px!important;
+  }
+
+  .success-popup-wrapper {
+    padding: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border: 3px solid black;
+  }
+
+  .success-popup__title {
+    font-family: Matiz;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000;
+  }
+
+  .success-popup__content {
+    font-family: Bariol;
+    font-size: 22px;
+    font-weight: 400;
+    display: inline-block;
+  }
+

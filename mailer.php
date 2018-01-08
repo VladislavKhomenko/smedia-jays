@@ -47,7 +47,7 @@ function SendEmail($tos, $from, $subject, $message, $reply_to = null, $reply_to_
     }
     
     $response = sendThroughMailgun($smtp2apply['domain'], $smtp2apply['api_key'], $_from, $_to, $_cc, $subject, $message, $reply_to);
-    
+
     if(isset($response->id)) {
         return true;
     } else {
