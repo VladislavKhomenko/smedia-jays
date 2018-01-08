@@ -342,12 +342,13 @@ var myModule = (function (){
         // fancybox popup about-us
 
         $('.content').fancybox();
-        $(document).on('click', '#your-button', function() {$.fancybox.close();});
+        $(document).on('click', '#your-button', function() {$.fancybox.close(); parent.$.fancybox.close();});
         $('.link').click(function(){
             window.location.href = 'http://chp.tbe.taleo.net/chp01/ats/careers/jobSearch.jsp?org=MULLEN&cws=1';
             $.fancybox.close();
+            parent.$.fancybox.close();
         });
-        
+
         // parallax 
         $(window).stellar();
 
