@@ -363,7 +363,11 @@ var myModule = (function (){
 			offset: 0
         });
     }
-
+    $('#content').fancybox({
+    });
+    $(document).on('click', '.btn', function() {
+        $.fn.fancybox.close();
+    });
     // moving-preview page
 
     var onChangeSubPageTitle = function() {
