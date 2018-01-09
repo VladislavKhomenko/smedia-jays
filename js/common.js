@@ -345,7 +345,7 @@ var myModule = (function (){
 
         // fancybox popup about-us
 
-        $('modal-cont').fancybox();
+        $('.modal-content-about').fancybox();
         $(document).on('click', '#your-button', function() {$.fancybox.close(); parent.$.fancybox.close();});
         $('.link').click(function(){
             window.location.href = 'http://chp.tbe.taleo.net/chp01/ats/careers/jobSearch.jsp?org=MULLEN&cws=1';
