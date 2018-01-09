@@ -354,7 +354,10 @@ var myModule = (function (){
         });
 
         // parallax 
-        $(window).stellar();
+        $(window).stellar({
+            scrollProperty: 'transform',
+            positionProperty: 'transform',
+        });
 
         if ($('.careers').length && $('.about-us').length) {
             var careersTop = $('.careers').position().top - 500;

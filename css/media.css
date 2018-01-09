@@ -472,6 +472,9 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+    .moving-preview, .freight-preview {
+        background-repeat: initial;
+    }
     .location-name {
         background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
         background-position: 50% 0%, center, center;
