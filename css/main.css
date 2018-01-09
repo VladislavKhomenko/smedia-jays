@@ -1137,7 +1137,7 @@ textarea.error {
 /***************************** MOVING PAGE *************************/
 
 .wrapper-moving {
-    background-image: url('../img/moving-bg.jpg');
+    background-image: url('../img/moving-bg.jpg')!important;
 }
 
 .action {
