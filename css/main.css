@@ -1210,7 +1210,6 @@ textarea.error {
     background-size: cover;
     background-repeat: no-repeat;
     min-width: 100%;
-    padding-bottom: 250px;
 }
 
 .long-distance--content:nth-child(4) {
@@ -1333,6 +1332,7 @@ textarea.error {
     min-width: 100%;
     background-image: url('../img/moving-first-section.png');
     background-position-x: right!important;
+    background-repeat: no-repeat;
 }
 
 .speciality {
