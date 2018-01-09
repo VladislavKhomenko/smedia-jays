@@ -27,7 +27,7 @@ var myModule = (function (){
         $('.close-form').on('click', hideContactForm);
         $('.logo__link').on('click', function () {localStorage.clear()});
         $('#contact-form').on('submit', submitContactForm);
-        $('#quote').on('submit', submitAjaxForm);
+        $('#quotes').on('submit', submitAjaxForm);
         // quote page
         $(document).ready(onInitUi);
         $(document).on('scroll', onChangeSubPageTitle);
