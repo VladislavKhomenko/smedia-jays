@@ -293,11 +293,11 @@ var myModule = (function (){
 
                 switch(newIndex) {
                     case 1:
-                        $('#quotes').css('background-image', 'url(./img/bg-quote-2.png)');
+                        $('#quotes').css('background-image', 'url(./img/bg-quote-2.jpg)');
                         $('.actions ul[role] li:nth-child(2) a').addClass('black-button');
                         break;
                     case 2:
-                        $('#quotes').css('background-image', 'url(./img/bg-quote-3.png)');
+                        $('#quotes').css('background-image', 'url(./img/bg-quote-3.jpg)');
                         $('.actions ul[role] li:nth-child(2) a').addClass('black-button');
                         break;
                     case 3:
@@ -354,10 +354,7 @@ var myModule = (function (){
         });
 
         // parallax 
-        $(window).stellar({
-            scrollProperty: 'transform',
-            positionProperty: 'transform',
-        });
+        $(window).stellar();
 
         if ($('.careers').length && $('.about-us').length) {
             var careersTop = $('.careers').position().top - 500;

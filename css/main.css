@@ -259,7 +259,7 @@ body, html {
     left: 0;
     min-width: 100%;
     min-height: 100%;
-    background-image: url('../img/bg-menu.png');
+    background-image: url('../img/bg-menu.jpg');
     display: flex;
     align-items: center;
     transition: all 1s ease-in-out;
@@ -480,7 +480,7 @@ body, html {
     justify-content: space-around;
     position: relative;
     overflow: hidden;
-    background-image: url('../img/bg-quote-1.png');
+    background-image: url('../img/bg-quote-1.jpg');
     background-size: cover;
     background-position: center center;
     transition: all .5s ease-in-out;
@@ -804,7 +804,7 @@ textarea.error {
 
 .careers {
     min-width: 100%;
-    background-image: url('../img/bg-careers.png');
+    background-image: url('../img/bg-careers.jpg');
     padding: 150px 0;
 }
 
@@ -989,7 +989,7 @@ textarea.error {
 
 .location-name {
     min-height: 100%;
-    background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
+    background-image: url(../img/bg-title-location.png), url(../img/bg-location.jpg);
     background-position: 0% 0%, center, center;
     background-size: 100% auto, cover;
     background-repeat: no-repeat;
@@ -1006,7 +1006,7 @@ textarea.error {
 }
 
 .location-info {
-    background-image: url('../img/bg-menu.png');
+    background-image: url('../img/bg-menu.jpg');
     background-size: cover;
     background-position: center center;
     padding: 5% 0;
@@ -1092,7 +1092,7 @@ textarea.error {
 }
 
 .faq{
-    background-image: url('../img/bg-menu.png');
+    background-image: url('../img/bg-menu.jpg');
     background-size: cover;
     background-position: center center;
     color: #000000;
@@ -1206,7 +1206,7 @@ textarea.error {
 }
 
 .long-distance {
-    background-image: url('../img/bg-quote-1.png');
+    background-image: url('../img/bg-quote-1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-width: 100%;
@@ -1312,7 +1312,7 @@ textarea.error {
 }
 
 .menu.active-form-bg {
-    background-image: url('../img/contact-form--mobile.png');
+    background-image: url('../img/contact-form--mobile.jpg');
     background-size: cover;
     overflow: auto;
 }
@@ -1330,14 +1330,14 @@ textarea.error {
 
 .moving-preview, .freight-preview {
     min-width: 100%;
-    background-image: url('../img/moving-first-section.png');
+    background-image: url('../img/moving-first-section.jpg');
     background-position-x: right!important;
     background-repeat: no-repeat;
 }
 
 .speciality {
     min-width: 100%;
-    background-image: url('../img/moving-third-section.png');
+    background-image: url('../img/moving-third-section.jpg');
     background-repeat: no-repeat;
     background-position-x: right!important;
 }
