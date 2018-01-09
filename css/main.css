@@ -1211,9 +1211,7 @@ textarea.error {
     background-image: url('../img/bg-quote-1.png');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100%;
     min-width: 100%;
-    padding-top: 80px;
     padding-bottom: 250px;
 }
 
@@ -1335,9 +1333,7 @@ textarea.error {
 
 .moving-preview, .freight-preview {
     min-width: 100%;
-    min-height: 100%;
     background-image: url('../img/moving-first-section.png');
-    background-repeat: no-repeat;
     background-position-x: right!important;
 }
 

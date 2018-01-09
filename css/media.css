@@ -654,17 +654,14 @@
         overflow-y: scroll;    
     }
     .long-distance{
-        padding-bottom: 100px;
-        min-height: 120%;
+        padding-bottom: 50px;
         background-size: initial;
         background-position: 0px !important;
     }
     .moving-preview, .freght-preview {
-        min-height: 165%;
         background-position: 0px !important;
     }
     .speciality {
-        min-height: 108%;
         background-size: initial;
         background-position: 0px !important;
     }
