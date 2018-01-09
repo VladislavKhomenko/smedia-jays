@@ -665,12 +665,6 @@
         background-size: initial;
         background-position: 0px !important;
     }
-    .careers {
-        min-height: 200%;
-    }
-    .about-us {
-        min-height: 410%;
-    }
     .quote__about-us{
         margin-top: 50px;
     }

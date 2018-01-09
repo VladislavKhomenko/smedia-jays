@@ -759,7 +759,6 @@ textarea.error {
 }
 
 .about-us {
-    min-height: 100%;
     min-width: 100%;
     background-image: url('../img/bg-about-us.jpg');
 }
@@ -804,7 +803,6 @@ textarea.error {
 }
 
 .careers {
-    min-height: 100%;
     min-width: 100%;
     background-image: url('../img/bg-careers.png');
     padding: 150px 0;
