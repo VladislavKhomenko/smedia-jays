@@ -1005,7 +1005,7 @@ textarea.error {
 
 .location-name {
     min-height: 100%;
-    background-image: url(../img/bg-title-location.png), url(../img/bg-location.jpg);
+    background-image: url(../img/bg-title-location.png), url(../img/bg-quote-1.jpg);
     background-position: 0% 0%, center, center;
     background-size: 100% auto, cover;
     background-repeat: no-repeat;

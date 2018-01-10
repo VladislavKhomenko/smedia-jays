@@ -424,7 +424,7 @@
         padding-bottom: 50px;
     }
     .location-name {
-        background-image: url(../img/bg-title-location.png), url(../img/bg-location.jpg);
+        background-image: url(../img/bg-title-location.png), url(../img/bg-quote-1.jpg);
         background-position: 50% 0%, center, center;
         background-size: 110%, cover;
         background-repeat: no-repeat;
@@ -482,7 +482,7 @@
         background-repeat: initial;
     }
     .location-name {
-        background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
+        background-image: url(../img/bg-title-location.png), url(../img/bg-quote-1.jpg);
         background-position: 50% 0%, center, center;
         background-size: 155%, cover;
         background-repeat: no-repeat;
