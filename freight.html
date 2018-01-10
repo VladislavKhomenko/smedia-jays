@@ -42,8 +42,16 @@
                         <span class="logo__action">menu</span>
                     </div>
                     <ul class="socials">
-                        <li class="socials__item"><a href="https://www.facebook.com/JaysTransportationGroup" target="_blank" class="socials__link"><i class="fa fa-facebook-square"></i></a></li>
-                        <li class="socials__item"><a href="https://plus.google.com/+JaysMovingStorageLtdRegina" target="_blank" class="socials__link"><i class="fa fa-google-plus-square"></i></a></li>
+                        <li class="socials__item">
+                            <a href="https://www.facebook.com/JaysTransportationGroup" target="_blank" class="socials__link">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li class="socials__item">
+                            <a href="https://plus.google.com/+JaysMovingStorageLtdRegina" target="_blank" class="socials__link">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -53,6 +61,21 @@
                     <label class="first-quote__label">Hi! What's your name?</label>
                     <input type="text" class="form-control" name="firstName-freight" placeholder="First name" required>
                     <input type="text" class="form-control" name="lastName-freight" placeholder="Laste name" required>
+                </div>
+                <div class="form-group moving-from">
+                    <label class="first-quote__label">Closest Jay's location</label>
+                    <select type="text" class="form-control" name="cityFrom-moving" required>
+                        <option value="" style="display:none">Locations</option>
+                        <option value="Battleford">Battleford</option>
+                        <option value="Calgary">Calgary</option>
+                        <option value="Regina">Regina</option>
+                        <option value="Saskatoon">Saskatoon</option>
+                        <option value="Yorkton">Yorkton</option>
+                        <option value="Swift Current">Swift Current</option>
+                        <option value="Moose Jaw">Moose Jaw</option>
+                        <option value="Prince Albert">Prince Albert</option>
+                        <option value="Estevan">Estevan</option>
+                    </select>
                 </div>
                 <div class="form-group">
                     <label class="first-quote__label">Company name?</label>
@@ -103,14 +126,14 @@
             <section class="fourth-quote">
                 <span class="second-quote__description">Pickup date</span>
                 <div class="form-group group-data">
-                    <input type="text" class="form-control control-data" id="datepickerPickup" name="pickupDate-freight" placeholder="MM/DD/YY" required
-                        data-language='en' data-datapicker="true">
+                    <input type="text" class="form-control control-data" id="datepickerPickup" name="pickupDate-freight" placeholder="MM/DD/YY"
+                        required data-language='en' data-datapicker="true">
                     <i class="fa fa-calendar" id="datepickerPickupLabel" aria-hidden="true"></i>
                 </div>
                 <span class="second-quote__description">Delivery date</span>
                 <div class="form-group group-data">
-                    <input type="text" class="form-control control-data" id="datepickerDelivery" name="deliveryDate-freight" placeholder="MM/DD/YY" required
-                        data-language='en' data-datapicker="true">
+                    <input type="text" class="form-control control-data" id="datepickerDelivery" name="deliveryDate-freight" placeholder="MM/DD/YY"
+                        required data-language='en' data-datapicker="true">
                     <i class="fa fa-calendar" id="datepickerDeliveryLabel" aria-hidden="true"></i>
                 </div>
             </section>

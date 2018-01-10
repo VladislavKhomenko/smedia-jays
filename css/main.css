@@ -259,7 +259,7 @@ body, html {
     left: 0;
     min-width: 100%;
     min-height: 100%;
-    background-image: url('../img/bg-menu.jpg');
+    background-image: url('../img/bg-menu.png');
     display: flex;
     align-items: center;
     transition: all 1s ease-in-out;
@@ -604,7 +604,6 @@ body, html {
     text-transform: uppercase;
     margin-bottom: 50px;
     text-align: center;
-    padding-top: 30px;
     display: none;
 }
 
@@ -715,22 +714,6 @@ textarea.error {
     text-decoration: none;
 }
 
-.actions ul[role] li:nth-child(3) a.black-button {
-    font-family: 'Matiz';
-    text-transform: uppercase;
-    color: #000;
-    font-size: 24px;
-    border: 1px solid #000;
-    padding: 26px 62px;
-    transition: all .3s ease-in-out;
-}
-
-.actions ul[role] li:nth-child(3) a.black-button:hover, .actions ul[role] li:nth-child(3) a.black-button:focus {
-    background-color: rgba(0, 0, 0, 0.15);
-    color: #000;
-    text-decoration: none;
-}
-
 .group-data {
     position: relative;
 }
@@ -775,6 +758,7 @@ textarea.error {
 }
 
 .about-us {
+    min-height: 100%;
     min-width: 100%;
     background-image: url('../img/bg-about-us.jpg');
 }
@@ -819,8 +803,9 @@ textarea.error {
 }
 
 .careers {
+    min-height: 100%;
     min-width: 100%;
-    background-image: url('../img/bg-careers.jpg');
+    background-image: url('../img/bg-careers.png');
     padding: 150px 0;
 }
 
@@ -1005,7 +990,7 @@ textarea.error {
 
 .location-name {
     min-height: 100%;
-    background-image: url(../img/bg-title-location.png), url(../img/bg-quote-1.jpg);
+    background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
     background-position: 0% 0%, center, center;
     background-size: 100% auto, cover;
     background-repeat: no-repeat;
@@ -1022,7 +1007,7 @@ textarea.error {
 }
 
 .location-info {
-    background-image: url('../img/bg-menu.jpg');
+    background-image: url('../img/bg-menu.png');
     background-size: cover;
     background-position: center center;
     padding: 5% 0;
@@ -1108,7 +1093,7 @@ textarea.error {
 }
 
 .faq{
-    background-image: url('../img/bg-menu.jpg');
+    background-image: url('../img/bg-menu.png');
     background-size: cover;
     background-position: center center;
     color: #000000;
@@ -1153,7 +1138,7 @@ textarea.error {
 /***************************** MOVING PAGE *************************/
 
 .wrapper-moving {
-    background-image: url('../img/moving-bg.jpg')!important;
+    background-image: url('../img/moving-bg.jpg');
 }
 
 .action {
@@ -1222,10 +1207,13 @@ textarea.error {
 }
 
 .long-distance {
-    background-image: url('../img/bg-quote-1.jpg');
+    background-image: url('../img/bg-quote-1.png');
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100%;
     min-width: 100%;
+    padding-top: 80px;
+    padding-bottom: 250px;
 }
 
 .long-distance--content:nth-child(4) {
@@ -1328,7 +1316,7 @@ textarea.error {
 }
 
 .menu.active-form-bg {
-    background-image: url('../img/contact-form--mobile.jpg');
+    background-image: url('../img/contact-form--mobile.png');
     background-size: cover;
     overflow: auto;
 }
@@ -1346,14 +1334,16 @@ textarea.error {
 
 .moving-preview, .freight-preview {
     min-width: 100%;
-    background-image: url('../img/moving-first-section.jpg');
-    background-position-x: right!important;
+    min-height: 100%;
+    background-image: url('../img/moving-first-section.png');
     background-repeat: no-repeat;
+    background-position-x: right!important;
 }
 
 .speciality {
     min-width: 100%;
-    background-image: url('../img/moving-third-section.jpg');
+    min-height: 100%;
+    background-image: url('../img/moving-third-section.png');
     background-repeat: no-repeat;
     background-position-x: right!important;
 }
@@ -1497,6 +1487,8 @@ tr:hover td {
     display: inline-block;
   }
 
-.success-popup .fancybox-close-small {
-    display: block!important;
+  select.form-control:not([size]):not([multiple]) {
+    border: 2px solid rgba(2, 2, 2, 0.15);
+    background-color: #eeeeee;
+    margin-bottom: 20px;
 }
