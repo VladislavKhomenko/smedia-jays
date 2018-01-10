@@ -101,6 +101,11 @@ var myModule = (function (){
             .fadeIn();
         $('.quote--menu').fadeOut(0);
         $(window).scrollTop(0);
+
+        if ($(window).width() < 768) {
+            $('.menu__list').fadeOut(0);
+            $('.back-menu').fadeIn();
+        }
     };
 
     var onGoToMovingSection = function() {
