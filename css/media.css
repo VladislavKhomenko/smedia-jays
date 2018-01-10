@@ -659,7 +659,6 @@
         background-size: cover;
         background-position-y: 0px;
         width: 100%;
-        overflow-y: scroll;    
     }
     .long-distance{
         padding-bottom: 50px;
