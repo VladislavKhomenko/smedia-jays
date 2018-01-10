@@ -21,7 +21,7 @@ var myModule = (function (){
         $('.back-menu').on('touchstart', onFadeOutSubMenu); 
         $('.menu__link--moving').on('mouseenter touchstart', showFormPreviewMoving);
         $('.menu__link--moving').on('mouseleave', hideFormPreviewMoving);
-        $('.menu__link--freight').on('mouseenter touchstart', showFormPreviewFreight);
+        /*$('.menu__link--freight').on('mouseenter touchstart', showFormPreviewFreight);*/
         $('.menu__link--freight').on('mouseleave', hideFormPreviewFreight);
         $('.menu__link--contact').on('click', showContactForm);
         $('.close-form').on('click', hideContactForm);
@@ -181,20 +181,6 @@ var myModule = (function (){
         $('.quote--menu--moving').stop(true).fadeOut(0);
     };
 
-    var showFormPreviewFreight = function() {
-        $('.contact-form').removeClass('active-form');
-        $('.quote--menu').stop(true).fadeOut(0);
-        $('.quote--menu--freight').css("display", "flex")
-        .hide()
-        .delay(200)
-        .stop(true)
-        .fadeIn();
-        
-        if ($(window).width() < 767) {
-            $('.menu__list').fadeOut(0);
-            $('.back-menu').fadeIn();
-        }
-    };
     
     var hideFormPreviewFreight = function () {
         $('.quote--menu').stop(true).fadeIn();
