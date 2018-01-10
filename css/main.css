@@ -715,6 +715,22 @@ textarea.error {
     text-decoration: none;
 }
 
+.actions ul[role] li:nth-child(3) a.black-button {
+    font-family: 'Matiz';
+    text-transform: uppercase;
+    color: #000;
+    font-size: 24px;
+    border: 1px solid #000;
+    padding: 26px 62px;
+    transition: all .3s ease-in-out;
+}
+
+.actions ul[role] li:nth-child(3) a.black-button:hover, .actions ul[role] li:nth-child(3) a.black-button:focus {
+    background-color: rgba(0, 0, 0, 0.15);
+    color: #000;
+    text-decoration: none;
+}
+
 .group-data {
     position: relative;
 }

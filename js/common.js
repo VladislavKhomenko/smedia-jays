@@ -320,10 +320,11 @@ var myModule = (function (){
                         $('.actions ul[role] li:nth-child(2) a').addClass('black-button');
                         break;
                     case 4:
-                        $('#quotes').css('background-image', 'url(./img/bg-quote-1.png)');
+                        $('#quotes').css('background-image', 'url(./img/bg-quote-2.jpg)');
+                        $('.actions ul[role] li:nth-child(3) a').addClass('black-button');
                         break;
                     default: 
-                        $('#quotes').css('background-image', 'url(./img/bg-quote-1.png)');
+                        $('#quotes').css('background-image', 'url(./img/bg-quote-1.jpg)');
                         $('.actions ul[role] li:nth-child(2) a').removeClass('black-button');
                 }
 
