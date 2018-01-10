@@ -441,6 +441,12 @@
     }
 }
 @media only screen and (max-width: 650px) {
+    .wrapper-quote {
+        background-image: none!important;
+    }
+    .success-popup {
+        width: initial!important;
+    }
     .table {
         width: auto!important;
         margin: 0 10px;
