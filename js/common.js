@@ -345,6 +345,16 @@ var myModule = (function (){
             parent.$.fancybox.close();
         });
 
+        // Listnav
+
+        $('#locationsdivList1172').listnav({ 
+            includeNums: false, 
+            includeAll: true, 
+            showCounts: false,
+            initLetter: 'a', 
+            noMatchText: 'There are no matching entries.' 
+        });
+        
         // parallax 
         $(window).stellar();
 

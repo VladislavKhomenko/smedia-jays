@@ -841,7 +841,7 @@ textarea.error {
 .table {
     margin-bottom: 100px;
     background-color: transparent;
-    width: 789px!important;
+    width: 600px!important;
 }
 
 .table thead th {
@@ -1510,4 +1510,44 @@ select.form-control:not([size]):not([multiple]) {
     justify-content: space-between;
     flex-wrap: wrap;
     flex-basis: 50%;
+}
+.table tbody tr:nth-child(even) {
+    background-color: rgba(221, 221, 217, 0.7);
+}
+.locations .item:nth-child(even){
+    background-color: rgba(242, 242, 228, 0.7);
+}
+.table {
+    margin-bottom: 100px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 'Bariol';
+}
+.item .location{
+    width: 100%;
+}
+.item .delivery{
+    width: 100%;
+    text-align: right;
+}
+/* CSS List nav*/
+
+.listNav { margin:0 0 10px; }
+.ln-letters { overflow:hidden; }
+.ln-letters a { font-size: 14px; font-family: 'Bariol'; display:block; float:left; padding:2px 5px; border-right:none; text-decoration:none; }
+.ln-letters a.ln-last {  }
+.ln-letters a:hover,
+.ln-letters a.ln-selected { background-color:#336699; color: white; text-decoration: none; }
+.ln-letters a.ln-disabled { color:#ccc; }
+.ln-letter-count { text-align:center; font-size:0.8em; line-height:1; margin-bottom:3px; color:#336699; }
+#locationsdivList1172-nav{
+    margin-bottom: 30px;
+    font-family: 'Bariol';
+}
+#locationsdivList1172{
+    margin-bottom: 80px;
 }
