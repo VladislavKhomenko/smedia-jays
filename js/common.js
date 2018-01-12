@@ -346,7 +346,6 @@ var myModule = (function (){
         });
 
         // Listnav
-
         $('#locationsdivList1172').listnav({ 
             includeNums: false, 
             includeAll: true, 
@@ -354,7 +353,7 @@ var myModule = (function (){
             initLetter: 'a', 
             noMatchText: 'There are no matching entries.' 
         });
-        
+
         // parallax 
         $(window).stellar();
 
