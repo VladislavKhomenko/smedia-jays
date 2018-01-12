@@ -1505,3 +1505,9 @@ select.form-control:not([size]):not([multiple]) {
     background-color: #eeeeee;
     margin-bottom: 20px;
 }
+.content-freight{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-basis: 50%;
+}
