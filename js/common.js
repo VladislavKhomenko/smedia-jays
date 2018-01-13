@@ -339,11 +339,14 @@ var myModule = (function (){
 
         $('.modal-content-about').fancybox();
         $(document).on('click', '#your-button', function() {$.fancybox.close(); parent.$.fancybox.close();});
-        $('.link').click(function(){
-            window.location.href = 'http://chp.tbe.taleo.net/chp01/ats/careers/jobSearch.jsp?org=MULLEN&cws=1';
+        $('.link').click(function(event){
+            event.preventDefault();
+            window.open('http://chp.tbe.taleo.net/chp01/ats/careers/jobSearch.jsp?org=MULLEN&cws=1');
             $.fancybox.close();
             parent.$.fancybox.close();
         });
+
+            
 
         // Listnav
         $('#locationsdivList1172').listnav({ 
