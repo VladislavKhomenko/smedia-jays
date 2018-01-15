@@ -28,7 +28,6 @@
         font-size: 19px;
     }
     .logo{
-        margin-left: 55px;
     }
     .side-menu__item{
         margin-bottom: 5px;
@@ -439,6 +438,16 @@
     .col-inset-moving {
         padding: 0 0 0 40px !important;
     }
+    .careers_sch{
+        padding-top: 150px;
+    }
+    .quote--menu--moving{
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .link-moving{
+        display: none;
+    }
 }
 @media only screen and (max-width: 650px) {
     .wrapper-quote {
@@ -677,6 +686,25 @@
     }
     .active-freight-bg .container--menu {
         width: 90%;
+    }
+    .logo{
+        position: relative;
+        left:0;
+    }
+    .header-wrapper{
+        position: fixed;
+        background-image: url(../img/bg-menu.jpg);
+        width:100%;
+        z-index: 99;
+    }
+    .container--logo--about{
+        margin-bottom: 10px;
+    }
+    .about-us-row{
+        padding-top: 150px;
+    }
+    .link-moving{
+        display: none;
     }
 }
 

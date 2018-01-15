@@ -43,6 +43,8 @@ body, html {
     z-index: 99;
     background-position-y: -129%;
     transition: all .5s ease-in-out;
+    position: fixed;
+    left: 38px;
 }
 
 .row--logo {
@@ -56,7 +58,7 @@ body, html {
 }
 
 .nav-up {
-    top: -200px;
+    top: 0px;
 }
 
 .logo__link {
@@ -130,6 +132,8 @@ body, html {
 .socials {
     display: flex;
     margin-top: 20px;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 .socials__link {
@@ -330,6 +334,23 @@ body, html {
 
 .menu__item--locations {
     cursor: pointer;
+}
+.link-moving{
+    border: none;
+    font-family: 'Bariol';
+    color: #000;
+    padding: 0;
+    font-size: 20px;
+}
+.link-moving:hover{
+    text-decoration: underline;
+    background-color: transparent;
+    color: #000;
+}
+.link-moving:focus{
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
 }
 
 .locations__list.row {
@@ -821,7 +842,6 @@ textarea.error {
 .careers {
     min-width: 100%;
     background-image: url('../img/bg-careers.jpg');
-    padding: 150px 0;
 }
 
 
@@ -876,7 +896,7 @@ textarea.error {
 
 .side-menu {
     position: fixed;
-    top: 31%;
+    top: 50%;
     left: -10px;   
 }
 
@@ -970,7 +990,7 @@ textarea.error {
 .side-menu__list {
     position: absolute;
     left: 70px;
-    bottom: -130px;
+    bottom: -85px;
     display: none;
 }
 
@@ -1093,7 +1113,7 @@ textarea.error {
 }
 .side-menu__title--black{
     color: #000;
-    left: 16px;
+    left: 6px;
     top: -48px;
 }
 .color{
@@ -1261,10 +1281,18 @@ textarea.error {
     display: none;
 }
 
-.quote--menu--freight, .quote--menu--moving  {
+.quote--menu--freight  {
     flex: 1;
     justify-content: space-between;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 41px;
+}
+.quote--menu--moving{
+    flex: 1;
+    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     position: relative;
     top: 41px;
