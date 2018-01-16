@@ -27,8 +27,6 @@
     .location-info__title{
         font-size: 19px;
     }
-    .logo{
-    }
     .side-menu__item{
         margin-bottom: 5px;
     }
@@ -311,6 +309,18 @@
     }
     .logo{
         margin-left: 0;
+        position: static;
+    }
+    .header-wrapper {
+        height: 150px;
+        background-image: url(../img/bg-menu.jpg);
+        position: fixed;
+        top: 0;
+        min-width: 100%;
+        z-index: 10;
+    }
+    .about-us-row {
+        padding-top: 150px;
     }
     .quote-location{
         margin-top: 40px;
@@ -439,7 +449,7 @@
         padding: 0 0 0 40px !important;
     }
     .careers_sch{
-        padding-top: 150px;
+        padding-top: 200px;
     }
     .quote--menu--moving{
         justify-content: space-between;

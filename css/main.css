@@ -44,7 +44,7 @@ body, html {
     background-position-y: -129%;
     transition: all .5s ease-in-out;
     position: fixed;
-    left: 38px;
+    left: 80px;
 }
 
 .row--logo {
@@ -358,7 +358,6 @@ body, html {
     flex: 1;
     align-self: center;
     padding-left: 200px;
-    padding-bottom: 36px;
 }
 
 .locations__link {
@@ -842,6 +841,7 @@ textarea.error {
 .careers {
     min-width: 100%;
     background-image: url('../img/bg-careers.jpg');
+    min-height: 100vh;
 }
 
 
@@ -1103,7 +1103,7 @@ textarea.error {
 }
 
 .side-menu__title--locations {
-    left: 24px;
+    left: 5px;
     top: -50px;
 }
 
@@ -1292,10 +1292,10 @@ textarea.error {
 .quote--menu--moving{
     flex: 1;
     justify-content: space-around;
-    flex-direction: row;
     align-items: center;
     position: relative;
-    top: 41px;
+    flex-direction: column;
+    top: 15px;
 }
 
 .container--form {
