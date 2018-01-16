@@ -27,6 +27,7 @@
     <script src="./libs/datepicker/datepicker.en.js"></script>
     <script src="https://use.fontawesome.com/a6846a2378.js"></script>
     <script src="./libs/parallax/jquery.stellar.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
 <body>
@@ -325,7 +326,7 @@
                     <a href="moving-preview.html#long-distance" class="quote__link link-moving">LONG DISTANCE MOVING</a>
                     <a href="moving-preview.html#speciality" class="quote__link link-moving">SPECIALTY MOVIN</a>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" action="mail-contact.php">
                     <span class="close-form">x close</span>
                     <a href="#" class="menu__link--contact--mobile">contact</a>
                     <div class="contact-form__basic">
@@ -347,6 +348,7 @@
                             <label class="first-quote__label">Message</label>
                             <textarea class="form-control" name="message" rows="8" cols="5"></textarea>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6LeT5kAUAAAAAEmgftq-9jNapHGstJvrpp1OJY0_"></div>
                         <button class="submit-contact-form" type="submit">submit</button>
                     </div>
                 </form>

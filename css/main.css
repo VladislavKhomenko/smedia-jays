@@ -1344,6 +1344,7 @@ textarea.error {
     border: 1px solid #000;
     padding: 22px 45px;
     transition: all .3s ease-in-out;
+    margin-top: 10px;
 }
 
 .contact-form__secondary textarea {
