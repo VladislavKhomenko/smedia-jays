@@ -1,20 +1,23 @@
 @font-face {
   font-family: 'Matiz';
-  src: url("../fonts/matiz/Matiz.ttf");
+  src: url('../fonts/matiz/Matiz-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/matiz/Matiz.ttf') format('truetype');
   font-weight: normal;
   font-style: normal; 
 }
 
 @font-face {
   font-family: 'Bariol';
-  src: url("../fonts/BariolCompleteWebfont/bariol_regular-webfont.ttf");
+  src: url("../fonts/BariolCompleteWebfont/bariol_regular-webfont.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/BariolCompleteWebfont/bariol_regular-webfont.ttf") format('truetype');
   font-weight: normal;
   font-style: normal; 
 }
 
 @font-face {
   font-family: 'Bariol Bold';
-  src: url("../fonts/BariolCompleteWebfont/bariol_bold-webfont.ttf");
+  src: url("../fonts/BariolCompleteWebfont/bariol_bold-webfont.eot?#iefix") format('embedded-opentype'),
+       url("../fonts/BariolCompleteWebfont/bariol_bold-webfont.ttf") format('truetype');
   font-weight: normal;
   font-style: normal; 
 }

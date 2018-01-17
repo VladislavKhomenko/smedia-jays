@@ -143,9 +143,6 @@
     .col-inset-mov{
         padding: 61px 0 0 150px !important;
     }
-    .main-title  .main-title__text{
-        top: 17px;
-    }
     .main-title {
         flex: 1;
     }
