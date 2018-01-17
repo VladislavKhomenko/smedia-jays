@@ -48,7 +48,7 @@
         top: 98px;
     }
     .menu__list{
-        margin-left: 70px;
+        margin-left: 85px;
     }
     .locations__link{
         font-family: 'Bariol';
@@ -838,6 +838,12 @@
         height: auto;
         z-index: -100;
         transform: translate(-50%, -50%);
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    .menu__list{
+        margin-left: 85px;
     }
 }
 
