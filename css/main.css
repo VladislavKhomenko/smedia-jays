@@ -192,7 +192,7 @@ body, html {
 }
 
 .main-title {
-    flex: 1;
+    min-height: 80vh;
 }
 
 .footer-mobile .quote__link {
@@ -249,8 +249,10 @@ body, html {
     justify-content: center;
     flex-direction: column;
     display: flex;
-    position: relative;
-    top: 50px;
+    position: absolute!important;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .menu__list {
@@ -267,8 +269,6 @@ body, html {
     min-width: 100%;
     min-height: 100%;
     background-image: url('../img/bg-menu.jpg');
-    display: flex;
-    align-items: center;
     transition: all 1s ease-in-out;
     z-index: 9;
 }
@@ -499,16 +499,16 @@ body, html {
 
 #quotes {
     min-width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     position: relative;
     overflow: hidden;
+    background-position-x: 0;
+    background-position-y: 0;
     background-image: url('../img/bg-quote-1.jpg');
-    background-size: cover;
-    background-position: center center;
+    min-height: 100vh;
     transition: all .5s ease-in-out;
 }
 
@@ -1385,7 +1385,14 @@ textarea.error {
     color: #000;
 }
 
-.moving-preview, .freight-preview {
+.moving-preview {
+    min-width: 100%;
+    background-image: url('../img/moving-first-section.jpg');
+    background-position-x: right!important;
+    background-repeat: no-repeat;
+}
+
+.freight-preview {
     min-width: 100%;
     background-image: url('../img/moving-first-section.jpg');
     background-position-x: right!important;
@@ -1397,6 +1404,7 @@ textarea.error {
     background-image: url('../img/moving-third-section.jpg');
     background-repeat: no-repeat;
     background-position-x: right!important;
+    min-height: 100%;
 }
 
 .quote__freight .quote__link--black {

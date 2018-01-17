@@ -50,14 +50,12 @@ var myModule = (function () {
             url: $(this).attr('action'),
             data: formData
         }).done(function () {
-            $.fancybox.open(`
-                <div class="success-popup">
-                    <div class="success-popup-wrapper">
-                        <h1 class="success-popup__title">THANK YOU!</h1>
-                        <span class="success-popup__content">Your Jay's moving consultant will be in touch soon!</span>
-                    </div>
-                </div>
-            `);
+            $.fancybox.open("<div class='success-popup'> \
+                    <div class='success-popup-wrapper'> \
+                        <h1 class='success-popup__title'>THANK YOU!</h1> \
+                        <span class='success-popup__content'>Your Jay's moving consultant will be in touch soon!</span> \
+                    </div> \
+                </div>");
             setTimeout(function () {
                 $.fancybox.close();
             }, 5000);
@@ -75,14 +73,12 @@ var myModule = (function () {
             url: $(this).attr('action'),
             data: formData
         }).done(function () {
-            $.fancybox.open(`
-                <div class="success-popup">
-                    <div class="success-popup-wrapper">
-                        <h1 class="success-popup__title">THANK YOU!</h1>
-                        <span class="success-popup__content">Your Jay's moving consultant will be in touch soon!</span>
-                    </div>
-                </div>
-            `);
+            $.fancybox.open("<div class='success-popup'> \
+                <div class='success-popup-wrapper'> \
+                    <h1 class='success-popup__title'>THANK YOU!</h1> \
+                    <span class='success-popup__content'>Your Jay's moving consultant will be in touch soon!</span> \
+                </div> \
+            </div>");
             setTimeout(function () {
                 $.fancybox.close();
             }, 5000);
@@ -408,7 +404,7 @@ var myModule = (function () {
 
     var goToTheSection = function () {
         var sectionName = $(this).data('menu');
-        $.scrollTo($(`#${sectionName}`), 800, {
+        $.scrollTo($("#"+ sectionName +""), 800, {
             offset: 0
         });
     }
