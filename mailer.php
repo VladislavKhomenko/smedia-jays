@@ -115,30 +115,6 @@ function sendThroughMailgun($domain, $api_key, $from, $to, $cc, $subject, $html,
     }
 }
 
-function verifyCaptcha() {
-    $api_url            = 'https://www.google.com/recaptcha/api/siteverify';
-    $g_captcha_response = filter_input(INPUT_POST, 'g-recaptcha-response');
-    $site_secret        = '6LdTazAUAAAAAGYjhZtrOUrHzzdqkhSzpR3iVnkq';
-    
-    if(!$g_captcha_response) { return false; }
-    
-    $post_data = "secret=$site_secret&response=$g_captcha_response";
-    
-    try {
-        
-        $response = HttpPost($api_url, $post_data);
-        
-        if(!$response) { return false; }
-        
-        $resp_obj = json_decode($response);
-        
-        return $resp_obj? $resp_obj->success : false;
-        
-    } catch (Exception $ex) {
-        return false;
-    }
-}
-
 function prepareAdfXML($name, $email, $phone) {
     return '<?xml version="1.0" encoding="UTF-8"?>
     <?adf version="1.0"?>
