@@ -360,7 +360,10 @@ body, html {
     display: none;
     flex: 1;
     align-self: center;
-    padding-left: 200px;
+    margin-bottom: 0;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 .locations__link {
