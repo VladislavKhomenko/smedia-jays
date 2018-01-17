@@ -150,7 +150,7 @@ body, html {
     margin-right: 0;
 }
 
-.socials__link:hover {
+.socials__link:hover, .socials__link:focus{
     color: rgba(115, 92, 92, 1);
 }
 
