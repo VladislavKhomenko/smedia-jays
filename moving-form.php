@@ -3,9 +3,15 @@
 require_once 'mailer.php';
 require_once 'incs/atlas.php';
 require_once 'incs/maps.php';
+require_once 'incs/captcha.php';
 
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
+    
+    if(!verifyCaptcha()) {
+        die("Error: Captcha can't be verified");
+    }
+    
     $name = filter_input(INPUT_POST, "firstName-freight");
 
     $lastName = filter_input(INPUT_POST, "lastName-freight");

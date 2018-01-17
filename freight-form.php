@@ -3,9 +3,15 @@
     require_once 'mailer.php';
     require_once 'incs/atlas.php';
     require_once 'incs/maps.php';
+    require_once 'incs/captcha.php';
     
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+        if(!verifyCaptcha()) {
+            die("Error: Captcha can't be verified");
+        }
+    
         // Get the form fields and remove whitespace.
         $name = strip_tags(trim($_POST["firstName-freight"]));
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
