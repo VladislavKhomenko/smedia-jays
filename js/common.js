@@ -42,6 +42,11 @@ var myModule = (function () {
 
     var submitAjaxForm = function (e) {
         e.preventDefault();
+        
+        if(!window.captchaOK) {
+            alert('Fill in the capcha!');
+            return false;
+        }
 
         var formData = $(this).serialize();
         console.log(formData);
