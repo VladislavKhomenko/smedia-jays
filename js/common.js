@@ -35,7 +35,7 @@ var myModule = (function () {
         $('#side-menu__icon').on('click', onAnimateBurgerIcon);
         $('.side-menu__item').on('click', goToTheSection);
         // moving page
-        $('.quote--menu--freight--link').on('click', onGoToMovingSection);
+        $('.quote--menu--freight--link, .link-moving').on('click', onGoToMovingSection);
         // about us
         $('.content-link--locations').on('click', onStoreMenu);
     };
