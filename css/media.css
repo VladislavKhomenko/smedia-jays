@@ -27,9 +27,6 @@
     .location-info__title{
         font-size: 19px;
     }
-    .logo{
-        margin-left: 55px;
-    }
     .side-menu__item{
         margin-bottom: 5px;
     }
@@ -189,6 +186,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
+    .footer-mobile .copyright {
+        margin-right: 0px;
+        text-align: center;
+    }
     .location-name {
         min-height: 75%;
     }
@@ -274,11 +275,22 @@
     #video-background {
         display: none;
     }
-    .wrapper {
-        background-image: url('../img/homepage-mobile.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
+    @media (orientation: landscape) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+    }
+    @media (orientation: portrait) {
+         .wrapper {
+             background-image: url('../img/Jays_cinema_1080x1920.jpg');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position-y: 0px;
+             width: 100%;
+        }
     }
     .contact-form {
         background-image: none;
@@ -312,6 +324,18 @@
     }
     .logo{
         margin-left: 0;
+        position: static;
+    }
+    .header-wrapper {
+        height: 150px;
+        background-image: url(../img/bg-menu.jpg);
+        position: fixed;
+        top: 0;
+        min-width: 100%;
+        z-index: 10;
+    }
+    .about-us-row {
+        padding-top: 150px;
     }
     .quote-location{
         margin-top: 40px;
@@ -346,13 +370,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 0;
     }
     .customer-item {
         margin-right: 0;
-        margin-bottom: 50px;
+        margin-bottom: 35px;
     }
     .customers .customer-item:nth-child(1) {
         margin-top: 55px;
+    }
+    .customers .customer-item:nth-child(5) {
+        margin-bottom: 0;
     }
     .contacts__link {
         color: #fff;
@@ -361,8 +389,14 @@
     .socials__item {
         margin-right: 30px;
     }
+    .socials--mobile .socials__item:nth-child(2) {
+        margin-right: 0;
+    }
+    .socials__item i {
+        font-size: 28px;
+    }
     .contacts__link--privacy {
-        margin-right: 20px;
+        margin-right: 15px;
     }
     .footer-mobile .quote__link {
         font-size: 21px;
@@ -424,7 +458,7 @@
         padding-bottom: 50px;
     }
     .location-name {
-        background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
+        background-image: url(../img/bg-title-location.png), url(../img/bg-quote-1.jpg);
         background-position: 50% 0%, center, center;
         background-size: 110%, cover;
         background-repeat: no-repeat;
@@ -439,8 +473,24 @@
     .col-inset-moving {
         padding: 0 0 0 40px !important;
     }
+    .careers_sch{
+        padding-top: 200px;
+    }
+    .quote--menu--moving{
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .link-moving{
+        display: none;
+    }
 }
 @media only screen and (max-width: 650px) {
+    .wrapper-quote {
+        background-image: none!important;
+    }
+    .success-popup {
+        width: initial!important;
+    }
     .table {
         width: auto!important;
         margin: 0 10px;
@@ -448,11 +498,22 @@
     .side-menu{
         display: none;
     }
-    .wrapper {
-        background-image: url(../img/homepage-mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
+    @media (orientation: landscape) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+    }
+    @media (orientation: portrait) {
+         .wrapper {
+            background-image: url('../img/Jays_cinema_1080x1920.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
     }
     .col-inset-moving {
         padding: 0 0 0 30px !important;
@@ -462,18 +523,32 @@
     }
 }
 @media only screen and (max-width: 560px) {
-    .wrapper {
-        background-image: url(../img/homepage-mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: 0px;
-        width: 100%;
+    @media (orientation: landscape) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
+    }
+    @media (orientation: portrait) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1080x1920.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
     }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+    .moving-preview, .freight-preview {
+        background-repeat: initial;
+    }
     .location-name {
-        background-image: url(../img/bg-title-location.png), url(../img/bg-location.png);
+        background-image: url(../img/bg-title-location.png), url(../img/bg-quote-1.jpg);
         background-position: 50% 0%, center, center;
         background-size: 155%, cover;
         background-repeat: no-repeat;
@@ -540,7 +615,7 @@
     }
 
     .action__moving {
-        padding: 45px 100px;
+        padding: 20px 80px;
     }
     
     .quote {
@@ -644,41 +719,60 @@
     .col-ins{
         font-size: 22px;
     }
-    .wrapper {
-        background-image: url('../img/homepage-mobile.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: 0px;
-        width: 100%;
-        height: 100%;
-        overflow-y: scroll;    
+    @media (orientation: landscape) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
+    }
+    @media (orientation: portrait) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1080x1920.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
     }
     .long-distance{
-        padding-bottom: 100px;
-        min-height: 120%;
+        padding-bottom: 50px;
         background-size: initial;
         background-position: 0px !important;
     }
     .moving-preview, .freght-preview {
-        min-height: 165%;
         background-position: 0px !important;
     }
     .speciality {
-        min-height: 108%;
         background-size: initial;
         background-position: 0px !important;
-    }
-    .careers {
-        min-height: 200%;
-    }
-    .about-us {
-        min-height: 410%;
     }
     .quote__about-us{
         margin-top: 50px;
     }
     .active-freight-bg .container--menu {
         width: 90%;
+    }
+    .logo{
+        position: relative;
+        left:0;
+    }
+    .header-wrapper{
+        position: fixed;
+        background-image: url(../img/bg-menu.jpg);
+        width:100%;
+        z-index: 99;
+    }
+    .container--logo--about{
+        margin-bottom: 10px;
+    }
+    .about-us-row{
+        padding-top: 150px;
+    }
+    .link-moving{
+        display: none;
     }
 }
 

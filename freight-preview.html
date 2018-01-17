@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
 </head>
@@ -33,10 +34,50 @@
                         <span class="logo__action">menu</span>
                     </div>
                     <ul class="socials">
-                        <li class="socials__item"><a href="https://www.facebook.com/JaysTransportationGroup" class="socials__link"><i class="fa fa-facebook-square"></i></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-instagram"></i></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-linkedin"></i></a></li>
-                        <li class="socials__item"><a href="https://plus.google.com/+JaysMovingStorageLtdRegina" class="socials__link"><i class="fa fa-google-plus-square"></i></a></li>
+                        <li class="socials__item">
+                            <a href="#content" class="socials__link modal-content-about">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <div class="modal-container content" id="content">
+                                <div class="modal-title">Leaving Site</div>
+                                <div class="modal-body">
+                                    <p>
+                                        You are leaving the Jay's Transportation Group Ltd. website now.
+                                    </p>
+                                    <p>
+                                        Jay's Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability
+                                        or fitness for a particular purpose of any information available through these links and
+                                        disclaims any opinions expressed on such sites.
+                                    </p>
+                                    <a class="facebook" id="your-button" href="https://www.facebook.com/JaysTransportationGroup">Click Ok to Continue</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#one" target="_blank" class="socials__link modal-content-about">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <div class="modal-container content" id="one">
+                                <div class="modal-title">Leaving Site</div>
+                                <div class="modal-body">
+                                    <p>
+                                        You are leaving the Jay's Transportation Group Ltd. website now.
+                                    </p>
+                                    <p>
+                                        Jay's Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability
+                                        or fitness for a particular purpose of any information available through these links and
+                                        disclaims any opinions expressed on such sites.
+                                    </p>
+                                    <a class="plus" id="your-button" href="https://plus.google.com/+JaysMovingStorageLtdRegina">Click Ok to Continue</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -47,16 +88,52 @@
                         <p class="form-preview__content infinity-content">Got freight? Serving over 500 communities across Saskatchewan — and beyond! — Jay’s will get your
                             shipment wherever it needs to go. We pioneered same-day and overnight freight service in Saskatchewan
                             decades ago!</p>
+                        <p class="form-preview__content infinity-content content-freight">
+                            <span class="content-freight-link">Please visit our
+                                <a href="./freight-shedule.html" target="_blank" class="link-freight-location">Schedule Page
+                                    <i class="fa fa-calendar"></i>
+                                </a>
+                            </span>
+                            <span class="content-freight-link">Download our
+                                <a href="JaysFreightCreditApplication.pdf" target="_blank" class="link-freight-location">Credit Application
+                                    <i class="fa fa-pencil-square-o"></i>
+                                </a>
+                            </span>
+                        </p>
                         <h1 class="main-title__text main-title__text--quote form-preview-title title-inset">GIVE US THE GOODS</h1>
-                        <p class="form-preview__content infinity-content">Local moves are priced by the hour. Out-of-town moves are priced by weight and distance. After our
-                            free in-home visit, Jay's guarantees your long distance move estimate within 10%! Just another
-                            reason why choosing Jay's is the right move.</p>
-                        <p class="form-preview__content infinity-content">Local moves are priced by the hour. Out-of-town moves are priced by weight and distance. After our
-                            free in-home visit, Jay's guarantees your long distance move estimate within 10%! Just another
-                            reason why choosing Jay's is the right move.</p>
+                        <p class="form-preview__content infinity-content">Since 1964, Canadians have counted on Jay’s to move what 
+                            matters — on time, every time. From courier packages to truckloads and everything in between (including 
+                            warehousing and distribution support at our nine terminals throughout Saskatchewan), it’s ALL precious 
+                            cargo to us. </p>
+                        <p class="form-preview__content infinity-content">Call 1-866-890-4815 or click below to request a quote for 
+                            your courier, small/LTL or truckload shipment and let’s get this show on the road!</p>
+                        <p class="form-preview__content infinity-content content-freight">
+                            <span class="content-freight-link">Use our Fill and Print
+                                <a href="BlankFreightBOL2018.pdf" target="_blank" class="link-freight-location">Bill of Lading
+                                    <i class="fa fa-file-o"></i>
+                                </a>
+                            </span>
+                        </p>
                         <div class="quote quote__freight">
                             <a href="./freight.html" class="quote__link quote__link--black quote__link--freight">NEED A QUOTE?</a>
-                            <a href="http://jaysfreight.webmti.com/login.msw" class="quote__link quote__link--black quote__link--freight">CHECK SHIPMENT</a>
+                            <a href="#main" class="quote__link quote__link--black quote__link--freight modal-content-about">CHECK SHIPMENT</a>
+                            <div class="modal-container content" id="main">
+                                <div class="modal-title">Leaving Site</div>
+                                <div class="modal-body">
+                                    <p>
+                                        You are leaving the Jay's Transportation Group Ltd. website now.
+                                    </p>
+                                    <p>
+                                        Jay's Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability
+                                        or fitness for a particular purpose of any information available through these links
+                                        and disclaims any opinions expressed on such sites.
+                                    </p>
+                                    <a class="link" id="your-button" href="http://jaysfreight.webmti.com/login.msw">Click Ok to Continue</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -77,9 +154,6 @@
                                 <img src="./img/footer-logo-3.png" alt="customer-img">
                             </li>
                             <li class="customer-item">
-                                <img src="./img/footer-logo-4.png" alt="customer-img">
-                            </li>
-                            <li class="customer-item">
                                 <img src="./img/footer-logo-1.png" alt="customer-img">
                             </li>
                         </ul>
@@ -87,10 +161,10 @@
                     <div class="row justify-content-center">
                         <ul class="contacts">
                             <li class="contacts__item">
-                                <a href="#" class="contacts__link">Privacy policy</a>
+                                <a href="ScheduleBPrivacyPolicy.pdf" target="_blank" class="contacts__link">Privacy policy</a>
                             </li>
                             <li class="contacts__item">
-                                <a href="#" class="contacts__link">Terms & use</a>
+                                <a href="ScheduleALegalDisclaimer.pdf" target="_blank" class="contacts__link">Legal Disclaimer</a>
                             </li>
                             <li class="contacts__item">
                                 <a href="tel:1(866)995-8731" class="contacts__link">
@@ -102,8 +176,9 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="row justify-content-center">
-                        <span class="copyright">Copyright 2017 Jay's Transportation Group</span>
+                    <div class="row justify-content-center align-items-center">
+                        <span class="copyright">Copyright 2017 Jay’s Transportation Group, a subsidiary of Mullen Group Ltd.</span>
+                        <img src="./img/footer-logo-4.png" alt="customer-img">
                     </div>
                 </div>
             </div>
@@ -117,43 +192,67 @@
                             <i class="fa fa-phone" aria-hidden="true"></i> 1(866) 995-8731</a>
                         <a href="mailto:info@jaystransportationgroup.ca" class="contacts__link">
                             <i class="fa fa-envelope" aria-hidden="true"></i> info@jaystransportationgroup.ca</a>
-                        <ul class="socials socials--mobile">
+                        <ul class="socials socials--mobile justify-content-center">
                             <li class="socials__item">
-                                <a href="https://www.facebook.com/JaysTransportationGroup" class="socials__link">
+                                <a href="#content" class="socials__link modal-content-about">
                                     <i class="fa fa-facebook-square"></i>
                                 </a>
+                                <div class="modal-container content" id="content">
+                                    <div class="modal-title">Leaving Site</div>
+                                    <div class="modal-body">
+                                        <p>
+                                            You are leaving the Jay's Transportation Group Ltd. website now.
+                                        </p>
+                                        <p>
+                                            Jay's Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability
+                                            or fitness for a particular purpose of any information available through these links and
+                                            disclaims any opinions expressed on such sites.
+                                        </p>
+                                        <a class="facebook" id="your-button" href="https://www.facebook.com/JaysTransportationGroup">Click Ok to Continue</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>
+                                    </div>
+                                </div>
                             </li>
                             <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a href="#" class="socials__link">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="socials__item">
-                                <a href="https://plus.google.com/+JaysMovingStorageLtdRegina" class="socials__link">
+                                <a href="#one" target="_blank" class="socials__link modal-content-about">
                                     <i class="fa fa-google-plus-square"></i>
                                 </a>
+                                <div class="modal-container content" id="one">
+                                    <div class="modal-title">Leaving Site</div>
+                                    <div class="modal-body">
+                                        <p>
+                                            You are leaving the Jay's Transportation Group Ltd. website now.
+                                        </p>
+                                        <p>
+                                            Jay's Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability
+                                            or fitness for a particular purpose of any information available through these links and
+                                            disclaims any opinions expressed on such sites.
+                                        </p>
+                                        <a class="plus" id="your-button" href="https://plus.google.com/+JaysMovingStorageLtdRegina">Click Ok to Continue</a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
                     <div class="row justify-content-center">
-                        <a href="#" class="contacts__link contacts__link--privacy">Privacy policy</a>
-                        <a href="#" class="contacts__link">Terms & use</a>
+                        <a href="ScheduleBPrivacyPolicy.pdf" target="_blank" class="contacts__link contacts__link--privacy">Privacy policy</a>
+                        <a href="ScheduleALegalDisclaimer.pdf" target="_blank" class="contacts__link">Legal Disclaimer</a>
                     </div>
                     <div class="row justify-content-center">
-                        <span class="copyright">Copyright 2017 Jay's Transportation Group</span>
+                        <span class="copyright">Copyright 2017 Jay’s Transportation Group,<br> a subsidiary of Mullen Group Ltd.</span>
                     </div>
                     <div class="row justify-content-center">
                         <ul class="customers">
                             <li class="customer-item">
-                                <img src="./img/footer-logo-mobile-1.png" alt="customer-img">
+                                <img src="./img/footer-logo-mobile-4.png" alt="customer-img">
                             </li>
                             <li class="customer-item">
-                                <img src="./img/footer-logo-mobile-4.png" alt="customer-img">
+                                <img src="./img/footer-logo-mobile-1.png" alt="customer-img">
                             </li>
                             <li class="customer-item">
                                 <img src="./img/footer-logo-mobile-3.png" alt="customer-img">
@@ -191,6 +290,9 @@
                     </li>
                     <li class="menu__item menu__link--contact">
                         <a href="#" class="menu__link">contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./Careers_Scholarships.html" class="menu__link">Careers</a>
                     </li>
                 </ul>
                 <ul class="locations__list row">
@@ -256,11 +358,12 @@
                     </div>
                 </div>
                 <div class="quote quote--menu--moving">
-                    <h1 class="main-title__text main-title__text--quote main-title-menu">let's get a move on!</h1>
                     <a href="moving-preview.html#moving-costs" class="quote--menu--freight--link">MOVING COSTS</a>
                     <a href="moving-preview.html#long-distance" class="quote--menu--freight--link">LONG DISTANCE MOVING</a>
                     <a href="moving-preview.html#speciality" class="quote--menu--freight--link">SPECIALTY MOVING</a>
-                    <a href="./moving-preview.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
+                    <a href="moving-preview.html#moving-costs" class="quote__link link-moving">MOVING COSTS</a>
+                    <a href="moving-preview.html#long-distance" class="quote__link link-moving">LONG DISTANCE MOVING</a>
+                    <a href="moving-preview.html#speciality" class="quote__link link-moving">SPECIALTY MOVIN</a>
                 </div>
                 <form class="contact-form">
                     <span class="close-form">x close</span>
@@ -297,9 +400,12 @@
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
     <script src="./libs/datepicker/datepicker.js"></script>
+    <script src="./libs/fancybox-master/jquery.fancybox.min.js"></script>
     <script src="./libs/datepicker/datepicker.en.js"></script>
     <script src="./libs/parallax/jquery.stellar.min.js"></script>
     <script src="./libs/scrollTo/scrollTo.js"></script>
+    <script src="./libs/fancybox-master/jquery.fancybox.min.js"></script>
+    <script src="./libs/jquery.listnav/jquery.listnav-2.1.js"></script>
     <script src="js/common.js"></script>
 </body>
 

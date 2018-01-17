@@ -42,10 +42,50 @@
                         <span class="logo__action">menu</span>
                     </div>
                     <ul class="socials">
-                        <li class="socials__item"><a href="https://www.facebook.com/JaysTransportationGroup" class="socials__link"><i class="fa fa-facebook-square"></i></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-instagram"></i></a></li>
-                        <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-linkedin"></i></a></li>
-                        <li class="socials__item"><a href="https://plus.google.com/+JaysMovingStorageLtdRegina" class="socials__link"><i class="fa fa-google-plus-square"></i></a></li>
+                        <li class="socials__item">
+                            <a href="#content" class="socials__link modal-content-about">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                            <div class="modal-container content" id="content">
+                                <div class="modal-title">Leaving Site</div>
+                                <div class="modal-body">
+                                    <p>
+                                        You are leaving the Jay's Transportation Group Ltd. website now.
+                                    </p>
+                                    <p>
+                                        Jay's Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability
+                                        or fitness for a particular purpose of any information available through these links and
+                                        disclaims any opinions expressed on such sites.
+                                    </p>
+                                    <a class="facebook" id="your-button" href="https://www.facebook.com/JaysTransportationGroup">Click Ok to Continue</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="socials__item">
+                            <a href="#one" target="_blank" class="socials__link modal-content-about">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                            <div class="modal-container content" id="one">
+                                <div class="modal-title">Leaving Site</div>
+                                <div class="modal-body">
+                                    <p>
+                                        You are leaving the Jay's Transportation Group Ltd. website now.
+                                    </p>
+                                    <p>
+                                        Jay's Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability
+                                        or fitness for a particular purpose of any information available through these links and
+                                        disclaims any opinions expressed on such sites.
+                                    </p>
+                                    <a class="plus" id="your-button" href="https://plus.google.com/+JaysMovingStorageLtdRegina">Click Ok to Continue</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -56,6 +96,21 @@
                     <input type="text" class="form-control" name="cityFrom-moving" placeholder="City" required>
                     <input type="text" class="form-control" name="provinceFrom-moving" placeholder="Province" required>
                 </div>
+                <!--div class="form-group moving-from">
+                    <label class="first-quote__label">Closest Jay's location</label>
+                    <select type="text" class="form-control" name="cityFrom-moving" required>
+                        <option value="" style="display:none">Locations</option>
+                        <option value="Battleford">Battleford</option>
+                        <option value="Calgary">Calgary</option>
+                        <option value="Regina">Regina</option>
+                        <option value="Saskatoon">Saskatoon</option>
+                        <option value="Yorkton">Yorkton</option>
+                        <option value="Swift Current">Swift Current</option>
+                        <option value="Moose Jaw">Moose Jaw</option>
+                        <option value="Prince Albert">Prince Albert</option>
+                        <option value="Estevan">Estevan</option>
+                    </select>
+                </div-->
                 <div class="form-group">
                     <label class="first-quote__label">Where are you moving to?</label>
                     <input type="text" class="form-control" name="cityTo-moving" placeholder="City" required>
@@ -122,9 +177,12 @@
                         <li class="menu__item menu__link--contact">
                             <a href="#" class="menu__link">contact</a>
                         </li>
+                        <li class="menu__item">
+                            <a href="./Careers_Scholarships.html" class="menu__link">Careers</a>
+                        </li>
                     </ul>
                     <ul class="locations__list row">
-
+    
                         <div class="col-md-4 col-lg-3">
                             <a href="#" class="menu__link--mobile locations__link">Locations</a>
                             <li class="locations__item">
@@ -169,16 +227,16 @@
                         <a href="./freight-preview.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
                         <div class="col-sm-12 freight--mobile">
                             <h1 class="main-title__text main-title__text--quote form-preview-title ">TO INFINITY AND BEYOND!</h1>
-                            <p class="form-preview__content infinity-content">Got freight? Serving over 500 communities across Saskatchewan — and beyond! — Jay’s will get
-                                your shipment wherever it needs to go. We pioneered same-day and overnight freight service
-                                in Saskatchewan decades ago!</p>
+                            <p class="form-preview__content infinity-content">Got freight? Serving over 500 communities across Saskatchewan — and beyond! — Jay’s will get your
+                                shipment wherever it needs to go. We pioneered same-day and overnight freight service in Saskatchewan
+                                decades ago!</p>
                             <h1 class="main-title__text main-title__text--quote form-preview-title title-inset">GIVE US THE GOODS</h1>
-                            <p class="form-preview__content infinity-content">Local moves are priced by the hour. Out-of-town moves are priced by weight and distance. After
-                                our free in-home visit, Jay's guarantees your long distance move estimate within 10%! Just
-                                another reason why choosing Jay's is the right move.</p>
-                            <p class="form-preview__content infinity-content">Local moves are priced by the hour. Out-of-town moves are priced by weight and distance. After
-                                our free in-home visit, Jay's guarantees your long distance move estimate within 10%! Just
-                                another reason why choosing Jay's is the right move.</p>
+                            <p class="form-preview__content infinity-content">Local moves are priced by the hour. Out-of-town moves are priced by weight and distance. After our
+                                free in-home visit, Jay's guarantees your long distance move estimate within 10%! Just another
+                                reason why choosing Jay's is the right move.</p>
+                            <p class="form-preview__content infinity-content">Local moves are priced by the hour. Out-of-town moves are priced by weight and distance. After our
+                                free in-home visit, Jay's guarantees your long distance move estimate within 10%! Just another
+                                reason why choosing Jay's is the right move.</p>
                             <div class="quote quote__freight">
                                 <a href="./freight.html" class="quote__link quote__link--black quote__link--freight">NEED A QUOTE?</a>
                                 <a href="./freight.html" class="quote__link quote__link--black quote__link--freight">CHECK SHIPMENT</a>
@@ -186,11 +244,12 @@
                         </div>
                     </div>
                     <div class="quote quote--menu--moving">
-                        <h1 class="main-title__text main-title__text--quote main-title-menu">let's get a move on!</h1>
                         <a href="moving-preview.html#moving-costs" class="quote--menu--freight--link">MOVING COSTS</a>
                         <a href="moving-preview.html#long-distance" class="quote--menu--freight--link">LONG DISTANCE MOVING</a>
                         <a href="moving-preview.html#speciality" class="quote--menu--freight--link">SPECIALTY MOVING</a>
-                        <a href="./moving-preview.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
+                        <a href="moving-preview.html#moving-costs" class="quote__link link-moving">MOVING COSTS</a>
+                        <a href="moving-preview.html#long-distance" class="quote__link link-moving">LONG DISTANCE MOVING</a>
+                        <a href="moving-preview.html#speciality" class="quote__link link-moving">SPECIALTY MOVIN</a>
                     </div>
                     <form class="contact-form">
                         <span class="close-form">x close</span>
@@ -223,6 +282,7 @@
                 < back</span>
         </div>
         <script src="./libs/fancybox-master/jquery.fancybox.min.js"></script>
+        <script src="./libs/jquery.listnav/jquery.listnav-2.1.js"></script>
         <script src="js/common.js"></script>
 </body>
 

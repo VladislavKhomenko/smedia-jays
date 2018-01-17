@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <script src="https://use.fontawesome.com/a6846a2378.js"></script>
@@ -33,10 +34,50 @@
                     <span class="logo__action">menu</span>
                 </div>
                 <ul class="socials">
-                    <li class="socials__item"><a href="https://www.facebook.com/JaysTransportationGroup" class="socials__link"><i class="fa fa-facebook-square"></i></a></li>
-                    <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-instagram"></i></a></li>
-                    <li class="socials__item"><a href="#" class="socials__link"><i class="fa fa-linkedin"></i></a></li>
-                    <li class="socials__item"><a href="https://plus.google.com/+JaysMovingStorageLtdRegina" class="socials__link"><i class="fa fa-google-plus-square"></i></a></li>
+                    <li class="socials__item">
+                        <a href="#content" class="socials__link modal-content-about">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                        <div class="modal-container content" id="content">
+                            <div class="modal-title">Leaving Site</div>
+                            <div class="modal-body">
+                                <p>
+                                    You are leaving the Jay's Transportation Group Ltd. website now.
+                                </p>
+                                <p>
+                                    Jay's Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability
+                                    or fitness for a particular purpose of any information available through these links and
+                                    disclaims any opinions expressed on such sites.
+                                </p>
+                                <a class="facebook" id="your-button" href="https://www.facebook.com/JaysTransportationGroup">Click Ok to Continue</a>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="socials__item">
+                        <a href="#one" target="_blank" class="socials__link modal-content-about">
+                            <i class="fa fa-google-plus-square"></i>
+                        </a>
+                        <div class="modal-container content" id="one">
+                            <div class="modal-title">Leaving Site</div>
+                            <div class="modal-body">
+                                <p>
+                                    You are leaving the Jay's Transportation Group Ltd. website now.
+                                </p>
+                                <p>
+                                    Jay's Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability
+                                    or fitness for a particular purpose of any information available through these links and
+                                    disclaims any opinions expressed on such sites.
+                                </p>
+                                <a class="plus" id="your-button" href="https://plus.google.com/+JaysMovingStorageLtdRegina">Click Ok to Continue</a>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -66,6 +107,9 @@
                     </li>
                     <li class="menu__item menu__link--contact">
                         <a href="#" class="menu__link">contact</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./Careers_Scholarships.html" class="menu__link">Careers</a>
                     </li>
                 </ul>
                 <ul class="locations__list row">
@@ -131,11 +175,12 @@
                     </div>
                 </div>
                 <div class="quote quote--menu--moving">
-                    <h1 class="main-title__text main-title__text--quote main-title-menu">let's get a move on!</h1>
                     <a href="moving-preview.html#moving-costs" class="quote--menu--freight--link">MOVING COSTS</a>
                     <a href="moving-preview.html#long-distance" class="quote--menu--freight--link">LONG DISTANCE MOVING</a>
                     <a href="moving-preview.html#speciality" class="quote--menu--freight--link">SPECIALTY MOVING</a>
-                    <a href="./moving-preview.html" class="quote__link quote__link--menu">NEED A QUOTE?</a>
+                    <a href="moving-preview.html#moving-costs" class="quote__link link-moving">MOVING COSTS</a>
+                    <a href="moving-preview.html#long-distance" class="quote__link link-moving">LONG DISTANCE MOVING</a>
+                    <a href="moving-preview.html#speciality" class="quote__link link-moving">SPECIALTY MOVIN</a>
                 </div>
                 <form class="contact-form">
                     <span class="close-form">x close</span>
@@ -168,13 +213,15 @@
             < back</span>
     </div>
     <script src="./libs/jquery/jquery.js"></script>
-    <script src="js/common.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
     <script src="./libs/datepicker/datepicker.js"></script>
+    <script src="./libs/fancybox-master/jquery.fancybox.min.js"></script>
     <script src="./libs/datepicker/datepicker.en.js"></script>
     <script src="https://use.fontawesome.com/a6846a2378.js"></script>
     <script src="./libs/parallax/jquery.stellar.min.js"></script>
+    <script src="./libs/jquery.listnav/jquery.listnav-2.1.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
