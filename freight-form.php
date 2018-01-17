@@ -1,7 +1,9 @@
 <?php
 
     require_once 'mailer.php';
-    echo $_SERVER["REQUEST_METHOD"];
+    require_once 'incs/atlas.php';
+    require_once 'incs/maps.php';
+    
     // Only process POST reqeusts.
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Get the form fields and remove whitespace.
@@ -9,7 +11,8 @@
         $name = str_replace(array("\r","\n"),array(" "," "),$name);
         $lastName = strip_tags(trim($_POST["lastName-freight"]));
         $lastName = str_replace(array("\r","\n"),array(" "," "),$lastName);
-        $company_name = filter_var(trim($_POST["companyName-freight"]), FILTER_SANITIZE_EMAIL);
+        $company_name = filter_input(INPUT_POST, "companyName-freight");
+        $account_number = filter_input(INPUT_POST, 'accountNumber-freight');
         $address = trim($_POST["address-freight"]);
         $city = trim($_POST["city-freight"]);
         $province = trim($_POST["province-freight"]);
@@ -20,7 +23,7 @@
         $province_destination  = trim($_POST["provinceDestination-freight"]);
         $zip_destination  = trim($_POST["zipDestination-freight"]);
         $phone  = trim($_POST["phone-freight"]);
-        $email  = trim($_POST["email-freight"]);
+        $email  = filter_input(INPUT_POST, "email-freight", FILTER_SANITIZE_EMAIL);
         $pickup_date  = trim($_POST["pickupDate-freight"]);
         $delivery_date  = trim($_POST["deliveryDate-freight"]);
         $freight  = trim($_POST["freight-freight"]);
@@ -44,6 +47,7 @@
         $email_content .= "Email: $email \n";
         $email_content .= "Phone: $phone \n";
         $email_content .= "Company name: $company_name \n";
+        $email_content .= "Account Number: $account_number \n";
         $email_content .= "Address: $address \n";
         $email_content .= "City: $city \n";
         $email_content .= "Province: $province \n";
@@ -65,15 +69,43 @@
         // Build the email headers.
         $email_headers = "From: $name <$email>";
 
+        $atlas_data = [
+            'Bedrooms'                          => '0',
+            'TotalWeight'                       => intval($weight),
+            'CustomerFirstName'                 => $name,
+            'CustomerLastName'                  => $lastName,
+            'CustomerHomePhone'                 => $phone,
+            'CustomerWorkPhone'                 => '',
+            'CustomerPrimaryEmail'              => $email,
+            'OriginCity'                        => $city,
+            'OriginState'                       => $province,
+            'OriginPostalCode'                  => $zip,
+            'OriginCountry'                     => 'Canada',
+            'DestinationCity'                   => $city_destination,
+            'DestinationState'                  => $province_destination,
+            'DestinationPostalCode'             => $zip_destination,
+            'DestinationCountry'                => 'Canada',
+            'RequestedLoadDate'                 => $date,
+            'CustomerComment'                   => $email_content,
+            'LeadProviderSource'                => '',
+            'ContactPreference'                 => '',
+            'LeadProviderBestTimeToCall'        => '',
+            'LeadProviderCallWork'              => ''
+        ];
+
+        $resp = submit2nearest($atlas_data);
+
+        $message = $resp?"Synced with CRM" : "Not Synced";
+
         // Send the email.
         if (SendEmail($recipient, 'offers@mail.smedia.ca', $subject, $email_content, $email, $name) === true) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            echo "Thank You! Your message has been sent. $message";
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
+            echo "Oops! Something went wrong and we couldn't send your message. $message";
         }
 
     } else {
