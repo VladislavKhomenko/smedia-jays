@@ -271,11 +271,22 @@
     #video-background {
         display: none;
     }
-    .wrapper {
-        background-image: url('../img/homepage-mobile.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
+    @media (orientation: landscape) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+    }
+    @media (orientation: portrait) {
+         .wrapper {
+             background-image: url('../img/Jays_cinema_1080x1920.jpg');
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-position-y: 0px;
+             width: 100%;
+        }
     }
     .contact-form {
         background-image: none;
@@ -473,11 +484,22 @@
     .side-menu{
         display: none;
     }
-    .wrapper {
-        background-image: url(../img/homepage-mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
+    @media (orientation: landscape) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+        }
+    }
+    @media (orientation: portrait) {
+         .wrapper {
+            background-image: url('../img/Jays_cinema_1080x1920.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
     }
     .col-inset-moving {
         padding: 0 0 0 30px !important;
@@ -487,12 +509,23 @@
     }
 }
 @media only screen and (max-width: 560px) {
-    .wrapper {
-        background-image: url(../img/homepage-mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: 0px;
-        width: 100%;
+    @media (orientation: landscape) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
+    }
+    @media (orientation: portrait) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1080x1920.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
     }
 }
 /* Extra Small Devices, Phones */
@@ -672,12 +705,23 @@
     .col-ins{
         font-size: 22px;
     }
-    .wrapper {
-        background-image: url('../img/homepage-mobile.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: 0px;
-        width: 100%;
+    @media (orientation: landscape) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1920x1080.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
+    }
+    @media (orientation: portrait) {
+        .wrapper {
+            background-image: url('../img/Jays_cinema_1080x1920.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: 0px;
+            width: 100%;
+        }
     }
     .long-distance{
         padding-bottom: 50px;
