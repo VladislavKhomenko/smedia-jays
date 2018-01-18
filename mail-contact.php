@@ -1,6 +1,11 @@
 <?php
 
 require_once 'mailer.php';
+require_once 'incs/captcha.php';
+
+if(!verifyCaptcha()) {
+    die('Error: Unable to verify captcha');
+}
 
 $recepient = array('konstantinkudelko@mail.ru', '14seldor14@mail.ru');
 $special_recepient = ['konstantinkudelko@mail.ru'];
