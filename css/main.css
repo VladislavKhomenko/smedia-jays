@@ -1589,6 +1589,20 @@ select.form-control:not([size]):not([multiple]) {
 .careers_sch {
     margin-bottom: 70px;
 }
+.header-wrapper {
+    min-width: 100%;
+}
+.content-freight-link {
+    display: flex;
+}
+.content-freight-link a {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.content-freight-link a i {
+    padding-left: 10px;
+}
 /* CSS List nav*/
 
 .listNav { margin:0 0 10px; }
