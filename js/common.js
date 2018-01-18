@@ -71,6 +71,11 @@ var myModule = (function () {
     var submitContactForm = function (e) {
         e.preventDefault();
 
+        if(!window.captchaOK) {
+            alert('Fill in the capcha!');
+            return false;
+        }
+
         var formData = $(this).serialize();
         console.log(formData);
         $.ajax({

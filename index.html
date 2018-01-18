@@ -326,7 +326,7 @@
                     <a href="moving-preview.html#long-distance" class="quote__link link-moving">LONG-DISTANCE MOVING</a>
                     <a href="moving-preview.html#speciality" class="quote__link link-moving">SPECIALTY MOVING</a>
                 </div>
-                <form class="contact-form" action="mail-contact.php">
+                <form class="contact-form" id="contact-form" action="mail-contact.php">
                     <span class="close-form">x close</span>
                     <a href="#" class="menu__link--contact--mobile">contact</a>
                     <div class="contact-form__basic">
@@ -348,7 +348,9 @@
                             <label class="first-quote__label">Message</label>
                             <textarea class="form-control" name="message" rows="8" cols="5"></textarea>
                         </div>
-                        <div class="g-recaptcha" data-sitekey="6LeT5kAUAAAAAEmgftq-9jNapHGstJvrpp1OJY0_"></div>
+                        <div class="form-group">
+                            <div class="g-recaptcha" data-callback="capcha_filled" data-expired-callback="capcha_expired" data-sitekey="6LfeQEEUAAAAAElzXZOh6z7Cm9cHhVvbBt9w1VZf"></div>
+                        </div>
                         <button class="submit-contact-form" type="submit">submit</button>
                     </div>
                 </form>
@@ -360,6 +362,7 @@
     <script src="./libs/jquery.listnav/jquery.listnav-2.1.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/media.js"></script>
+    <script src="js/captcha.js"></script>
 
 </body>
 
