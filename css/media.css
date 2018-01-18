@@ -265,7 +265,7 @@
         margin-bottom: 50px;
     }
     .quote-index {
-        display: none;
+        display: block;
     }
     .container--form {
         left: 50%;
@@ -273,6 +273,9 @@
     }
     #video-background {
         display: none;
+    }
+    .wrapper .quote{
+        position: relative;
     }
     .menu .container--menu .row{
         flex-direction: column;
@@ -404,6 +407,7 @@
     }
     .footer-mobile .quote__link {
         font-size: 21px;
+        display: none;
     }
     .quote--menu--freight--link {
         color: #000000;
