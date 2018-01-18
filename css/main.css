@@ -1584,6 +1584,9 @@ select.form-control:not([size]):not([multiple]) {
     width: 100%;
     text-align: right;
 }
+.careers_sch {
+    margin-bottom: 70px;
+}
 /* CSS List nav*/
 
 .listNav { margin:0 0 10px; }

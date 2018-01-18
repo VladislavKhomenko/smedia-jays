@@ -547,12 +547,11 @@
     .location-name {
         background-image: url(../img/bg-title-location.png), url(../img/bg-quote-1.jpg);
         background-position: 50% 0%, center, center;
-        background-size: 155%, cover;
+        background-size: 200%, cover;
         background-repeat: no-repeat;
     }
     .location-name__title {
-        padding: 35% 0;
-        padding-top: 30px;
+        padding-top: 50%;
         font-size: 24px;
     }
     .steps {
