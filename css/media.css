@@ -350,6 +350,7 @@
     .back-menu{
         top: 44px;
         left: 38px;
+        z-index: 99;
     }
     .col-inset-mov{
         padding: 61px 0 0 90px !important;
@@ -681,8 +682,7 @@
         padding: 30px 21px 0 21px !important;
     }
     .contact-form {
-        padding-top: 130px;
-        width: 190%;
+        padding-top: 0;
     }
     .side-menu{
         display: none;
@@ -759,7 +759,6 @@
         position: fixed;
         background-image: url(../img/bg-menu.jpg);
         width:100%;
-        z-index: 99;
     }
     .container--logo--about{
         margin-bottom: 10px;

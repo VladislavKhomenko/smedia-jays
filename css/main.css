@@ -435,6 +435,7 @@ body, html {
     left: 20px;
     display: none;
     cursor: pointer;
+    z-index: 99;
 }
 
 .form-preview, .form-preview--freight {
@@ -1378,6 +1379,7 @@ textarea.error {
 .active-form-bg .container--menu, .active-freight-bg .container--menu {
     position: absolute;
     left: 50%;
+    top: 20%;
     transform: translateX(-50%);
 }
 
