@@ -13,7 +13,7 @@
         right: 20px;
     }
     .location-name {
-        min-height: 80%;
+        min-height: 100%;
     }
     .about-us-wrapper {
         background-size: 700px;
@@ -99,6 +99,8 @@
     }
     .contact-form{
         margin-bottom: 50px;
+        margin-right: 50px;
+        margin-left: 50px;
     }
 
 }
@@ -272,6 +274,9 @@
     #video-background {
         display: none;
     }
+    .menu .container--menu .row{
+        flex-direction: column;
+    }
     @media (orientation: landscape) {
         .wrapper {
             background-image: url('../img/Jays_cinema_1920x1080.jpg');
@@ -328,6 +333,7 @@
         background-image: url(../img/bg-menu.jpg);
         position: fixed;
         top: 0;
+        left:0;
         min-width: 100%;
         z-index: 10;
     }
@@ -463,7 +469,7 @@
     }
     .location-name__title {
         padding: 35% 0;
-        padding-top: 30px;
+        padding-top: 200px;
     }
     .location-info__list--map {
         text-align: center;
@@ -480,6 +486,9 @@
     }
     .link-moving{
         display: none;
+    }
+    .menu__item{
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 650px) {
