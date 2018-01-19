@@ -67,6 +67,26 @@ var myModule = (function () {
         });
         return false;
     };
+    
+    window.confirmLeavingSite = function(url) {
+        $.fancybox.open('<div class="modal-container content">' + 
+            '<div class="modal-title">Leaving Site</div>' + 
+            '<div class="modal-body">' + 
+            '    <p>' + 
+            '        You are leaving the Jay\'s Transportation Group Ltd. website now.' + 
+            '    </p>' + 
+            '    <p>' + 
+            '        Jay\'s Transportation Group Ltd. cannot and does not warrant the accuracy, completeness, timeliness non-infringement, merchantability' + 
+            '        or fitness for a particular purpose of any information available through these links and' + 
+            '        disclaims any opinions expressed on such sites.' + 
+            '    </p>' + 
+            '    <a class="facebook" id="your-button" href="' + url + '">Click Ok to Continue</a>' + 
+            '</div>' + 
+            '<div class="modal-footer">' + 
+            '    <a href="javascript:;" class="btn btn-primary" id="your-button">X</a>' + 
+            '</div>' + 
+        '</div>');
+    };
 
     var submitContactForm = function (e) {
         e.preventDefault();

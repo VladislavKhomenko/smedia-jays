@@ -22,7 +22,6 @@
         crossorigin="anonymous">
     <script src="https://use.fontawesome.com/a6846a2378.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzWuVeMAnzVi8ftq8cqMyRBL4zOoqoTQ4"></script>
 </head>
 
 <body>
@@ -416,20 +415,36 @@
     <script src="./libs/datepicker/datepicker.en.js"></script>
     <script src="./libs/parallax/jquery.stellar.min.js"></script>
     <script src="./libs/jquery.listnav/jquery.listnav-2.1.js"></script>
-    <!--script src="./libs/gmaps/google-maps.js"></script-->
-    <script src="./libs/gmaps/gmaps.js"></script>
     <script>
-        var map = new GMaps({
-            div: '#map',
-            lat: 51.229086,
-            lng: -102.472829,
-            zoom: 12,
-        });
-        map.addMarker({
-            lat: 51.229086,
-            lng: -102.472829,
-        });
+        var map;
+        
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 51.229086,
+                    lng: -102.472829
+                },
+                zoom: 12
+            });
+            
+            new google.maps.Marker({
+                position: {
+                    lat: 51.229086,
+                    lng: -102.472829
+                },
+                map: map
+            });
+            
+            setTimeout(function() {
+                $('.gm-style div:nth-child(2) a,.gm-style div:nth-child(4) a,.gm-style div:nth-child(6) a').click(function() {
+                    event.preventDefault();
+                    window.confirmLeavingSite($(this).attr('href'));
+                    return false;
+                });
+            }, 500);
+        }
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzWuVeMAnzVi8ftq8cqMyRBL4zOoqoTQ4&callback=initMap" async defer></script>
     <script src="js/common.js"></script>
     <script src="js/captcha.js"></script>
 </body>

@@ -444,7 +444,44 @@
             lat: 49.6684,
             lng: -103.8441918,
         });
+    </script><script>
+        var map;
+        
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 49.6581496,
+                    lng: -103.8416215
+                },
+                zoom: 12
+            });
+            
+            new google.maps.Marker({
+                position: {
+                    lat: 49.6586009,
+                    lng: -103.8431815
+                },
+                map: map
+            });
+            
+            new google.maps.Marker({
+                position: {
+                    lat: 49.6684,
+                    lng: -103.8441918
+                },
+                map: map
+            });
+            
+            setTimeout(function() {
+                $('.gm-style div:nth-child(2) a,.gm-style div:nth-child(4) a,.gm-style div:nth-child(6) a').click(function() {
+                    event.preventDefault();
+                    window.confirmLeavingSite($(this).attr('href'));
+                    return false;
+                });
+            }, 500);
+        }
     </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzWuVeMAnzVi8ftq8cqMyRBL4zOoqoTQ4&callback=initMap" async defer></script>
     <script src="js/common.js"></script>
     <script src="js/captcha.js"></script>
 </body>
