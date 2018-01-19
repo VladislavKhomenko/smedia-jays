@@ -273,6 +273,7 @@ var myModule = (function () {
     };
 
     var onInitUi = function () {
+        // Location maps
         var form = $('#quotes');
 
         $("#quotes").steps({

@@ -117,8 +117,7 @@
                     </div>
                 </div>
                 <div class="col-md-5 offset-md-1">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1Ao-klrAafVLMTmkFt-G2gscD1sTbk1yZ&hl=en" width="300" height="300" frameborder="0"
-                        style="border:0" allowfullscreen></iframe>
+                    <div id="map" class="map" style="border:0;"></div>
                 </div>
             </div>
         </div>
@@ -427,6 +426,24 @@
     <script src="./libs/datepicker/datepicker.en.js"></script>
     <script src="./libs/parallax/jquery.stellar.min.js"></script>
     <script src="./libs/jquery.listnav/jquery.listnav-2.1.js"></script>
+    <script src="./libs/gmaps/google-maps.js"></script>
+    <script src="./libs/gmaps/gmaps.js"></script>
+    <script>
+        var map = new GMaps({
+            div: '#map',
+            lat: 49.6581496,
+            lng: -103.8416215,
+            zoom: 12,
+        });
+        map.addMarker({
+            lat: 49.6586009,
+            lng: -103.8431815,
+        });
+        map.addMarker({
+            lat: 49.6684,
+            lng: -103.8441918,
+        });
+    </script>
     <script src="js/common.js"></script>
     <script src="js/captcha.js"></script>
 </body>

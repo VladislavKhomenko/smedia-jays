@@ -1621,3 +1621,7 @@ select.form-control:not([size]):not([multiple]) {
 #locationsdivList1172{
     margin-bottom: 80px;
 }
+.map {
+    height: 300px!important;
+    width: 300px!important;
+}
