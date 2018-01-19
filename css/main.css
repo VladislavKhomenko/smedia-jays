@@ -296,6 +296,7 @@ body, html {
     letter-spacing: 2.72px;
     cursor: pointer;
     line-height: 23.79px;
+    display: inline-block;
 }
 
 .menu__link:before {
@@ -373,6 +374,7 @@ body, html {
     font-size: 19px;
     position: relative;
     letter-spacing: 2.72px;
+    display: inline-block;
 }
 
 .locations__link:hover {
@@ -849,7 +851,6 @@ textarea.error {
 .careers {
     min-width: 100%;
     background-image: url('../img/bg-careers.jpg');
-    min-height: 100vh;
 }
 
 

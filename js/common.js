@@ -236,8 +236,6 @@ var myModule = (function () {
         } else {
             $(this).text('menu');
         }
-
-        localStorage.clear();
     };
 
     var fadeInRibbon = function (e) {
