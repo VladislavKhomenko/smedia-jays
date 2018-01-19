@@ -360,7 +360,7 @@ var myModule = (function () {
         });
         $('.plus').click(function (event) {
             event.preventDefault();
-            window.open('https://plus.google.com/+JaysMovingStorageLtdRegina');
+            window.open('https://www.linkedin.com/company/2552179/');
             $.fancybox.close();
             parent.$.fancybox.close();
         });
