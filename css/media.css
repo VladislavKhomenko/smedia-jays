@@ -276,6 +276,7 @@
     }
     .wrapper .quote{
         position: relative;
+        margin-bottom: -50px;
     }
     .menu .container--menu .row{
         flex-direction: column;
