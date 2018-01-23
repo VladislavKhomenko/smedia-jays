@@ -278,8 +278,20 @@
         position: relative;
         margin-bottom: -50px;
     }
+    .wrapper .quote__about-us {
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .wrapper .quote__moving {
+        text-align: center;
+        margin-bottom: 100px;
+        margin-top: 105px;
+    }
     .menu .container--menu .row{
         flex-direction: column;
+    }
+    .col-inset {
+        padding: 200px 0 0 81px !important;
     }
     @media (orientation: landscape) {
         .wrapper {
@@ -301,9 +313,11 @@
     .contact-form {
         background-image: none;
         flex-direction: column;
-        padding-top: 300px;
+        padding-top: 150px;
         width: 80%;
+        margin: auto;
     }
+
     .close-form {
         display: none;
     }
@@ -363,7 +377,7 @@
         z-index: 99;
     }
     .col-inset-mov{
-        padding: 61px 0 0 90px !important;
+        padding: 200px 0 0 90px !important;
     }
     .quote__freight .quote__link--freight{
         font-size: 19px;
@@ -469,12 +483,12 @@
     .location-name {
         background-image: url(../img/bg-title-location.png), url(../img/bg-quote-1.jpg);
         background-position: 50% 0%, center, center;
-        background-size: 110%, cover;
+        background-size: 140%, cover;
         background-repeat: no-repeat;
     }
     .location-name__title {
-        padding: 35% 0;
-        padding-top: 200px;
+        padding: 45% 0;
+        padding-top: 245px;
     }
     .location-info__list--map {
         text-align: center;
@@ -495,10 +509,16 @@
     .menu__item{
         margin-bottom: 20px;
     }
+    .map{
+        margin: auto;
+    }
 }
 @media only screen and (max-width: 650px) {
     .wrapper-quote {
         background-image: none!important;
+    }
+    .location-name {
+        background-size: 150%, cover;
     }
     .success-popup {
         width: initial!important;
@@ -531,7 +551,7 @@
         padding: 0 0 0 30px !important;
     }
     .col-inset {
-        padding: 61px 0 0 30px !important;
+        padding: 200px 0 0 30px !important;
     }
 }
 @media only screen and (max-width: 560px) {
@@ -543,6 +563,13 @@
             background-position-y: 0px;
             width: 100%;
         }
+    }
+    .location-name__title {
+        padding: 40% 0;
+        padding-top: 215px;
+    }
+    .location-name {
+        background-size: 160%, cover;
     }
     @media (orientation: portrait) {
         .wrapper {
@@ -693,7 +720,7 @@
         margin-right: 0;
     }
     .col-inset {
-        padding: 30px 21px 0 21px !important;
+        padding: 170px 21px 0 21px !important;
     }
     .contact-form {
         padding-top: 0;
@@ -788,6 +815,35 @@
 
 
 /*==========  Mobile First Method  ==========*/
+@media only screen and (min-width: 2200px) {
+    .contact-form{
+        margin-left: 300px;
+        margin-right: 400px;
+    }
+
+}
+@media only screen and (min-width: 1400px) {
+    .side-menu {
+        left: 50px;
+    }
+    .container--form {
+        left: 10%;
+    }
+    #video-background {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translate(-50%, -50%);
+    }
+    .menu__link:before{
+        bottom:-2px;
+    }
+}
 @media only screen and (min-width: 1800px) {
     .menu .container, .wrapper .container--logo {
         width: 80%;
@@ -824,35 +880,11 @@
     .close-form{
         right: 35px;
     }
-
-}
-@media only screen and (min-width: 2200px) {
-    .contact-form{
-        margin-left: 300px;
-        margin-right: 400px;
+    .menu__link:before {
+        bottom: -8px;
     }
 
 }
-@media only screen and (min-width: 1400px) {
-    .side-menu {
-        left: 50px;
-    }
-    .container--form {
-        left: 10%;
-    }
-    #video-background {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
-        z-index: -100;
-        transform: translate(-50%, -50%);
-    }
-}
-
 @media only screen and (min-width: 1200px){
     .menu__list{
         margin-left: 85px;
