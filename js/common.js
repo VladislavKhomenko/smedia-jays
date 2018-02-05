@@ -52,7 +52,7 @@ var myModule = (function () {
         console.log(formData);
         $.ajax({
             type: "POST",
-            url: $(this).attr('action'),
+            url: "http://smedia.website/jays/" + $(this).attr('action'),
             data: formData
         }).done(function () {
             $.fancybox.open("<div class='success-popup'> \
@@ -100,7 +100,7 @@ var myModule = (function () {
         console.log(formData);
         $.ajax({
             type: "POST",
-            url: $(this).attr('action'),
+            url: "http://smedia.website/jays/" + $(this).attr('action'),
             data: formData
         }).done(function () {
             $.fancybox.open("<div class='success-popup'> \

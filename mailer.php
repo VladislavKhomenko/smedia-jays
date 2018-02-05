@@ -3,6 +3,8 @@
 require_once 'PHPMailer/PHPMailerAutoload.php';
 require_once 'incs/utils.php';
 
+header("Access-Control-Allow-Origin: *");
+
 function SendEmail($tos, $from, $subject, $message, $reply_to = null, $reply_to_name = '', $smtp = array(), $content_type = 'text/plain', $SMTPDebug = 0)
 {
     if(!is_array($tos)) { $tos = array($tos); }

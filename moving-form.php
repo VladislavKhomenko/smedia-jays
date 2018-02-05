@@ -12,9 +12,9 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         die("Error: Captcha can't be verified");
     }
     
-    $name = filter_input(INPUT_POST, "firstName-freight");
+    $name = filter_input(INPUT_POST, "firstName-moving");
 
-    $lastName = filter_input(INPUT_POST, "lastName-freight");
+    $lastName = filter_input(INPUT_POST, "lastName-moving");
 
     $city_from = trim($_POST["cityFrom-moving"]);
 
