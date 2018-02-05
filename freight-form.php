@@ -41,7 +41,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = array("konstantinkudelko@mail.ru");
+        $recipient = array("info@jaystransportationgroup.ca", "tayler@smedia.ca");
 
         // Set the email subject.
         $subject = "New contact from $name";
@@ -91,7 +91,7 @@
             'DestinationState'                  => $province_destination,
             'DestinationPostalCode'             => $zip_destination,
             'DestinationCountry'                => 'Canada',
-            'RequestedLoadDate'                 => $date,
+            'RequestedLoadDate'                 => $pickup_date,
             'CustomerComment'                   => $email_content,
             'LeadProviderSource'                => '',
             'ContactPreference'                 => '',

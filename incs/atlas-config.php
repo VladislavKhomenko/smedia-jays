@@ -1,19 +1,19 @@
 <?php
 
-$atlas_endpoint      = "https://sslws-qa.atlasworldgroup.com/AtlasLeadReceiverWcf/LeadReceiver.svc/SubmitLeadPost";
+$atlas_endpoint      = 'https://sslws.atlasworldgroup.com/AtlasLeadReceiverWcf/LeadReceiver.svc/SubmitLeadPost';//"https://sslws-qa.atlasworldgroup.com/AtlasLeadReceiverWcf/LeadReceiver.svc/SubmitLeadPost";
 $atlas_content_type  = "application/json";
 
 $atlas_accounts     = [
     'AB'  => [
         'LeadProvider'  => 'JaysMovingAB',
         'UserName'      => 'jaysab',
-        'Password'      => 'UbGfncG2',
+        'Password'      => 'w8ASmKNe',//'UbGfncG2',
         'AtlasAgentID'  => '8423'
     ],
     'SK'  => [
         'LeadProvider'  => 'JaysMovingSK',
         'UserName'      => 'jayssk',
-        'Password'      => '6hXNYhj3',
+        'Password'      => '5pm4K9Ih',//6hXNYhj3',
         'AtlasAgentID'  => '8410'
     ]
 ];
