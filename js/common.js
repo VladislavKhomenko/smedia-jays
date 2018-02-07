@@ -38,6 +38,15 @@ var myModule = (function () {
         $('.quote--menu--freight--link, .link-moving').on('click', onGoToMovingSection);
         // about us
         $('.content-link--locations').on('click', onStoreMenu);
+        
+        //smedia Conversion Tracker
+	sfn="//tm.smedia.ca/analytics/script.js";
+	sref=document.createElement('script');
+	sref.setAttribute("type","text/javascript");
+	sref.setAttribute("src", sfn);
+	sref.setAttribute("async", "");
+	document.getElementsByTagName("head")[0].appendChild(sref);
+        //End of Conversion Tracker
     };
 
     var submitAjaxForm = function (e) {
@@ -55,6 +64,12 @@ var myModule = (function () {
             url: "http://smedia.website/jays/" + $(this).attr('action'),
             data: formData
         }).done(function () {
+            ga('smedia_analytics_tracker.send', {
+                hitType: 'event',
+                eventCategory: 'Form Submission',
+                eventAction: 'Quote',
+                nonInteraction: true
+            });
             $.fancybox.open("<div class='success-popup'> \
                     <div class='success-popup-wrapper'> \
                         <h1 class='success-popup__title'>THANK YOU!</h1> \
@@ -103,6 +118,12 @@ var myModule = (function () {
             url: "http://smedia.website/jays/" + $(this).attr('action'),
             data: formData
         }).done(function () {
+            ga('smedia_analytics_tracker.send', {
+                hitType: 'event',
+                eventCategory: 'Form Submission',
+                eventAction: 'Contact',
+                nonInteraction: true
+            });
             $.fancybox.open("<div class='success-popup'> \
                 <div class='success-popup-wrapper'> \
                     <h1 class='success-popup__title'>THANK YOU!</h1> \

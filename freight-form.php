@@ -41,7 +41,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = array("info@jaystransportationgroup.ca", "tayler@smedia.ca");
+        $recipient = array("sales-freight@jaystransportationgroup.ca", "estimate@jaystransportationgroup.ca", "tayler@smedia.ca");
 
         // Set the email subject.
         $subject = "New contact from $name";
@@ -99,7 +99,7 @@
             'LeadProviderCallWork'              => ''
         ];
 
-        $resp = submit2nearest($atlas_data);
+        $resp = false; //submit2nearest($atlas_data);
 
         $message = $resp?"Synced with CRM" : "Not Synced";
 
