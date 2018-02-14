@@ -41,7 +41,7 @@
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = array("sales-freight@jaystransportationgroup.ca", "estimate@jaystransportationgroup.ca", "tayler@smedia.ca");
+        $recipient = array("sales-freight@jaystransportationgroup.ca", "tayler@smedia.ca");
 
         // Set the email subject.
         $subject = "New contact from $name";

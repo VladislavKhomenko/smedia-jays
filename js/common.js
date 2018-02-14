@@ -59,11 +59,15 @@ var myModule = (function () {
 
         var formData = $(this).serialize();
         console.log(formData);
+        $('#smedia-loading-spinner').css('display', 'block');
+        $('div.actions').css('display', 'none');
         $.ajax({
             type: "POST",
             url: "http://smedia.website/jays/" + $(this).attr('action'),
             data: formData
         }).done(function () {
+            $('#smedia-loading-spinner').css('display', 'none');
+            $('div.actions').css('display', 'block');
             ga('smedia_analytics_tracker.send', {
                 hitType: 'event',
                 eventCategory: 'Form Submission',
