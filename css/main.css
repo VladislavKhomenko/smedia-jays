@@ -1295,7 +1295,12 @@ textarea.error {
 .quote--menu--freight, .quote--menu--moving {
     display: none;
 }
-
+.form-preview__faq{
+    font-weight: 900;
+}
+.form-preview__content:nth-last-child(){
+    padding-bottom: 40px;
+}
 .quote--menu--freight  {
     flex: 1;
     justify-content: space-between;
