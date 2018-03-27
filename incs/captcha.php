@@ -15,7 +15,7 @@ function verifyCaptcha() {
         
         $response = HttpPost($api_url, $post_data);
         
-        echo "$response\n";
+        //echo "$response\n";
         
         if(!$response) { return false; }
         

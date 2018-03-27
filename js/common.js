@@ -65,13 +65,13 @@ var myModule = (function () {
             type: "POST",
             url: "http://smedia.website/jays/" + $(this).attr('action'),
             data: formData
-        }).done(function () {
+        }).done(function (data) {
             $('#smedia-loading-spinner').css('display', 'none');
             $('div.actions').css('display', 'block');
             ga('smedia_analytics_tracker.send', {
                 hitType: 'event',
                 eventCategory: 'Form Submission',
-                eventAction: 'Quote',
+                eventAction: data.form,
                 nonInteraction: true
             });
             $.fancybox.open("<div class='success-popup'> \

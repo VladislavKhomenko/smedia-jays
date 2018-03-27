@@ -133,7 +133,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 
         http_response_code(200);
 
-        echo "Thank You! Your message has been sent. $message";
+        echo json_encode( ['form' => 'moving', 'msg' => "Thank You! Your message has been sent. $message"] );
 
     } else {
 

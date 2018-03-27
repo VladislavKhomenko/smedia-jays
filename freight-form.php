@@ -107,7 +107,8 @@
         if (SendEmail($recipient, 'offers@mail.smedia.ca', $subject, $email_content, $email, $name) === true) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Your message has been sent. $message";
+            
+            echo json_encode( ['form' => 'freight', 'msg' => "Thank You! Your message has been sent. $message"] );
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
