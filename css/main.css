@@ -1142,15 +1142,9 @@ textarea.error {
     background-image: none;
 }
 
-.faq{
-    background-image: url('../img/bg-menu.jpg');
-    background-size: cover;
-    background-position: center center;
-    color: #000000;
-    font-family: Bariol;
-    font-size: 18px;
-    min-height: 100%;
-    padding-top: 150px;
+#faq{
+    background-color: #fff;
+    padding-bottom: 50px;
 }
 
 .title-wrapper-faq {
