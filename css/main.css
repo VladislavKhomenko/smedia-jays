@@ -283,7 +283,7 @@ body, html {
     cursor: pointer;
 }
 
-.menu__item:nth-child(7) {
+.menu__item:last-child {
     margin-bottom: 0;
 }
 
