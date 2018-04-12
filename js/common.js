@@ -409,7 +409,11 @@ var myModule = (function () {
             parent.$.fancybox.close();
         });
 
-        // Listnav
+        // accordion
+
+        $( "#accordion" ).accordion();
+        
+        // listnav
         $('#locationsdivList1172').listnav({
             includeNums: false,
             includeAll: true,
