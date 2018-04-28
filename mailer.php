@@ -1,6 +1,5 @@
 <?php
 
-require_once 'PHPMailer/PHPMailerAutoload.php';
 require_once 'incs/utils.php';
 
 header("Access-Control-Allow-Origin: *");
