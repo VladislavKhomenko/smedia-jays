@@ -130,8 +130,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     if (SendEmail($recipient, 'offers@mail.smedia.ca', $subject, $email_content, $email, $name) === true) {
 
         // Set a 200 (okay) response code.
-
-        http_response_code(200);
+        header('Content-Type: application/json');
 
         echo json_encode( ['form' => 'moving', 'msg' => "Thank You! Your message has been sent. $message"] );
 
