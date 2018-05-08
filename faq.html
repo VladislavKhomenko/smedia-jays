@@ -23,9 +23,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="libs/fancybox-master/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
         crossorigin="anonymous">
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="./libs/jquery/jquery.js"></script>
+    <script src="./libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 </head>
 
 
@@ -107,70 +110,93 @@
                     <div class="col-lg-8 offset-lg-1 col-xl-7 col-md-11 offset-xl-1 col-inset col-inset-mov faq">
 
                         <h1 class="main-title__text main-title__text--quote form-preview-title col-ins">Frequently asked questions</h1>
-
-                        <p class="form-preview__content form-preview__faq">Q: How will you protect my furniture and flooring during the move?</p>
-                        <p class="form-preview__content">A: We’ll wrap your belongings with furniture pads to make sure they 
-                            arrive safe and sound. We also put down floor runners to protect your floors.</p>
-                        <p class="form-preview__content form-preview__faq">Q: Will the movers disassemble and reassemble furniture?</p>
-                        <p class="form-preview__content">A: We can typically handle beds, tables, dresser mirrors and
-                             other standard furniture. Items that may require a third-party service include treadmills, 
-                             ellipticals, trampolines, dollhouses, washer and dryer blocking kits and any other pieces 
-                             that need special attention.</p>
-                        <p class="form-preview__content form-preview__faq">Q: Do I have to empty the drawers before you move my dresser?</p>
-                        <p class="form-preview__content">A: Nah, we got this. Our crew will remove the drawers and carry 
-                            them out separately if the dresser is too heavy, and then replace them once the dresser is 
-                            loaded in the transport vehicle. Just remember to remove any fragile or heavy items first.</p>
-                        <p class="form-preview__content form-preview__faq">Q: Do you have anything to protect mattresses?</p>
-                        <p class="form-preview__content">A: Yes. We use specialty mattress bags to seal mattresses and box springs during transportation.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: Will the movers just drop my stuff anywhere?</p>
-                        <p class="form-preview__content">A: And make you spend your first night in your new place 
-                            hunting down bedsheets? We wouldn’t do that to you! Cartons are labelled by room and dropped
-                             off in their rightful place. If any cartons do sneak through unmarked our movers will 
-                             ask you where you’d like them.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: What should we do with nonperishable food items that we aren’t taking with us?</p>
-                        <p class="form-preview__content">A: Set them aside on moving day and we’ll make sure they find a good home! We’ve 
-                            teamed up with Move For Hunger, an amazing organization that collects nonperishable food items and 
-                            relocates them to your local food bank.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: Do your trucks have climate-controlled trailers?</p>
-                        <p class="form-preview__content">A: Our trailers are not climate-controlled. We recommend that you bring any 
-                            items that don’t do well in extreme conditions, such as musical instruments or antiques, with you in your
-                             vehicle. </p>
-                        <p class="form-preview__content form-preview__faq">Q: Can you move motorized equipment like snow blowers and lawnmowers?</p>
-                        <p class="form-preview__content">A: We’d be revved up to move your motorized equipment! Just don’t forget to run the fuel dry first.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: Can you transport vehicles on your trucks?</p>
-                        <p class="form-preview__content">A: Motorcycles and quads are not a problem. We can also move larger vehicles like 
-                            cars and trucks if you’d like, but a third-party vehicle hauler is much more cost-effective. If you choose to go 
-                            that route we’d be happy to arrange the service for you.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: Can we send our pets along with the driver?</p>
-                        <p class="form-preview__content">A: We know they’re part of the family, but pets are not allowed in the trucks.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: Can we help move our stuff onto the trucks?</p>
-                        <p class="form-preview__content">A: While we appreciate your enthusiasm, our movers are the only ones who can move 
-                            items onto the trucks. It’s a health and safety thing. Just sit back, relax and be available to answer any 
-                            questions the crew may have.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: Can we have another pickup or delivery done at our residence while you’re moving us?</p>
-                        <p class="form-preview__content">A: While we would prefer to have you all to ourselves, we understand that sometimes these 
-                            things are unavoidable. We are willing to share the space when necessary, as long as it doesn’t interfere with the job we are doing.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: Do you sell moving cartons?</p>
-                        <p class="form-preview__content">A: When it comes to packing material, we’ve got you covered. We carry cartons of all shapes and sizes, tape, 
-                            bubble wrap, packing paper and stretch wrap.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: Do we need to have our own insurance?</p>
-                        <p class="form-preview__content">A: No. We do have valuation coverage that you can purchase, but it’s best to check with your insurance 
-                            provider first to find out if your current policy covers your move. There is a lower valuation that comes with every move.</p>
-
-                        <p class="form-preview__content form-preview__faq">Q: How much should I tip the crew?</p>
-                        <p class="form-preview__content">A: While tips are a great way to acknowledge excellent service, our crews do not expect them. 
-                            It’s completely up to you if you’d like to provide a tip, as is the amount you choose to give.</p>
-
-
+                        <div id="accordion">
+                            <p class="form-preview__content form-preview__faq">Q: How will you protect my furniture and flooring during the move?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: We’ll wrap your belongings with furniture pads to make sure they arrive safe and sound.
+                                    We also put down floor runners to protect your floors.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Will the movers disassemble and reassemble furniture?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: We can typically handle beds, tables, dresser mirrors and other standard furniture. Items
+                                    that may require a third-party service include treadmills, ellipticals, trampolines,
+                                    dollhouses, washer and dryer blocking kits and any other pieces that need special attention.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Do I have to empty the drawers before you move my dresser?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: Nah, we got this. Our crew will remove the drawers and carry them out separately if the
+                                    dresser is too heavy, and then replace them once the dresser is loaded in the transport
+                                    vehicle. Just remember to remove any fragile or heavy items first.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Do you have anything to protect mattresses?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: Yes. We use specialty mattress bags to seal mattresses and box springs during transportation.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Will the movers just drop my stuff anywhere?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: And make you spend your first night in your new place hunting down bedsheets? We wouldn’t
+                                    do that to you! Cartons are labelled by room and dropped off in their rightful place.
+                                    If any cartons do sneak through unmarked our movers will ask you where you’d like them.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: What should we do with nonperishable food items that we aren’t taking with us?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: Set them aside on moving day and we’ll make sure they find a good home! We’ve teamed up
+                                    with Move For Hunger, an amazing organization that collects nonperishable food items
+                                    and relocates them to your local food bank.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Do your trucks have climate-controlled trailers?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: Our trailers are not climate-controlled. We recommend that you bring any items that don’t
+                                    do well in extreme conditions, such as musical instruments or antiques, with you in your
+                                    vehicle. </p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Can you move motorized equipment like snow blowers and lawnmowers?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: We’d be revved up to move your motorized equipment! Just don’t forget to run the fuel
+                                    dry first.
+                                </p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Can you transport vehicles on your trucks?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: Motorcycles and quads are not a problem. We can also move larger vehicles like cars and
+                                    trucks if you’d like, but a third-party vehicle hauler is much more cost-effective. If
+                                    you choose to go that route we’d be happy to arrange the service for you.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Can we send our pets along with the driver?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: We know they’re part of the family, but pets are not allowed in the trucks.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Can we help move our stuff onto the trucks?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: While we appreciate your enthusiasm, our movers are the only ones who can move items onto
+                                    the trucks. It’s a health and safety thing. Just sit back, relax and be available to
+                                    answer any questions the crew may have.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Can we have another pickup or delivery done at our residence while you’re moving us?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: While we would prefer to have you all to ourselves, we understand that sometimes these
+                                    things are unavoidable. We are willing to share the space when necessary, as long as
+                                    it doesn’t interfere with the job we are doing.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Do you sell moving cartons?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: When it comes to packing material, we’ve got you covered. We carry cartons of all shapes
+                                    and sizes, tape, bubble wrap, packing paper and stretch wrap.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: Do we need to have our own insurance?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: No. We do have valuation coverage that you can purchase, but it’s best to check with your
+                                    insurance provider first to find out if your current policy covers your move. There is
+                                    a lower valuation that comes with every move.</p>
+                            </div>
+                            <p class="form-preview__content form-preview__faq">Q: How much should I tip the crew?</p>
+                            <div class="accordion-card">
+                                <p class="form-preview__content">A: While tips are a great way to acknowledge excellent service, our crews do not expect them.
+                                    It’s completely up to you if you’d like to provide a tip, as is the amount you choose
+                                    to give.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -337,6 +363,9 @@
                         <a href="#" class="menu__link">contact</a>
                     </li>
                     <li class="menu__item">
+                        <a href="./faq.html" class="menu__link">faq</a>
+                    </li>
+                    <li class="menu__item">
                         <a href="./Careers_Scholarships.html" class="menu__link">Careers</a>
                     </li>
                 </ul>
@@ -443,7 +472,6 @@
     <span class="back-menu">
         < back</span>
             <script src="https://use.fontawesome.com/a6846a2378.js"></script>
-            <script src="./libs/jquery/jquery.js"></script>
             <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-steps/1.1.0/jquery.steps.min.js"></script>
             <script src="./libs/datepicker/datepicker.js"></script>
