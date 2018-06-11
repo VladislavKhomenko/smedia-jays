@@ -279,12 +279,8 @@ body, html {
 }
 
 .menu__item {
-    margin-bottom: 25px;
+    margin-bottom: 25px !important;
     cursor: pointer;
-}
-
-.menu__item:last-child {
-    margin-bottom: 0;
 }
 
 .menu__link {
